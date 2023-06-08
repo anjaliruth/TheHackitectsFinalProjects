@@ -1,4 +1,5 @@
 import React from "react";
+import "./DogCard.css";
 import fridaImage from "../../Media/Frida/WhatsApp Image 2023-06-03 at 12.50.29.jpeg";
 import georgeImage from "../../Media/George/WhatsApp Image 2023-06-03 at 11.20.07.jpeg";
 import maisieImage from "../../Media/Maisie/WhatsApp Image 2023-06-03 at 11.15.30.jpeg";
@@ -63,19 +64,29 @@ const dogData = [
   },
 ];
 
-
 export default function DogCard() {
-  return <div className="individualDogCard">
-{/* image, name, breed, location, sex, age, button */}
-{dogData.map((info, index)=>
-<div key={index}>
-<img src={info.photo} alt="dog photo" />
-  <h2>{info.name}</h2>
-  <p>{info.breed}</p>
-  <p>{info.sex}</p>
-  <p>{info.age}</p>
-  <button>More Info</button>
-</div>
-)}
-  </div>;
+  return (
+    <div className="individualDogCard">
+      <h1>Connecting you to dogs available for adoption today...</h1>
+      {/* image, name, breed, location, sex, age, button */}
+      {dogData.map((info, index) => (
+        <div key={index} className="ind">
+          <img src={info.photo} alt="dog photo" className="dogGridPhoto" />
+          <div className="indDogDatawButton">
+            <div className="indDogData">
+              <h2 className="dogName">{info.name}</h2>
+              <p>{info.breed}</p>
+              <p>{info.location}</p>
+              <p>
+                {info.sex}, {info.age}
+              </p>
+            </div>
+            <div className="moreInfoButton">
+              <button>More Info!</button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

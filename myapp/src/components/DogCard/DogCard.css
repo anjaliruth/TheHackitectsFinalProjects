@@ -1,0 +1,56 @@
+:root{
+    --lightBlue: #00BDBD;
+    --orange: #FD8B49;
+}
+
+
+.dogGridPhoto{
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    background-color: black;
+    margin:0 auto;
+    padding: 0;
+    border-radius:  20px 20px 0 0 ;
+
+}
+
+.indDogDatawButton{
+    box-sizing: border-box;
+    text-align:left;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 0 0 20px 20px ;
+    padding-left: 20px;
+    width: 250px;
+    background-color: var(--lightBlue);
+}
+
+.indDogData > p{
+
+margin: 0;
+font-size: 1.5rem;
+}
+/* class to move the doggy data text away from the border */
+
+/* takes out the space between dog name and dog photo */
+.dogName{
+padding-top: 10px;
+margin: 0;
+font-size: 2rem;
+}
+
+.moreInfoButton{
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+
+
+}
+
+.moreInfoButton > button {
+background-color: var(--orange);
+border: none;
+border-radius: 10px;
+padding: 10px; 
+}
