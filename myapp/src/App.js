@@ -1,17 +1,10 @@
-import './App.css';
-import DogProfile from './components/DogProfile/DogProfile.js';
-import MyGallery from './components/DogProfile/imagegallerTest.js';
+import "./App.css";
+import DemoCarousel from "./components/DogProfile/DogProfile";
 
 function App() {
-
-
   return (
     <div className="App">
-    <DogProfile/>
-    <MyGallery/>
-    
-    <p>hellos</p>
-    
+      <DemoCarousel />
     </div>
   );
 }
