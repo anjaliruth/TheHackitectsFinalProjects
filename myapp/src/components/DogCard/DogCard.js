@@ -67,8 +67,9 @@ const dogData = [
 export default function DogCard() {
   return (
     <div className="individualDogCard">
-      <h1>Connecting you to dogs available for adoption today...</h1>
+      <h1 className="dogCardTitle">Connecting you to dogs available for adoption today...</h1>
       {/* image, name, breed, location, sex, age, button */}
+      <div className="dogGallery">
       {dogData.map((info, index) => (
         <div key={index} className="ind">
           <img src={info.photo} alt="dog photo" className="dogGridPhoto" />
@@ -87,6 +88,7 @@ export default function DogCard() {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 }
