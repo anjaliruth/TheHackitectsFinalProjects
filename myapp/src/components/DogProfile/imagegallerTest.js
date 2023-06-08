@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 import ImageGallery from 'react-image-gallery';
-
-
 
 const images = [
   {
@@ -18,14 +16,9 @@ const images = [
   },
 ];
 
-export default function DogProfile() {
-
-
-
-
-  class MyGallery extends React.Component {
-    render() {
-      return <ImageGallery items={images} />;
-    }
+class MyGallery extends React.Component {
+  render() {
+    return <ImageGallery items={images} />;
   }
 }
+export default MyGallery;
