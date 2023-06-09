@@ -46,7 +46,9 @@ export default function AboutUs() {
       </div>
 
       <div className="aboutUsPara">
+      {/* comment */}
         <p>
+
           At Paws For Affection, we are committed to improving the lives of
           shelter dogs and promoting responsible pet ownership. Through
           technology and compassion, we aim to make a positive and lasting
