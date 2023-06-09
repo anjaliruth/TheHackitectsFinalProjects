@@ -1,30 +1,41 @@
-import React from 'react'
-import './NavBar.css'
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./NavBar.css";
 
+function Navbar() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
+  const showNavbar = () => {
+    setIsNavbarOpen((prevState) => !prevState);
+  };
 
-export default function NavBar() {
   return (
-    <div className = "navContainer">
-    
-    <ul className = "navButtons">  
-    <li>Home</li>
-    <li>About us</li>    
-    <li>Info pack</li>
-    <li>Application form</li>
-    </ul>
-  
-    </div>
-  )
+    <nav id="nav">
+      <div className="nav-container">
+        <button className="nav-btn" onClick={showNavbar}>
+          {isNavbarOpen ? (
+            <FaTimes className="nav-icon" />
+          ) : (
+            <FaBars className="nav-icon" />
+          )}
+        </button>
+        <div className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`}>
+          <a href="/#" className="nav-link">
+            Home
+          </a>
+          <a href="/#" className="nav-link">
+            My work
+          </a>
+          <a href="/#" className="nav-link">
+            Blog
+          </a>
+          <a href="/#" className="nav-link">
+            About me
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-
-
-
-// Nav bar buttons, Home,About us, Info pack, Application form 
-// ul of th buttons components in the nav bar
-// Path: TheHackitectsFinalProjects\myapp\src\components\NavBar\NavBar.js
-
-
-
-
+export default Navbar;

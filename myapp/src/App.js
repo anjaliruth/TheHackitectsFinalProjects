@@ -1,15 +1,24 @@
+
+
+import DogProfile from "./components/DogProfile/DogProfile";
+
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar.js'
-
+import DogCard from './components/DogCard/DogCard.js'
+import AboutUs from './components/AboutUs/AboutUs.js'
+import NavBar from "./components/NavBar/NavBar";
 
 
 function App() {
   return (
     <div className="App">
-    <NavBar/>
+          <NavBar />
+        <AboutUs/>
+
+    <DogCard/>
+      <DogProfile />
+
     </div>
   );
 }
-
 export default App;
