@@ -1,0 +1,5 @@
+.bannerTagLine {
+ font-size: 1rem; /* rem font unit used, this may need adjusting when root font sixe is set */
+text-align: center;
+background-image: linear-gradient(to right, rgb(255, 255, 255, 0), rgb(0, 224, 224,0.5));
+}

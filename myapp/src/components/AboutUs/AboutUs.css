@@ -1,0 +1,23 @@
+
+p {
+    background-color: #F5F5F5;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* .aboutUsPara {
+    display: flex;
+    justify-content: center;
+    margin:20px auto;
+max-width: 500px;
+gap: 20px;
+
+} */
