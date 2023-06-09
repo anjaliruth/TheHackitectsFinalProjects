@@ -11,7 +11,6 @@ function Navbar() {
 
   return (
     <nav id="nav">
-      <h3 className="logo">LOGO</h3>
       <div className="nav-container">
         <button className="nav-btn" onClick={showNavbar}>
           {isNavbarOpen ? (
