@@ -1,12 +1,12 @@
 import "./App.css";
-import carouselMain from "./components/DogProfile/DogProfile";
+import DogProfile from "./components/DogProfile/DogProfile";
 
 function App() {
   return (
     <div className="App">
-      <App />
+      <DogProfile />
     </div>
   );
 }
 
-export default carouselMain;
+export default App;
