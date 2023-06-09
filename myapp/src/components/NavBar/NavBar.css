@@ -56,16 +56,15 @@
     justify-content: center;
     gap: 1.5rem;
     background-color: white;
-    transition: 1s;
-    transform: translateY(-100%); /* Start with the nav hidden */
+    transform: translateY(-100%);
+    visibility: hidden;
     z-index: -1; /* Add a negative z-index to hide the nav initially */
-    visibility: hidden; /* Hide the nav by default */
   }
 
   #nav .header-nav.responsive_nav {
-    transform: translateY(0); /* Show the nav when the class is added */
+    transform: translateY(0);
+    visibility: visible;
     z-index: 1; /* Increase the z-index to bring the nav above other elements */
-    visibility: visible; /* Set the nav to visible when the class is added */
   }
 
   #nav .header-nav .nav-close-btn {
