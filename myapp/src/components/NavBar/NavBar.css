@@ -14,10 +14,6 @@
   text-decoration: none;
 }
 
-#nav .header-nav a:hover {
-  color: gray; /* Update the hover color as desired */
-}
-
 #nav .nav-btn {
   padding: 5px;
   cursor: pointer;
@@ -36,7 +32,7 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 567px) {
   #nav .nav-btn {
     visibility: visible;
     opacity: 1;
