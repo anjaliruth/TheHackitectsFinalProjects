@@ -19,7 +19,7 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
-        <img src={sookieImage} alt="picture of a dog" />
+        <img src={sookieImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
@@ -31,7 +31,7 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
-        <img src={fridaImage} alt="picture of a dog" />
+        <img src={fridaImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
@@ -42,7 +42,7 @@ export default function AboutUs() {
           enjoyable experience for everyone involved.
         </p>
 
-        <img src={georgeImage} alt="picture of a dog" />
+        <img src={georgeImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
