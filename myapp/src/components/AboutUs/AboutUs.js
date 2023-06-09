@@ -4,6 +4,7 @@ import fridaImage from "../../Media/Frida/WhatsApp Image 2023-06-03 at 12.50.28.
 import georgeImage from "../../Media/George/WhatsApp Image 2023-06-03 at 11.12.17.jpeg";
 import "./AboutUs.css";
 
+//adding comments here to test git
 export default function AboutUs() {
   return (
     <div>
