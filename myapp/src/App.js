@@ -1,8 +1,6 @@
 
 
 import DogProfile from "./components/DogProfile/DogProfile";
-
-import logo from './logo.svg';
 import './App.css';
 import DogCard from './components/DogCard/DogCard.js'
 import AboutUs from './components/AboutUs/AboutUs.js'
