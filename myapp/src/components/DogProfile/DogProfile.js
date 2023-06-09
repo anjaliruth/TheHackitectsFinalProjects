@@ -32,6 +32,7 @@ function DogProfile() {
         <p><BsFillBarChartFill/> Activity Level: "props"</p>
         <p><FaMapMarkedAlt/> Location: "props"</p>
         </div>
+        
 
     </div>
   );
