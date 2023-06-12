@@ -47,6 +47,7 @@ function PhotoCarousel() {
             width="80%"
             height="500px"
             // captionStyle={captionStyle}
+
             radius="10px"
             slideNumber={true}
             slideNumberStyle={slideNumberStyle}
@@ -58,12 +59,16 @@ function PhotoCarousel() {
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
             thumbnails={true}
-            thumbnailWidth="100px"
+            thumbnailalignment="center"
+
+    
+            thumbnailWidth="60px"
             style={{
               textAlign: "center",
               maxWidth: "850px",
               maxHeight: "500px",
               margin: "40px auto",
+              justifyContent: "right",
             }}
           />
         </div>

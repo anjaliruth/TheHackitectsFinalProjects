@@ -54,7 +54,6 @@ align-items: center;    */
 .dogphotos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: column;
     background-color: yellow;
     height: 100%;

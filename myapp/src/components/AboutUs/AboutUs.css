@@ -6,7 +6,7 @@ p {
     margin: 0 auto;
 }
 
-img {
+.aboutuspic {
     width: 200px;
     height: 200px;
     object-fit: cover;
