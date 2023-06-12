@@ -72,7 +72,7 @@ export default function DogCard() {
       <div className="dogGallery">
       {dogData.map((info, index) => (
         <div key={index} className="ind">
-          <img src={info.photo} alt="dog photo" className="dogGridPhoto" />
+          <img src={info.photo} alt="dog card" className="dogGridPhoto" />
           <div className="indDogDatawButton">
             <div className="indDogData">
               <h2 className="dogName">{info.name}</h2>

@@ -9,9 +9,10 @@ export default function InfoPack() {
     <>
       <div className="infoContainer">
         <section classname="dogSection">
-          <h1>
+        <div id="pageTitle">
+          <h1 id="mainHeader">
             Our top tips on what to expect and how to care for your adopted dog
-          </h1>
+          </h1></div>
           <h2 className="infoHeader">Do Your Research First</h2>
           <div id="paraImgContainer1">
             <div className="infoPackContent">
@@ -71,7 +72,7 @@ export default function InfoPack() {
                 regularly they destroy their toys!
               </p>
             </div>
-            <img src={neilImage1} alt="dog" />
+            <img id="neilImg" src={neilImage1} alt="dog" />
           </div>
         </section>
       </div>

@@ -79,12 +79,41 @@ section {
 }
 
 #millieImg {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   /* mask-image: invert(url("/src/Media/icons/housemask.png")); */
   /* invert the mask */
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: cover;
+}
+
+#neilImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* mask-image: invert(url("/src/Media/icons/housemask.png")); */
+    /* invert the mask */
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: cover;
+}
+
+#mainHeader {
+    font-size: 32px;
+    height: 32px;
+}
+
+#pageTitle {
+    margin-bottom: 60px;
+    width: 600px;
+
+}
+
+.infoHeader {
+    font-size: 28px;
+    height: 24px;
+    margin-bottom: 60px;
+    font-weight: 400;
 }
