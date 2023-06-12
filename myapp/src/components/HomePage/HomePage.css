@@ -1,0 +1,20 @@
+.homePage {
+    position: relative;
+  }
+  
+  .homePageTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* centers the text to teh middle of the page, after given teh top and left properties */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .homepagePic {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+

@@ -4,6 +4,7 @@ p {
     width: 200px;
     text-align: center;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 img {

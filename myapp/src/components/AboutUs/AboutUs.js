@@ -20,9 +20,8 @@ export default function AboutUs() {
         </p>
 
         <img src={sookieImage} alt="picture of a dog" />
-      </div>
-
-      <div className="aboutUsPara">
+  
+        <img src={fridaImage} alt="picture of a dog" />
         <p>
           We are dedicated to ensuring that every adoption is a success. Our
           rigorous vetting process allows us to identify qualified adopters who
@@ -31,10 +30,7 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
-        <img src={fridaImage} alt="picture of a dog" />
-      </div>
-
-      <div className="aboutUsPara">
+       
         <p>
           Our user-friendly platform minimises unnecessary visits to shelters,
           saving time and resources for both adopters and shelters. By
@@ -43,9 +39,7 @@ export default function AboutUs() {
         </p>
 
         <img src={georgeImage} alt="picture of a dog" />
-      </div>
 
-      <div className="aboutUsPara">
         <p>
           At Paws For Affection, we are committed to improving the lives of
           shelter dogs and promoting responsible pet ownership. Through
