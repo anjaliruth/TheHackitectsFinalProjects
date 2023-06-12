@@ -8,28 +8,35 @@ export default function InfoPack() {
   return (
     <>
       <div className="infoContainer">
-        <section classname="dogSection">
-        <div id="pageTitle">
-          <h1 id="mainHeader">
-            Our top tips on what to expect and how to care for your adopted dog
-          </h1></div>
+        <section className="dogsrus">
+          <div id="pageTitle">
+            <h1 id="mainHeader">
+              Our top tips on what to expect and how to care for your adopted
+              dog
+            </h1>
+          </div>
           <h2 className="infoHeader">Do Your Research First</h2>
           <div id="paraImgContainer1">
             <div className="infoPackContent">
               <p id="para1">
                 You’ll want to adopt a dog that is a good fit for your life.
+                <br></br>
+                <br></br>
                 Think about whether you have space for a larger dog, if you have
                 the time and ability to give a more energetic dog the exercise
-                it needs, and if you have children (or plan to) - which breeds
-                are most child-friendly. Dogs can live from 10-20 years - this
-                is a long-term commitment.
+                it needs.
+                <br></br>
+                <br></br>
+                If you have children (or plan to) - consider which breeds are
+                most child-friendly. Dogs can live from 10-20 years - this is a
+                long-term commitment.
               </p>
             </div>
             <img id="masieImg" src={maisieImage1} alt="dog" />
           </div>
         </section>
 
-        <section classname="dogSection">
+        <section className="dogsrus">
           <h2 className="infoHeader">
             When You First Bring Home Your New Dog…
           </h2>
@@ -58,10 +65,13 @@ export default function InfoPack() {
             <div id="millieContainer">
               <img id="millieImg" src={millieImage1} alt="dog" />
             </div>
+            {/* <div id="home">
+              <h3 className="rotateText">HOME</h3>
+            </div> */}
           </div>
         </section>
 
-        <section classname="dogSection">
+        <section className="dogsrus">
           <h2 className="infoHeader">Understand the Cost</h2>
           <div id="paraImgContainer3">
             <div className="infoPackContent">

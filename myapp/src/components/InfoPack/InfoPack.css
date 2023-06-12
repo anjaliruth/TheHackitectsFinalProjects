@@ -1,4 +1,4 @@
-section {
+.dogsrus {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,12 +7,26 @@ section {
   margin-bottom: 10vh;
 }
 
+#section2 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section3 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #paraImgContainer1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
   width: 100%;
   height: 100%;
 }
@@ -21,7 +35,7 @@ section {
   background-color: #f5f5f5;
   width: 300px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 22px;
   text-align: center;
   margin: 0 auto;
 }
@@ -30,19 +44,20 @@ section {
   background-color: #f5f5f5;
   width: 300px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 22px;
   text-align: center;
   margin: 0 auto;
 }
 
 #paraImgContainer2 {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
-  width: 100%;
-  height: 100%;
+  gap: 22rem;
+  max-width: 100px;
 }
 
 #paraImgContainer3 {
@@ -50,9 +65,18 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
+  height: 42vh;
+  gap: 12rem;
   width: 100%;
-  height: 100%;
+}
+
+#millieContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 #infoLi {
@@ -67,12 +91,24 @@ section {
   border-radius: 20px;
 }
 
+#home.rotateText {
+  display: flex;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+  margin-top: none;
+  font-size: 100px;
+}
+
 #masieImg {
   width: 300px;
   height: 300px;
   object-fit: cover;
   /* mask-image: invert(url("/src/Media/icons/housemask.png")); */
   /* invert the mask */
+  margin-top: 22vh;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: cover;
@@ -82,38 +118,95 @@ section {
   width: 320px;
   height: 320px;
   object-fit: cover;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: cover;
+  margin-top: 22vh;
+}
+
+#neilImg {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   /* mask-image: invert(url("/src/Media/icons/housemask.png")); */
   /* invert the mask */
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: cover;
-}
-
-#neilImg {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    /* mask-image: invert(url("/src/Media/icons/housemask.png")); */
-    /* invert the mask */
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: cover;
+  margin-top: 22vh;
 }
 
 #mainHeader {
-    font-size: 32px;
-    height: 32px;
+  font-size: 32px;
+  height: 32px;
+  margin-bottom: 6vh;
 }
 
 #pageTitle {
-    margin-bottom: 60px;
-    width: 600px;
-
+  margin-bottom: 30px;
+  width: 600px;
 }
 
 .infoHeader {
-    font-size: 28px;
-    height: 24px;
-    margin-bottom: 60px;
-    font-weight: 400;
+  font-size: 28px;
+  height: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 560px) {
+  .infoHeader {
+    margin-bottom: 12vh;
+  }
+  #pageTitle {
+    width: 100%;
+    margin-bottom: 6vh;
+  }
+  #paraImgContainer1 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #paraImgContainer2 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #paraImgContainer3 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #para1 {
+    margin-bottom: 20px;
+  }
+
+  #para3 {
+    margin-bottom: 20px;
+  }
+
+  #millieContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #infoLi {
+    margin-bottom: 20px;
+  }
+
+  #home.rotateText {
+    display: none;
+  }
+
+  #masieImg {
+    margin-top: 0;
+  }
+
+  #millieImg {
+    margin-top: 0;
+  }
+
+  #neilImg {
+    margin-top: 0;
+  }
 }
