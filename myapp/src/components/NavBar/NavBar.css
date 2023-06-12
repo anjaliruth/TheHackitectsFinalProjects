@@ -15,6 +15,12 @@
   color: #fd8b49;
 }
 
+.nav-link{
+  box-sizing: border-box;
+}
+.nav-link:last-child{
+padding-right: 30px;
+}
 #nav .header-nav a {
   margin: 0 1rem;
   color: black;
