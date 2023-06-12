@@ -1,0 +1,73 @@
+.dogSection {
+}
+
+#paraImgContainer1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+  height: 100%;
+}
+
+#para1 {
+  background-color: #f5f5f5;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#para3 {
+  background-color: #f5f5f5;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#paraImgContainer2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+  height: 100%;
+}
+
+#paraImgContainer3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+  height: 100%;
+}
+
+#infoLi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  list-style-image: url("../../Media/icons/dog-paw.png");
+  background-color: #f5f5f5;
+  padding: 15px;
+  padding-left: 40px;
+  border-radius: 20px;
+}
+
+#millieImg {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  mask-image: url("/src/Media/icons/housemask.png");
+  /* invert the mask */
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: cover;
+}
