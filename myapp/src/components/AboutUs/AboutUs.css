@@ -13,11 +13,11 @@ img {
     border-radius: 20px;
 }
 
-/* .aboutUsPara {
-    display: flex;
-    justify-content: center;
+.aboutUsPara {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin:20px auto;
 max-width: 500px;
 gap: 20px;
 
-} */
+}
