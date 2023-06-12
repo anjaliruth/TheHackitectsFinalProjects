@@ -12,7 +12,6 @@ export default function InfoPack() {
           <h1>
             Our top tips on what to expect and how to care for your adopted dog
           </h1>
-
           <h2 className="infoHeader">Do Your Research First</h2>
           <div id="paraImgContainer1">
             <div className="infoPackContent">
@@ -25,9 +24,10 @@ export default function InfoPack() {
                 is a long-term commitment.
               </p>
             </div>
-            <img src={maisieImage1} alt="dog" />
+            <img id="masieImg" src={maisieImage1} alt="dog" />
           </div>
         </section>
+
         <section classname="dogSection">
           <h2 className="infoHeader">
             When You First Bring Home Your New Dog…
@@ -59,6 +59,7 @@ export default function InfoPack() {
             </div>
           </div>
         </section>
+
         <section classname="dogSection">
           <h2 className="infoHeader">Understand the Cost</h2>
           <div id="paraImgContainer3">
