@@ -1,31 +1,34 @@
 .homePage {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 245, 245, 0.5);
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px;
 }
-
-.homePageTitle {
-
-    /* position: absolute;
-    top: 50%;
-    left: 50%; 
-   // centers the text to the middle of the page, after given the top and left properties
-    transform: translate(-50%, -50%);
-    z-index: 1; */
-  } 
 
 .homePageTitle{
     display: flex; 
     justify-content: center;
     align-content: center;
+    font-size: 40px;
 }
-
-
 
 .section1 {
   background-image: url("../../Media/PFAHomePage.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  background-position: center center;
+  /* @media screen and (max-width: 600px) */
 }
+
+
 
 .homepagePic {
   display: block;
