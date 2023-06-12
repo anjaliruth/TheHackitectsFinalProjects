@@ -1,5 +1,5 @@
-.bannerTagLine {
- font-size: 1rem; /* rem font unit used, this may need adjusting when root font sixe is set */
+/* .bannerTagLine {
+ font-size: 1rem; rem font unit used, this may need adjusting when root font sixe is set
 text-align: center;
 background-image: linear-gradient(to right, rgb(255, 255, 255, 0), rgb(0, 224, 224,0.5));
 }
@@ -7,13 +7,13 @@ background-image: linear-gradient(to right, rgb(255, 255, 255, 0), rgb(0, 224, 2
 .dogProfile {
 display: flex;
 justify-content: space-around;
-/* align-items: center;   */
+align-items: center;    */
 /* align-items: flex-start;  */
-/* Align the content to the top */
-}
 
- .dogphotos {
-  display: inline-flex;
+
+
+ /* .dogphotos {
+  display: flex;
   align-self: flex-start;
   align-items: center;
   flex-direction: column;
@@ -38,4 +38,26 @@ justify-content: space-around;
     flex-direction:column; 
     align-items: center; 
 
-} 
+}  
+
+
+/* .App {
+    background-color: aqua;
+} */
+
+.dogProfile {
+    height: 100vh;
+
+    background-color: pink
+}
+
+.dogphotos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    height: 100%;
+    width: 50%;
+}
+

@@ -9,27 +9,25 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 function DogProfile() {
   return (
    
-    <div className="dogProfile">
+    <div className="dogProfile" >
 
       <div className="dogphotos">
       
-        <div className="carousel">
+        
           <PhotoCarousel />
-          </div>
+          
 
-          <div className="bannerTagLine">
+          <div className="banner">
             <p>Placeholder text</p>
             <p>Placeholder text</p>
-          </div>
-
-          <div className="buttons">
+          
             <button className="button1">Adopt Me!</button>
             <button className="button2">How To Care For Me</button>
         </div>
 
       </div>
 
-        <div className="dogInfo">
+        {/* <div className="dogInfo">
           <p>ID</p>
           <h1>Dog Name: "props"</h1>
           <p>
@@ -50,7 +48,7 @@ function DogProfile() {
           <p>
             <FaMapMarkedAlt /> Location: "props"
           </p>
-        </div>
+        </div> */}
     </div>
   
   );

@@ -44,7 +44,7 @@ function PhotoCarousel() {
         >
           <Carousel
             data={data}
-            width="350px"
+            width="80%"
             height="500px"
             // captionStyle={captionStyle}
             radius="10px"
