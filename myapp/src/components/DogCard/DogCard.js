@@ -96,10 +96,14 @@ const handleCardClick = (dogData) => {
       {dogData.map((info, index) => (
         <div key={index} className="ind">
 
+          <img src={info.photo} alt="dog card" className="dogGridPhoto" />
+
+
         <Link to={`/${info.id}`}>
           <img src={info.photo} alt="dog" className="dogGridPhoto" />
 
           <img src={info.photo} alt="dog" className="dogGridPic" />
+
 
           <div className="indDogDatawButton">
             <div className="indDogData">
