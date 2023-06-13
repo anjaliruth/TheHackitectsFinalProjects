@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./InfoPack.css";
 import maisieImage1 from "../../Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.07 (4).jpeg";
 import millieImage1 from "../../Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
@@ -87,5 +88,12 @@ export default function InfoPack() {
         </section>
       </div>
     </>
+
+export default function InfoPack() {
+  return (
+    <div>
+      <h1>INFO</h1>
+    </div>
+
   );
 }
