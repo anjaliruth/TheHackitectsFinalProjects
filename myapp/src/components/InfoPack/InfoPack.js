@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function InfoPack() {
   return (
-    <div>InfoPack</div>
-  )
+    <div>
+      <h1>INFO</h1>
+    </div>
+  );
 }
