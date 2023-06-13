@@ -1,21 +1,19 @@
+import React from "react";
 import "./App.css";
-
 import NavBar from "./components/NavBar/NavBar";
-
-import DogGrid from "./components/DogGrid/DogGrid";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DogCard from "./components/DogCard/DogCard";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <div>
       <NavBar />
       <Routes>
-        <Route path="/" element={<DogGrid />} />
-        {/* <AboutUs />
-        <ApplicationForm />
-        <InfoPack /> */}
+        <Route path="/" component={<DogCard />} />
+        {/* Add more Route components for other paths */}
       </Routes>
-    </Router>
+    </div>
   );
 }
+
 export default App;
