@@ -1,11 +1,10 @@
 import React from 'react'
-import homePage from "../../Media/PFAHomePage.jpg"
 import "./HomePage.css"
 import DogCard from '../DogCard/DogCard.js'
 export default function HomePage({dogData}) {
   return (
     <div>
-    <DogCard dogData={dogData}/>
+    {/* <DogCard dogData={dogData}/> */}
     <>
 <section className="section1">
 <div className="homePage">
