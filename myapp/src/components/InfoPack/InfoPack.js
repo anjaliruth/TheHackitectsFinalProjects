@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./InfoPack.css";
 import maisieImage1 from "../../Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.07 (4).jpeg";
 import millieImage1 from "../../Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
@@ -10,7 +11,7 @@ export default function InfoPack() {
       <div className="infoContainer">
         <section className="dogsrus">
           <div id="pageTitle">
-            <h1 id="mainHeader">
+            <h1 id="mainHeader" className="animateHeader">
               Our top tips on what to expect and how to care for your adopted
               dog
             </h1>
@@ -34,6 +35,11 @@ export default function InfoPack() {
             </div>
             <img id="masieImg" src={maisieImage1} alt="dog" />
           </div>
+          <aside>
+            <div className="rotateContainer-research">
+              <h3 className="rotateText-research">Research</h3>
+            </div>
+          </aside>
         </section>
 
         <section className="dogsrus">
@@ -47,14 +53,41 @@ export default function InfoPack() {
                   Don’t pressure them - you need to start building trust and a
                   bond
                 </li>
+                <br></br>
                 <li>
                   Give them a safe space - such as a room or crate, where they
                   can retreat to if they need
                 </li>
+                <br></br>
                 <li>
                   Let them settle at their own pace - some will take longer than
                   others
                 </li>
+                <br></br>
+                <li>
+                  Start as you mean to go on - if mealtimes are always the same
+                  or you’ll be walking at the same time each day, or if there
+                  are any areas of the house the dog won’t be able to access
+                </li>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <li>
+                  Don’t pressure them - you need to start building trust and a
+                  bond
+                </li>
+                <br></br>
+                <li>
+                  Give them a safe space - such as a room or crate, where they
+                  can retreat to if they need
+                </li>
+                <br></br>
+                <li>
+                  Let them settle at their own pace - some will take longer than
+                  others
+                </li>
+                <br></br>
                 <li>
                   Start as you mean to go on - if mealtimes are always the same
                   or you’ll be walking at the same time each day, or if there
@@ -69,6 +102,11 @@ export default function InfoPack() {
               <h3 className="rotateText">HOME</h3>
             </div> */}
           </div>
+          <aside id="research">
+            <div className="rotateContainer-home">
+              <h3 className="rotateText-home">Home</h3>
+            </div>
+          </aside>
         </section>
 
         <section className="dogsrus">
@@ -85,6 +123,11 @@ export default function InfoPack() {
             <img id="neilImg" src={neilImage1} alt="dog" />
           </div>
         </section>
+        <aside id="research">
+          <div className="rotateContainer-cost">
+            <h3 className="rotateText-cost">Cost</h3>
+          </div>
+        </aside>
       </div>
     </>
   );

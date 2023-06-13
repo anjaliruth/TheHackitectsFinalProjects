@@ -9,9 +9,6 @@ import InfoPack from "./components/InfoPack/InfoPack";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <DogCard />
-      <AboutUs />
       <InfoPack />
     </div>
   );
