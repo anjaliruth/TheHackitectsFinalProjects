@@ -9,7 +9,7 @@ function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route path="/" component={<DogCard />} />
+        <Route path="/" element={<DogCard />} />
         {/* Add more Route components for other paths */}
       </Routes>
     </div>
