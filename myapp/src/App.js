@@ -82,7 +82,6 @@ function App() {
         <Route path="info-pack" element={<InfoPack />} />
         <Route path="/:dogProfile" element={<DogProfile dogData={dogData} />} />
         <Route path="application-form" element={<ApplicationForm />} />
-        {/* Add more Route components for other paths */}
       </Routes>
     </div>
   );

@@ -1,6 +1,6 @@
 #nav {
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,6 +8,7 @@
   padding: 0 2rem;
   background-color: rgb(255, 255, 255);
   color: black;
+
   margin-top: -2vh;
   width: 100%;
 }
@@ -15,11 +16,11 @@
   color: #fd8b49;
 }
 
-.nav-link{
+.nav-link {
   box-sizing: border-box;
 }
-.nav-link:last-child{
-padding-right: 30px;
+.nav-link:last-child {
+  padding-right: 30px;
 }
 #nav .header-nav a {
   margin: 0 1rem;
