@@ -1,6 +1,7 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
+import "./ApplicationForm.css";
 //
 
 export default function ApplicationForm() {
@@ -13,6 +14,16 @@ export default function ApplicationForm() {
       noValidate
       autoComplete="off"
     >
+    <div id="FormFields">
+      <div className="id">
+        <TextField
+          required
+          id="filled-required"
+          label="Dog ID"
+          defaultValue="123455"
+          variant="filled"
+        />
+      </div>
       <div className="name">
         <TextField
           required
@@ -26,15 +37,6 @@ export default function ApplicationForm() {
           id="filled-required"
           label="Last Name"
           defaultValue="Last Name"
-          variant="filled"
-        />
-      </div>
-      <div className="id">
-        <TextField
-          required
-          id="filled-required"
-          label="Dog ID"
-          defaultValue="123455"
           variant="filled"
         />
       </div>
@@ -53,6 +55,8 @@ export default function ApplicationForm() {
           defaultValue="Street Name"
           variant="filled"
         />
+        </div>
+        <div className="Town/City">
         <TextField
           required
           id=""
@@ -78,6 +82,8 @@ export default function ApplicationForm() {
           defaultValue="Email"
           variant="filled"
         />
+        </div>
+        <div className="PhoneNumber">
         <TextField
           required
           id="filled-required"
@@ -85,6 +91,7 @@ export default function ApplicationForm() {
           defaultValue="Phone Number"
           variant="filled"
         />
+      </div>
       </div>
     </Box>
   );
