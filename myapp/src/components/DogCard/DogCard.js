@@ -8,11 +8,8 @@ import millieImage from "../../Media/Millie/Screenshot 2023-06-05 at 11.52.23.pn
 import neilImage from "../../Media/Neil/Screenshot 2023-06-05 at 12.24.23.png";
 import sookieImage from "../../Media/Sookie/Screenshot 2023-06-08 at 10.48.30.png";
 
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
-
-
-
 
 // const dogData = [
 //   {
@@ -71,59 +68,44 @@ import HomePage from "../HomePage/HomePage";
 //   },
 // ];
 
-export default function DogCard({dogData}) {
-
-const [selectedCard, setSelectedCard] = useState(null)
-
-const handleCardClick = (dogData) => {
-
-          setSelectedCard(dogData)
-
-
-}
-
+export default function DogCard({ dogData }) {
+  console.log("here:", dogData);
+  if (!dogData) {
+    return null; // or you can render a loading indicator or fallback component
+  }
   return (
-
-
-
     <div>
-    <HomePage/>
+      <HomePage />
 
-    <div className="individualDogCard">
-      <h1 className="dogCardTitle">Connecting you to dogs available for adoption today...</h1>
-      {/* image, name, breed, location, sex, age, button */}
-      <div className="dogGallery">
-      {dogData.map((info, index) => (
-        <div key={index} className="ind">
+      <div className="individualDogCard">
+        <h1 className="dogCardTitle">
+          Connecting you to dogs available for adoption today...
+        </h1>
+        {/* image, name, breed, location, sex, age, button */}
+        <div className="dogGallery">
+          {dogData.map((info, index) => (
+            <div key={index} className="ind">
+              <img src={info.photo} alt="dog card" className="dogGridPhoto" />
 
-          <img src={info.photo} alt="dog card" className="dogGridPhoto" />
-
-
-        <Link to={`/${info.id}`}>
-          <img src={info.photo} alt="dog" className="dogGridPhoto" />
-
-          <img src={info.photo} alt="dog" className="dogGridPic" />
-
-
-          <div className="indDogDatawButton">
-            <div className="indDogData">
-              <h2 className="dogName">{info.name}</h2>
-              <p>{info.breed}</p>
-              <p>{info.location}</p>
-              <p>
-                {info.sex}, {info.age}
-              </p>
+              <div className="indDogDatawButton">
+                <div className="indDogData">
+                  <h2 className="dogName">{info.name}</h2>
+                  <p>{info.breed}</p>
+                  <p>{info.location}</p>
+                  <p>
+                    {info.sex}, {info.age}
+                  </p>
+                </div>
+                <div className="moreInfoButton">
+                  <Link to={`/${info.id}`}>
+                    <button>More Info!</button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="moreInfoButton">
-              <button onClick={handleCardClick} id={selectedCard}>More Info!</button>
-              
-            </div>
-          </div>
-          </Link>
+          ))}
         </div>
-      ))}
       </div>
-    </div>
     </div>
   );
 }

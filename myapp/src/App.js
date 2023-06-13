@@ -79,7 +79,7 @@ function App() {
         <Route path="/" element={<HomePage dogData={dogData} />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="info-pack" element={<InfoPack />} />
-        <Route path="/:dogProfile" element={<DogProfile dogData={dogData} />} />
+        <Route path="/:id" element={<DogProfile dogData={dogData} />} />
         {/* Add more Route components for other paths */}
       </Routes>
     </div>
