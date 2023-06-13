@@ -7,7 +7,7 @@ p {
     border-radius: 10px;
 }
 
-img {
+.aboutuspic {
     width: 200px;
     height: 200px;
     object-fit: cover;

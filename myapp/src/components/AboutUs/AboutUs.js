@@ -19,6 +19,10 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
+        <img className= "aboutuspic" src={sookieImage} alt="picture of a dog" />
+      </div>
+
+      <div className="aboutUsPara">
         <img src={sookieImage} alt="picture of a dog" />
   
         <img src={fridaImage} alt="picture of a dog" />
@@ -30,7 +34,14 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
+
+        <img className="aboutuspic" src={fridaImage} alt="picture of a dog" />
+      </div>
+
+      <div className="aboutUsPara">
+
        
+
         <p>
           Our user-friendly platform minimises unnecessary visits to shelters,
           saving time and resources for both adopters and shelters. By
@@ -38,7 +49,12 @@ export default function AboutUs() {
           enjoyable experience for everyone involved.
         </p>
 
+
+        <img className="aboutuspic" src={georgeImage} alt="picture of a dog" />
+      </div>
+
         <img src={georgeImage} alt="picture of a dog" />
+
 
         <p>
           At Paws For Affection, we are committed to improving the lives of
