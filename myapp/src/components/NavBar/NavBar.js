@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -20,18 +21,21 @@ function Navbar() {
           )}
         </button>
         <div className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`}>
-          <a href="/#" className="nav-link">
+          <Link to="/" className="nav-link">
             Home
-          </a>
-          <a href="/#" className="nav-link">
-            My work
-          </a>
-          <a href="/#" className="nav-link">
-            Blog
-          </a>
-          <a href="/#" className="nav-link">
-            About me
-          </a>
+          </Link>
+          <Link to="/about-us" className="nav-link">
+            About Us
+          </Link>
+          <Link to="/info-pack" className="nav-link">
+            Info Pack
+          </Link>
+          <Link to="/application-form" className="nav-link">
+            Application Form
+          </Link>
+          <Link to="/stretch-goals" className="nav-link">
+            Stretch Goals
+          </Link>
         </div>
       </div>
     </nav>

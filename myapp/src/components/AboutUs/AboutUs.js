@@ -19,7 +19,11 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
+
+        <img src={sookieImage} alt="pic of a dog" />
+
         <img className= "aboutuspic" src={sookieImage} alt="picture of a dog" />
+
       </div>
 
       <div className="aboutUsPara">
@@ -35,7 +39,11 @@ export default function AboutUs() {
         </p>
 
 
+        <img src={fridaImage} alt="pic of a dog" />
+
+
         <img className="aboutuspic" src={fridaImage} alt="picture of a dog" />
+
       </div>
 
       <div className="aboutUsPara">
@@ -50,13 +58,22 @@ export default function AboutUs() {
         </p>
 
 
+        <img src={georgeImage} alt="pic of a dog" />
+      </div>
+
+      <div className="aboutUsPara">
+      {/* comment */}
+
+
         <img className="aboutuspic" src={georgeImage} alt="picture of a dog" />
       </div>
 
         <img src={georgeImage} alt="picture of a dog" />
 
 
+
         <p>
+
           At Paws For Affection, we are committed to improving the lives of
           shelter dogs and promoting responsible pet ownership. Through
           technology and compassion, we aim to make a positive and lasting

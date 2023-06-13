@@ -1,4 +1,12 @@
 import React from 'react'
+
+import DogCard from '../DogCard/DogCard.js'
+export default function HomePage({dogData}) {
+  return (
+    <div>
+    <DogCard dogData={dogData}/>
+    </div>
+
 import homePage from "../../Media/PFAHomePage.jpg"
 import "./HomePage.css"
 export default function HomePage() {
@@ -10,5 +18,6 @@ export default function HomePage() {
     </div>
     </section>
     </>
+
   )
 }
