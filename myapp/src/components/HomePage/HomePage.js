@@ -1,7 +1,9 @@
 import React from 'react'
-
-export default function HomePage() {
+import DogCard from '../DogCard/DogCard.js'
+export default function HomePage({dogData}) {
   return (
-    <div>HomePage</div>
+    <div>
+    <DogCard dogData={dogData}/>
+    </div>
   )
 }

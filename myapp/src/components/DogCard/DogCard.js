@@ -6,6 +6,7 @@ import maisieImage from "../../Media/Maisie/WhatsApp Image 2023-06-03 at 11.15.3
 import millieImage from "../../Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
 import neilImage from "../../Media/Neil/Screenshot 2023-06-05 at 12.24.23.png";
 import sookieImage from "../../Media/Sookie/Screenshot 2023-06-08 at 10.48.30.png";
+import {Link} from "react-router-dom";
 
 const dogData = [
   {
@@ -64,7 +65,7 @@ const dogData = [
   },
 ];
 
-export default function DogCard() {
+export default function DogCard({dogData}) {
   return (
     <div className="individualDogCard">
       <h1 className="dogCardTitle">Connecting you to dogs available for adoption today...</h1>
@@ -72,6 +73,7 @@ export default function DogCard() {
       <div className="dogGallery">
       {dogData.map((info, index) => (
         <div key={index} className="ind">
+        <Link to={`/${info.id}`}>
           <img src={info.photo} alt="dog" className="dogGridPhoto" />
           <div className="indDogDatawButton">
             <div className="indDogData">
@@ -84,8 +86,10 @@ export default function DogCard() {
             </div>
             <div className="moreInfoButton">
               <button>More Info!</button>
+              
             </div>
           </div>
+          </Link>
         </div>
       ))}
       </div>

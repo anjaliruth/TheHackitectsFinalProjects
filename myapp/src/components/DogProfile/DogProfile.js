@@ -9,7 +9,7 @@ import { FaMapMarkedAlt } from 'react-icons/fa';
 
 
 
-function DogProfile() {
+function DogProfile({dogData}) {
   return (
     <div>
       <PhotoCarousel />
@@ -22,16 +22,16 @@ function DogProfile() {
       <button className="button1">Adopt Me!</button>
       <button className="button2">How To Care For Me</button>
       </div>
-
+    {  dogData.map((info, index) => (
       <div className="dogProfile">
-        <p>ID</p>
-        <h1>Dog Name: "props"</h1>
-        <p> <BsGenderAmbiguous/> Gender: "props"</p>
-        <p> <FiClock/> Age: "props"</p>
-        <p><FaDog/><FaDog/> Size: "props"</p>
-        <p><BsFillBarChartFill/> Activity Level: "props"</p>
-        <p><FaMapMarkedAlt/> Location: "props"</p>
-        </div>
+        <p>{info.id}</p>
+        <h1>Dog Name: {info.name}</h1>
+        <p> <BsGenderAmbiguous/> Gender: {info.sex}</p>
+        <p> <FiClock/> Age: {info.age}</p>
+        {/* <p><FaDog/><FaDog/> Size: {info.}</p> */}
+        {/* <p><BsFillBarChartFill/> Activity Level: "props"</p> */}
+        <p><FaMapMarkedAlt/> Location: {info.location}</p>
+        </div>))}
         
 
     </div>
