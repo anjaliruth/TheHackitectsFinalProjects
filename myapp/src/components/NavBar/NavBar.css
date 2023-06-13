@@ -1,5 +1,6 @@
 #nav {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,12 +9,18 @@
   background-color: rgb(255, 255, 255);
   color: black;
   margin-top: -2vh;
-  width: 95%;
+  width: 100%;
 }
 #nav .nav-link:hover {
   color: #fd8b49;
 }
 
+.nav-link{
+  box-sizing: border-box;
+}
+.nav-link:last-child{
+padding-right: 30px;
+}
 #nav .header-nav a {
   margin: 0 1rem;
   color: black;
