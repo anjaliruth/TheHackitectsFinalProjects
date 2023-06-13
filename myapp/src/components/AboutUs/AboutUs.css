@@ -4,20 +4,21 @@ p {
     width: 200px;
     text-align: center;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
-img {
+.aboutuspic {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-/* .aboutUsPara {
-    display: flex;
-    justify-content: center;
+.aboutUsPara {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin:20px auto;
 max-width: 500px;
 gap: 20px;
 
-} */
+}
