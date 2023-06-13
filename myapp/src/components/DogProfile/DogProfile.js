@@ -22,16 +22,17 @@ function DogProfile({dogData}) {
       <button className="button1">Adopt Me!</button>
       <button className="button2">How To Care For Me</button>
       </div>
-    {  dogData.map((info, index) => (
+    {/* {  dogData.map((info, index) => ( */}
       <div className="dogProfile">
-        <p>{info.id}</p>
-        <h1>Dog Name: {info.name}</h1>
-        <p> <BsGenderAmbiguous/> Gender: {info.sex}</p>
-        <p> <FiClock/> Age: {info.age}</p>
+        <p>{dogData.id}</p>
+        <h1>Dog Name: {dogData.name}</h1>
+        <p> <BsGenderAmbiguous/> Gender: {dogData.sex}</p>
+        <p> <FiClock/> Age: {dogData.age}</p>
         {/* <p><FaDog/><FaDog/> Size: {info.}</p> */}
         {/* <p><BsFillBarChartFill/> Activity Level: "props"</p> */}
-        <p><FaMapMarkedAlt/> Location: {info.location}</p>
-        </div>))}
+        <p><FaMapMarkedAlt/> Location: {dogData.location}</p>
+        </div>
+        {/* ))} */}
         
 
     </div>
