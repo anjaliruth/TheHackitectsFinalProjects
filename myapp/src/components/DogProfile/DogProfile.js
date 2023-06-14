@@ -6,6 +6,7 @@ import { FiClock } from "react-icons/fi";
 import { FaDog } from "react-icons/fa";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
+import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
   const { id } = useParams();
@@ -34,10 +35,10 @@ function DogProfile({ dogData }) {
         </p>
       </div>
       {/* ))} */}
+      <SwiperComp />
 
       <div className="dogphotos">
-        <PhotoCarousel />
-
+      
         <div className="banner">
           <p>Placeholder text</p>
           <p>Placeholder text</p>

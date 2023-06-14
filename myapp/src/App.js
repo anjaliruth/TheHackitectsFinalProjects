@@ -76,7 +76,7 @@ function App() {
   return (
     <div>
       <NavBar />
-    
+
       <Routes>
         <Route path="/" element={<HomePage dogData={dogData} />} />
         <Route path="about-us" element={<AboutUs />} />
@@ -84,7 +84,7 @@ function App() {
         {/* <Route path="/:id" element={<DogProfile dogData={dogData} />} /> */}
         {/* Add more Route components for other paths */}
       </Routes>
-        <SwiperComp/>
+      <SwiperComp />
     </div>
   );
 }
