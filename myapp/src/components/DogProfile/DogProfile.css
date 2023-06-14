@@ -47,24 +47,24 @@ align-items: center;    */
 
 
 .totalDogInfo {
-  height: 100vh;
-    background-color: pink
-}
-
-.dogProfile {
-    offset: 500px;    
-}
-
-.dogphotos {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    background-color: yellow;
-    height: 100%;
-    width: 50%;
-}
-
-.offsetdiv {
-height: 80px
-
-}
+    height: 100vh;
+      /* background-color: pink */
+  }
+  
+  .dogProfile {
+      offset: 500px;    
+  }
+  
+  .dogphotos {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      /* background-color: yellow; */
+      height: 100%;
+      width: 50%;
+  }
+  
+  .offsetdiv {
+  height: 80px
+  
+  }
