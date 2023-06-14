@@ -77,6 +77,8 @@ function DogProfile({ dogData }) {
           </p>
         </div> */}
     </div>
+    </div>
+    </div>
   );
 }
 
