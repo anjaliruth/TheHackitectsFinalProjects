@@ -45,7 +45,7 @@ align-items: center;    */
     background-color: aqua;
 } */
 
-.dogProfile {
+.totalDogInfo {
     height: 100vh;
 
     background-color: pink
@@ -60,3 +60,7 @@ align-items: center;    */
     width: 50%;
 }
 
+.offsetdiv {
+height: 80px
+
+}

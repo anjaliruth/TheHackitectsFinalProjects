@@ -11,16 +11,13 @@ function DogProfile({dogData}) {
   const  {id} = useParams()
   return (
    
-    <div className="dogProfile" >
+    <div className="totalDogInfo" >
 
 
-      <div className="buttons">
-      <button className="button1">Adopt Me!</button>
-      <button className="button2">How To Care For Me</button>
-      </div>
+     <div className="offsetdiv">   </div>
 
-      <div className="dogProfile">
-        <p>{dogData[id-1].id}</p>
+      <div className="dogInfo">
+        <p >{dogData[id-1].id}</p>
         <h1>Dog Name: {dogData[id-1].name}</h1>
         <p> <BsGenderAmbiguous/> Gender: {dogData[id-1].sex}</p>
         <p> <FiClock/> Age: {dogData[id-1].age}</p>
@@ -33,9 +30,7 @@ function DogProfile({dogData}) {
 
       <div className="dogphotos">
       
-        
-          <PhotoCarousel />
-          
+      
 
           <div className="banner">
             <p>Placeholder text</p>
