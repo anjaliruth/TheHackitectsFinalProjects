@@ -1,5 +1,3 @@
-import React from "react";
-import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs.js";
