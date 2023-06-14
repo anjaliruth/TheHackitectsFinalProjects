@@ -43,7 +43,7 @@ export default function InfoPack() {
         </section>
 
         <section className="dogsrus">
-          <h2 className="infoHeader">
+          <h2 className="infoHeader" id="section2-title">
             When You First Bring Home Your New Dog…
           </h2>
           <div id="paraImgContainer2">
@@ -110,7 +110,9 @@ export default function InfoPack() {
         </section>
 
         <section className="dogsrus">
-          <h2 className="infoHeader">Understand the Cost</h2>
+          <h2 className="infoHeader" id="section3-title">
+            Understand the Cost
+          </h2>
           <div id="paraImgContainer3">
             <div className="infoPackContent">
               <p id="para3">
