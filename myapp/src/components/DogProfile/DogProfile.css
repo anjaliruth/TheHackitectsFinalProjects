@@ -45,10 +45,14 @@ align-items: center;    */
     background-color: aqua;
 } */
 
-.totalDogInfo {
-    height: 100vh;
 
+.totalDogInfo {
+  height: 100vh;
     background-color: pink
+}
+
+.dogProfile {
+    offset: 500px;    
 }
 
 .dogphotos {
