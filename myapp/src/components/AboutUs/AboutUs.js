@@ -19,17 +19,15 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
-
         <img src={sookieImage} alt="pic of a dog" />
 
-        <img className= "aboutuspic" src={sookieImage} alt="picture of a dog" />
-
+        <img className="aboutuspic" src={sookieImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
-        <img src={sookieImage} alt="picture of a dog" />
-  
-        <img src={fridaImage} alt="picture of a dog" />
+        <img src={sookieImage} alt="pic of a dog" />
+
+        <img src={fridaImage} alt="pic of a dog" />
         <p>
           We are dedicated to ensuring that every adoption is a success. Our
           rigorous vetting process allows us to identify qualified adopters who
@@ -38,18 +36,12 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
-
         <img src={fridaImage} alt="pic of a dog" />
 
-
-        <img className="aboutuspic" src={fridaImage} alt="picture of a dog" />
-
+        <img className="aboutuspic" src={fridaImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
-
-       
-
         <p>
           Our user-friendly platform minimises unnecessary visits to shelters,
           saving time and resources for both adopters and shelters. By
@@ -57,30 +49,24 @@ export default function AboutUs() {
           enjoyable experience for everyone involved.
         </p>
 
-
         <img src={georgeImage} alt="pic of a dog" />
       </div>
 
       <div className="aboutUsPara">
-      {/* comment */}
+        {/* comment */}
 
-
-        <img className="aboutuspic" src={georgeImage} alt="picture of a dog" />
+        <img className="aboutuspic" src={georgeImage} alt="pic of a dog" />
       </div>
 
-        <img src={georgeImage} alt="picture of a dog" />
+      <img src={georgeImage} alt="pic of a dog" />
 
-
-
-        <p>
-
-          At Paws For Affection, we are committed to improving the lives of
-          shelter dogs and promoting responsible pet ownership. Through
-          technology and compassion, we aim to make a positive and lasting
-          impact in the world of pet adoption. Join us in building a community
-          that fosters lifelong bonds between dogs and their adoptive families.
-        </p>
-      </div>
+      <p>
+        At Paws For Affection, we are committed to improving the lives of
+        shelter dogs and promoting responsible pet ownership. Through technology
+        and compassion, we aim to make a positive and lasting impact in the
+        world of pet adoption. Join us in building a community that fosters
+        lifelong bonds between dogs and their adoptive families.
+      </p>
     </div>
   );
 }

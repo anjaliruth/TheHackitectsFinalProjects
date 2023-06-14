@@ -46,8 +46,8 @@ align-items: center;    */
 } */
 
 .dogProfile {
+    offset: 500px;
     height: 100vh;
-
     background-color: pink
 }
 
