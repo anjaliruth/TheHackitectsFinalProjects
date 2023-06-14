@@ -10,6 +10,7 @@ export default function Form() {
         component="form"
         sx={{
           "& .MuiTextField-root": { m: 1 },
+          backgroundColor: "#00A3A3",
         }}
         noValidate
         autoComplete="off"
@@ -22,17 +23,26 @@ export default function Form() {
               label="Dog ID"
               defaultValue=""
               variant="filled"
-              sx={{ width: "15ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="name">
             <TextField
+              className="name"
               required
               id="filled-required"
               label="First Name"
               defaultValue=""
               variant="filled"
-              sx={{ width: "20ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
             <TextField
               required
@@ -40,7 +50,11 @@ export default function Form() {
               label="Last Name"
               defaultValue=""
               variant="filled"
-              sx={{ width: "20ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="Address">
@@ -50,7 +64,11 @@ export default function Form() {
               label="House Number/Name"
               defaultValue=""
               variant="filled"
-              sx={{ width: "25ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
             <TextField
               required
@@ -58,7 +76,11 @@ export default function Form() {
               label="Street Name"
               defaultValue=""
               variant="filled"
-              sx={{ width: "25ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="Town/City">
@@ -68,7 +90,11 @@ export default function Form() {
               label="Town/City"
               defaultValue=""
               variant="filled"
-              sx={{ width: "25ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="Postcode">
@@ -78,7 +104,11 @@ export default function Form() {
               label="Postcode"
               defaultValue=""
               variant="filled"
-              sx={{ width: "15ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="email-number">
@@ -88,7 +118,11 @@ export default function Form() {
               label="Email"
               defaultValue=""
               variant="filled"
-              sx={{ width: "30ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
           <div className="PhoneNumber">
@@ -98,7 +132,11 @@ export default function Form() {
               label="Phone Number"
               defaultValue=""
               variant="filled"
-              sx={{ width: "20ch" }}
+              sx={{
+                width: "15ch",
+                backgroundColor: "#F5F5F5",
+                borderRadius: "5px",
+              }}
             />
           </div>
         </div>

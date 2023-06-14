@@ -7,6 +7,7 @@ import "./ApplicationForm.css";
 export default function ApplicationForm() {
   return (
     <>
+      <h1 className="application-form-title">Application Form</h1>
       <Form />
     </>
   );
