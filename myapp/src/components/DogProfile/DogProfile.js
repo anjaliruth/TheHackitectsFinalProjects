@@ -9,7 +9,10 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
-  const { id } = useParams();
+  const {id} = useParams();
+  console.log(dogData)
+  console.log("id",id)
+  console.log(dogData.length)
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>

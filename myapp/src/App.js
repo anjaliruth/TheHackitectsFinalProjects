@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs/AboutUs.js";
 import InfoPack from "./components/InfoPack/InfoPack";
 import SwiperComp from "./components/Swiper/Swiper";
 import DogProfile from "./components/DogProfile/DogProfile";
+import {useEffect} from 'react';
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import fridaImage from "./Media/Frida/WhatsApp Image 2023-06-03 at 12.50.29.jpeg";
@@ -13,7 +14,10 @@ import millieImage from "./Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
 import neilImage from "./Media/Neil/Screenshot 2023-06-05 at 12.24.23.png";
 import sookieImage from "./Media/Sookie/Screenshot 2023-06-08 at 10.48.30.png";
 import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
+import { createClient } from "@supabase/supabase-js";
 
+
+const supabase = createClient();
 const dogData = [
   {
     id: 1,
@@ -70,8 +74,16 @@ const dogData = [
     age: 6,
   },
 ];
-
 function App() {
+
+
+  useEffect(()=>
+  async function getDogData(){
+    const response = await fetch("https://app.supabase.com/project/ufjunsgwcenjcnrrubci/settings/api")
+    console.log("response",response)
+    console.log("response",response)
+    console.log("hello")
+  }, [])
   return (
     <div>
       <NavBar />
@@ -80,9 +92,9 @@ function App() {
         <Route path="/" element={<HomePage dogData={dogData} />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="info-pack" element={<InfoPack />} />
-        <Route path="/:dogProfile" element={<DogProfile dogData={dogData} />} />
-        <Route path="application-form" element={<ApplicationForm />} />
         <Route path="/:id" element={<DogProfile dogData={dogData} />} />
+        <Route path="/dogProfile" element={<DogProfile dogData={dogData} />} />
+        <Route path="application-form" element={<ApplicationForm />} />
         {/* Add more Route components for other paths */}
       </Routes>
     </div>
