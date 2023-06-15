@@ -22,13 +22,17 @@
 }
 
 #TL_img {
-
     margin-top: 100px;
     margin-left: 10px;
 }
+
 .step-rows {
     width: 300vw;
     height: 50vH;
-  }
+}
 
-  
+.step1 {
+ margin-bottom: 10px;
+ display: flex;
+ flex-direction: row;
+}
