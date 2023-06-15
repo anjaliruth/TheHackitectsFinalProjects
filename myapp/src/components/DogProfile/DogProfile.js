@@ -10,6 +10,7 @@ import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
   const { id } = useParams();
+  console.log(dogData);
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
@@ -30,6 +31,7 @@ function DogProfile({ dogData }) {
               {" "}
               <BsGenderAmbiguous /> Gender: {dogData[id - 1].sex}
             </p>
+
             <p>
               {" "}
               <FiClock /> Age: {dogData[id - 1].age}
