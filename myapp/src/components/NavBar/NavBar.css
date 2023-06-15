@@ -1,6 +1,6 @@
 #nav {
   position: fixed;
-  z-index: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,10 +37,11 @@
   display: flex;
   padding: 5px;
   cursor: pointer;
-  background: transparent;
+  background: #fd8b49;
   border: none;
+  border-radius: 5px;
   outline: none;
-  color: black;
+  color: rgb(255, 255, 255);
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
@@ -85,7 +86,7 @@
     background-color: #00a3a3;
     transform: translateY(-100%);
     visibility: hidden;
-    z-index: 1; /* Add a negative z-index to hide the nav initially */
+    z-index: 10; /* Add a negative z-index to hide the nav initially */
   }
 
   #nav .header-nav.responsive_nav {

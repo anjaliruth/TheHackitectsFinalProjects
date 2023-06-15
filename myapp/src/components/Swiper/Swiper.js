@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function SwiperComp({ dogData }) {
-  const photos = Array.isArray(dogData.photo) ? dogData.photo : [dogData.photo];
+  const photos = Array.isArray(dogData.swiperPhoto) ? dogData.swiperPhoto : [dogData.swiperPhoto];
 
   return (
     <div className="swiper-container">

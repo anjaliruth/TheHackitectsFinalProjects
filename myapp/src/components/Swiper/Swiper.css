@@ -25,6 +25,7 @@
     height: 42vh;
     width: 60vw;
     margin: 0 auto;
+    z-index: -5;
   }
 
   .carousel-image {
@@ -32,5 +33,6 @@
     width: 60vw;
     border-radius: 10px;
     margin-left: 3px;
+    z-index: -5;
   }
 }

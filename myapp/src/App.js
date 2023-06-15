@@ -14,12 +14,12 @@ import georgeImage from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07.jp
 import George1 from "./Media/George/WhatsApp Image 2023-06-03 at 11.12.17.jpeg";
 import George2 from "./Media/George/WhatsApp Image 2023-06-03 at 11.12.27.jpeg";
 import George3 from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07 (1).jpeg";
-import George4 from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07 (2).jpeg"; 
-import George5 from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07 (3).jpeg"; 
+import George4 from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07 (2).jpeg";
+import George5 from "./Media/George/WhatsApp Image 2023-06-03 at 11.20.07 (3).jpeg";
 import maisieImage from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.15.30.jpeg";
 import Maisie1 from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.06.jpeg";
 import Maisie2 from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.07 (4).jpeg";
-import Maisie3 from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.07.jpeg";  
+import Maisie3 from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.20.07.jpeg";
 import millieImage from "./Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
 import Millie1 from "./Media/Millie/Screenshot 2023-06-05 at 11.50.36.png";
 import Millie2 from "./Media/Millie/Screenshot 2023-06-05 at 11.51.06.png";
@@ -43,7 +43,8 @@ import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 const dogData = [
   {
     id: 1,
-    photo: [fridaImage, Frida1, Frida2, Frida4, Frida5],
+    photo: fridaImage,
+    swiperPhoto: [fridaImage, Frida1, Frida2, Frida4, Frida5],
     name: "Frida",
     breed: "Pug",
     location: "London",
@@ -52,7 +53,8 @@ const dogData = [
   },
   {
     id: 2,
-    photo: [georgeImage, George1, George2, George3, George4, George5],
+    photo: georgeImage,
+    swiperPhoto: [georgeImage, George1, George2, George3, George4, George5],
     name: "George",
     breed: "Mixed Breed",
     location: "Manchester",
@@ -61,7 +63,8 @@ const dogData = [
   },
   {
     id: 3,
-    photo: [maisieImage, Maisie1, Maisie2, Maisie3],
+    photo: maisieImage,
+    swiperPhoto: [maisieImage, Maisie1, Maisie2, Maisie3],
     name: "Maisie",
     breed: "Springer Spaniel",
     location: "Birmingham",
@@ -70,7 +73,16 @@ const dogData = [
   },
   {
     id: 4,
-    photo: [millieImage, Millie1, Millie2, Millie3, Millie4, Millie5, Millie6],
+    photo: millieImage,
+    swiperPhoto: [
+      millieImage,
+      Millie1,
+      Millie2,
+      Millie3,
+      Millie4,
+      Millie5,
+      Millie6,
+    ],
     name: "Millie",
     breed: "Lurcher",
     location: "London",
@@ -79,7 +91,8 @@ const dogData = [
   },
   {
     id: 5,
-    photo: [neilImage, Neil1, Neil2, Neil3, Neil4, Neil5],
+    photo: neilImage,
+    swiperPhoto: [neilImage, Neil1, Neil2, Neil3, Neil4, Neil5],
     name: "Neil",
     breed: "Greyhound",
     location: "Leicester",
@@ -88,7 +101,8 @@ const dogData = [
   },
   {
     id: 6,
-    photo: [sookieImage, Sookie1, Sookie2, Sookie3, Sookie4],
+    photo: sookieImage,
+    swiperPhoto: [sookieImage, Sookie1, Sookie2, Sookie3, Sookie4],
     name: "Sookie",
     breed: "Schnauzer",
     location: "Newcastle",
