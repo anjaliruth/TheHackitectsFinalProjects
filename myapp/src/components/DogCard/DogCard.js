@@ -70,7 +70,7 @@ import HomePage from "../HomePage/HomePage";
 // ];
 
 export default function DogCard({ dogData }) {
-  console.log("here:", dogData);
+  // console.log("here:", dogData);
   if (!dogData) {
     return null; // or you can render a loading indicator or fallback component
   }

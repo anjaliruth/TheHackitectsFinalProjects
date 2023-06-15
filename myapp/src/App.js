@@ -15,77 +15,60 @@ import neilImage from "./Media/Neil/Screenshot 2023-06-05 at 12.24.23.png";
 import sookieImage from "./Media/Sookie/Screenshot 2023-06-08 at 10.48.30.png";
 import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
+import { useState } from "react";
 
 
-const supabase = createClient();
-const dogData = [
-  {
-    id: 1,
-    photo: fridaImage,
-    name: "Frida",
-    breed: "Pug",
-    location: "London",
-    sex: "Female",
-    age: 5,
-  },
-  {
-    id: 2,
-    photo: georgeImage,
-    name: "George",
-    breed: "Mixed Breed",
-    location: "Manchester",
-    sex: "Male",
-    age: 4,
-  },
-  {
-    id: 3,
-    photo: maisieImage,
-    name: "Maisie",
-    breed: "Springer Spaniel",
-    location: "Birmingham",
-    sex: "Female",
-    age: 2,
-  },
-  {
-    id: 4,
-    photo: millieImage,
-    name: "Millie",
-    breed: "Lurcher",
-    location: "London",
-    sex: "Female",
-    age: 7,
-  },
-  {
-    id: 5,
-    photo: neilImage,
-    name: "Neil",
-    breed: "Greyhound",
-    location: "Leicester",
-    sex: "Male",
-    age: 7,
-  },
-  {
-    id: 6,
-    photo: sookieImage,
-    name: "Sookie",
-    breed: "Schnauzer",
-    location: "Newcastle",
-    sex: "Female",
-    age: 6,
-  },
-];
+const supabase = createClient("https://ufjunsgwcenjcnrrubci.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmanVuc2d3Y2VuamNucnJ1YmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODY4Mjg1NzcsImV4cCI6MjAwMjQwNDU3N30.TbQDVBqgY3X-tz0r8_EBd5WqsWCrZCPBu3INjOHy5kA");
+
+
+
+
 function App() {
 
+  const [session, setSession] = useState(null)
+  const [dogData, setDogData] = useState(null)
 
-  useEffect(()=>
-  async function getDogData(){
-    const response = await fetch("https://app.supabase.com/project/ufjunsgwcenjcnrrubci/settings/api")
-    console.log("response",response)
-    console.log("response",response)
-    console.log("hello")
-  }, [])
-  return (
-    <div>
+    useEffect(() => {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        setSession(session)
+      })
+
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange((_event, session) => {
+        setSession(session)
+      })
+
+      return () => subscription.unsubscribe()
+    }, [])
+    
+    useEffect(()=>{
+
+    async function getDogData(){
+      const { data, error } = await supabase
+      .from('dogData')
+      .select('*')
+      setDogData(data)
+     
+    
+
+    }
+    getDogData()},[])
+      
+
+
+
+    
+    // useEffect(()=>
+    // async function getDogData(){
+      //   const response = await fetch("https://app.supabase.com/project/ufjunsgwcenjcnrrubci/settings/api")
+      //   console.log("response",response)
+      //   console.log("response",response)
+      //   console.log("hello")
+      // }, [])
+      
+      return (
+        <div>
       <NavBar />
 
       <Routes>
@@ -102,3 +85,4 @@ function App() {
 }
 
 export default App;
+
