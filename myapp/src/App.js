@@ -1,9 +1,8 @@
-import React from "react";
-import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import InfoPack from "./components/InfoPack/InfoPack";
+import SwiperComp from "./components/Swiper/Swiper";
 import DogProfile from "./components/DogProfile/DogProfile";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
@@ -76,12 +75,15 @@ function App() {
   return (
     <div>
       <NavBar />
+
       <Routes>
         <Route path="/" element={<HomePage dogData={dogData} />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="info-pack" element={<InfoPack />} />
         <Route path="/:dogProfile" element={<DogProfile dogData={dogData} />} />
         <Route path="application-form" element={<ApplicationForm />} />
+        <Route path="/:id" element={<DogProfile dogData={dogData} />} />
+        {/* Add more Route components for other paths */}
       </Routes>
     </div>
   );

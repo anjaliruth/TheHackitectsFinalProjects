@@ -45,18 +45,67 @@ align-items: center;    */
     background-color: aqua;
 } */
 
-.dogProfile {
+
+.swiper{
+    z-index: 0;
+}
+
+.totalDogInfo {
     height: 100vh;
-
-    background-color: pink
-}
-
-.dogphotos {
+      /* background-color: pink */
+  }
+  
+  .dogStats{
     display: flex;
-    justify-content: space-around;
+    max-width: 400px;
+    width: 40%;
     flex-direction: column;
-    background-color: yellow;
-    height: 100%;
-    width: 50%;
-}
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10%;
+  }
 
+  .dogStats > p {
+margin: 5px;
+  }
+
+  .dogStats > p:last-child{
+margin-bottom: 25px;
+  }
+
+  .leftAlignDogInfo{
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  .dogProfile {
+      offset: 500px;    
+  }
+
+  .dogProfileButtons{
+
+    margin: 5% auto;
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    gap: 40px;
+    background-color: aquamarine;
+
+  }
+
+  
+  /* .dogphotos {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: yellow;
+      height: 100%;
+      width: 50%;
+  }
+   */
+  .offsetdiv {
+  height: 80px
+  
+  }
