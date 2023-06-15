@@ -10,8 +10,8 @@ export default function AboutUs() {
     <div>
       <h1>About Us</h1>
 
-      <div className="aboutUsPara">
-        <p>
+      <div className="aboutUsParas">
+        <p className= "aboutUsPara">
           At Paws For Affection, our mission is to connect shelters and
           potential adopters through our compassionate marketplace, facilitating
           the adoption process for dogs in need. With our innovative web app, we
@@ -19,16 +19,12 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
-        <img src={sookieImage} alt="pic of a dog" />
-
         <img className="aboutuspic" src={sookieImage} alt="pic of a dog" />
       </div>
 
-      <div className="aboutUsPara">
-        <img src={sookieImage} alt="pic of a dog" />
+      <div className="aboutUsParas">
 
-        <img src={fridaImage} alt="pic of a dog" />
-        <p>
+        <p className= "aboutUsPara">
           We are dedicated to ensuring that every adoption is a success. Our
           rigorous vetting process allows us to identify qualified adopters who
           can provide a safe and nurturing environment for their new pet. Once
@@ -36,13 +32,11 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
-        <img src={fridaImage} alt="pic of a dog" />
-
         <img className="aboutuspic" src={fridaImage} alt="pic of a dog" />
       </div>
 
-      <div className="aboutUsPara">
-        <p>
+      <div className="aboutUsParas">
+        <p className= "aboutUsPara">
           Our user-friendly platform minimises unnecessary visits to shelters,
           saving time and resources for both adopters and shelters. By
           streamlining the adoption process, we create a more efficient and

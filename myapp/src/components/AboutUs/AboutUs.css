@@ -1,5 +1,5 @@
 
-p {
+.aboutUsPara {
     background-color: #F5F5F5;
     width: 200px;
     text-align: center;
@@ -14,7 +14,7 @@ p {
     border-radius: 20px;
 }
 
-.aboutUsPara {
+.aboutUsParas {
 
     display: flex;
     justify-content: center;
