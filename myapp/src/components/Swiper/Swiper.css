@@ -8,12 +8,29 @@
 } */
 
 .swiper-container {
-  max-height: 42vh;
-  max-width: 16vw; /* Set the maximum width you desire */
+  height: 42vh;
+  width: 16vw; /* Set the maximum width you desire */
   margin: 0 auto; /* Center the Swiper horizontally */
 }
 
 .carousel-image {
+  height: 42vh;
+  width: 16vw;
   border-radius: 10px;
   margin-left: 3px;
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-container {
+    height: 42vh;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .carousel-image {
+    height: 42vh;
+    width: 60vw;
+    border-radius: 10px;
+    margin-left: 3px;
+  }
 }
