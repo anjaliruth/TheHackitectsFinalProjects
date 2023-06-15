@@ -13,7 +13,6 @@ function DogProfile({ dogData }) {
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
 
-  console.log(dogData.id);
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>

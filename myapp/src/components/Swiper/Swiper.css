@@ -1,5 +1,15 @@
+/* .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4vw;
+  max-height: 400px;
+  max-width: 400px;
+} */
+
 .swiper-container {
-  max-width: 12vw; /* Set the maximum width you desire */
+  max-height: 42vh;
+  max-width: 16vw; /* Set the maximum width you desire */
   margin: 0 auto; /* Center the Swiper horizontally */
 }
 

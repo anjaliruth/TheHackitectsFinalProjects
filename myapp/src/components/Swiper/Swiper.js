@@ -1,4 +1,3 @@
-// import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -6,13 +5,12 @@ import "./Swiper.css";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/bundle";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function SwiperComp({ dogData }) {
-  console.log(dogData);
+  const photos = Array.isArray(dogData.photo) ? dogData.photo : [dogData.photo];
 
   return (
     <div className="swiper-container">
@@ -26,11 +24,14 @@ export default function SwiperComp({ dogData }) {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        {dogData.map((dog) => (
-          <SwiperSlide key={dog.id}>
+        {photos.map((photo, index) => (
+          <SwiperSlide key={index}>
             <div className="carousel">
-              <p>{dog.name}</p>
-              <img src={dog.photo} alt={`Dog ${dog.id}`} />
+              <img
+                className="carousel-image "
+                src={photo}
+                alt={`Dog ${dogData.id}`}
+              />
             </div>
           </SwiperSlide>
         ))}
