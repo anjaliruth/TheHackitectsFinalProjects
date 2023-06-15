@@ -5,6 +5,7 @@ export default function HomePage({dogData}) {
   return (
     <div>
     <DogCard dogData={dogData}/>
+
     <>
 <section className="section1">
 <div className="homePage">
@@ -17,4 +18,5 @@ export default function HomePage({dogData}) {
 
   )
 }
+
 

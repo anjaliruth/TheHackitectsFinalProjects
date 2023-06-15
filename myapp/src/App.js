@@ -12,6 +12,7 @@ import maisieImage from "./Media/Maisie/WhatsApp Image 2023-06-03 at 11.15.30.jp
 import millieImage from "./Media/Millie/Screenshot 2023-06-05 at 11.52.23.png";
 import neilImage from "./Media/Neil/Screenshot 2023-06-05 at 12.24.23.png";
 import sookieImage from "./Media/Sookie/Screenshot 2023-06-08 at 10.48.30.png";
+import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 
 const dogData = [
   {
@@ -79,6 +80,8 @@ function App() {
         <Route path="/" element={<HomePage dogData={dogData} />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="info-pack" element={<InfoPack />} />
+        <Route path="/:dogProfile" element={<DogProfile dogData={dogData} />} />
+        <Route path="application-form" element={<ApplicationForm />} />
         <Route path="/:id" element={<DogProfile dogData={dogData} />} />
         {/* Add more Route components for other paths */}
       </Routes>
