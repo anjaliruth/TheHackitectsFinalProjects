@@ -25,17 +25,17 @@ export default function ApplicationForm() {
             the dog.{" "}
           </span>
           <br />
-          <span className="step2">
+          <span className="step1">
             If you and the dog seem well suited, we may arrange a virtual home
             check or an appointment for you to come and meet them at the centre.{" "}
           </span>
           <br />
-          <span className="step3">
+          <span className="step1">
             If we mutually decide you're a perfect match, we'll arrange an
             appointment for you to take them to their forever home.{" "}
           </span>
           <br />
-          <span className="step4">
+          <span className="step1">
             We'll keep in touch to see how you and the dog are doing. If you
             need any advice or support, we're just a phone call away or you can
             browse our dog advice section.{" "}
