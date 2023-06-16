@@ -10,11 +10,14 @@ import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
   const { id } = useParams();
+  // fin the dog object with this id
+  const dog = dogData.find((dog) => dog.id === parseInt(id));
+
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <div className="swiper">
-        <SwiperComp />
+        <SwiperComp dogData={dog} />
       </div>
 
       <div className="dogInfo">
@@ -30,6 +33,7 @@ function DogProfile({ dogData }) {
               {" "}
               <BsGenderAmbiguous /> Gender: {dogData[id - 1].sex}
             </p>
+
             <p>
               {" "}
               <FiClock /> Age: {dogData[id - 1].age}
