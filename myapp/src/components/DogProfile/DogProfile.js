@@ -10,12 +10,14 @@ import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
   const { id } = useParams();
-  console.log(dogData);
+  // fin the dog object with this id
+  const dog = dogData.find((dog) => dog.id === parseInt(id));
+
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <div className="swiper">
-        <SwiperComp />
+        <SwiperComp dogData={dog} />
       </div>
 
       <div className="dogInfo">
