@@ -54,6 +54,20 @@ function App() {
 
     }
     getDogData()},[])
+
+    useEffect(()=>{
+
+      async function getDogPics(){
+        const { data, error } = await supabase
+        .from('dogPics2')
+        .select('photoLink')
+        setDogData(data)
+       
+      
+  
+      }
+      getDogPics()},[])
+        
       
 
 

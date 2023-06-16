@@ -9,7 +9,7 @@ export default function HomePage({dogData}) {
     <>
 <section className="section1">
 <div className="homePage">
-  <h2 className="homePageTitle">Paws For Affection, Your Companion in Adoptiong a Fur-ever friend.</h2>
+  <h2 className="homePageTitle">Paws For Affection, Your Companion in Adopting a Fur-ever friend.</h2>
 </div>
 </section>
 </>
