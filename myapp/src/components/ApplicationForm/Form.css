@@ -38,8 +38,8 @@
 }
 
 .appFormImage{
-  max-width: 320px;
-  margin: 50px auto;
+  max-width: 310px;
+  margin: 130px auto;
   margin-bottom: -10px;
   border-radius: 20px;
 }
@@ -59,17 +59,24 @@ input[type="file"] {
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
+  padding: 10px 25px;
+  margin: 20px 0px 20px 0px;
   background-color: #00A3A3;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .application-instruction {
   margin: 0px auto;
+  padding: 10px 21px;
+  background-color: #FD8B49;
+  color: #004953;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,4 +89,3 @@ button[type="submit"] {
     max-width: 700px;
   }
 }
-

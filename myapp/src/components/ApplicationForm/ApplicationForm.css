@@ -4,7 +4,8 @@
     display: flex;
     justify-content: flex-start;
     font-size: 35px;
-    margin-top: 40px;  
+    margin-top: 8vh;
+    margin-left: 2vw;
     padding: 0;
     color: #000;
     border-radius: 10px;
@@ -12,7 +13,7 @@
     width: 100%;
 }
 
-.timeline-img{
+.timeline-img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,17 +23,68 @@
 }
 
 #TL_img {
-    margin-top: 100px;
+    margin-top: 16vh;
     margin-left: 10px;
 }
 
-.step-rows {
-    width: 300vw;
-    height: 50vH;
+.timeline-title-step1 {
+    margin-top: -1.5vh;
+    margin-left: 2vw;
+    height: fit-content;
+    font-size: 15px;
 }
 
-.step1 {
- margin-bottom: 10px;
- display: flex;
- flex-direction: row;
+#application-parapgraph1 {
+    display: flex;
+    width: fit-content;
+    margin-left: 2vw;
+    margin-right: 9vw;
 }
+
+.timeline-title-step2 {
+    margin-top: 8.75vh;
+    margin-left: 2vw;
+    height: fit-content;
+    font-size: 15px;
+}
+
+#application-parapgraph2 {
+    display: flex;
+    width: fit-content;
+    margin-left: 2vw;
+    margin-right: 9vw;
+}
+
+.timeline-title-step3 {
+    margin-top: 5vh;
+    margin-left: 2vw;
+    height: fit-content;
+    
+}
+
+#application-parapgraph3 {
+    display: flex;
+    width: fit-content;
+    margin-left: 2vw;
+    margin-right: 9vw;
+}
+
+.timeline-title-step4 {
+    margin-top: 7vh;
+    margin-left: 2vw;
+    height: fit-content;
+    font-size: 15px;
+}
+
+#application-parapgraph4 {
+    display: flex;
+    width: fit-content;
+    margin-left: 2vw;
+    margin-right: 9vw;
+}
+
+.step-rows {
+    width: fit-content;
+    height: 50vh;
+}
+

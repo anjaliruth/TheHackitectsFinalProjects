@@ -37,7 +37,6 @@ export default function MyForm() {
           alt="happy dog and boy"
           className="appFormImage"
         />
-
         <h4 className="application-instruction">
           Please enter your details below
         </h4>
