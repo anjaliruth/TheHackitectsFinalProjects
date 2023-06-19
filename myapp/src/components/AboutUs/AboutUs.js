@@ -4,14 +4,14 @@ import fridaImage from "../../Media/Frida/WhatsApp Image 2023-06-03 at 12.50.28.
 import georgeImage from "../../Media/George/WhatsApp Image 2023-06-03 at 11.12.17.jpeg";
 import "./AboutUs.css";
 
-//adding comments here to test git
+//adding comments here to test gi
 export default function AboutUs() {
   return (
     <div>
       <h1>About Us</h1>
 
-      <div className="aboutUsPara">
-        <p>
+      <div className="aboutUsParas">
+        <p className= "aboutUsPara">
           At Paws For Affection, our mission is to connect shelters and
           potential adopters through our compassionate marketplace, facilitating
           the adoption process for dogs in need. With our innovative web app, we
@@ -19,11 +19,12 @@ export default function AboutUs() {
           find their perfect companion.
         </p>
 
-        <img src={sookieImage} alt="pic of a dog" />
+        <img className="aboutuspic" src={sookieImage} alt="pic of a dog" />
       </div>
 
-      <div className="aboutUsPara">
-        <p>
+      <div className="aboutUsParas">
+
+        <p className= "aboutUsPara">
           We are dedicated to ensuring that every adoption is a success. Our
           rigorous vetting process allows us to identify qualified adopters who
           can provide a safe and nurturing environment for their new pet. Once
@@ -31,11 +32,11 @@ export default function AboutUs() {
           on shelters and increasing the likelihood of successful matches.
         </p>
 
-        <img src={fridaImage} alt="pic of a dog" />
+        <img className="aboutuspic" src={fridaImage} alt="pic of a dog" />
       </div>
 
-      <div className="aboutUsPara">
-        <p>
+      <div className="aboutUsParas">
+        <p className= "aboutUsPara">
           Our user-friendly platform minimises unnecessary visits to shelters,
           saving time and resources for both adopters and shelters. By
           streamlining the adoption process, we create a more efficient and
@@ -46,16 +47,20 @@ export default function AboutUs() {
       </div>
 
       <div className="aboutUsPara">
-      {/* comment */}
-        <p>
+        {/* comment */}
 
-          At Paws For Affection, we are committed to improving the lives of
-          shelter dogs and promoting responsible pet ownership. Through
-          technology and compassion, we aim to make a positive and lasting
-          impact in the world of pet adoption. Join us in building a community
-          that fosters lifelong bonds between dogs and their adoptive families.
-        </p>
+        <img className="aboutuspic" src={georgeImage} alt="pic of a dog" />
       </div>
+
+      <img src={georgeImage} alt="pic of a dog" />
+
+      <p>
+        At Paws For Affection, we are committed to improving the lives of
+        shelter dogs and promoting responsible pet ownership. Through technology
+        and compassion, we aim to make a positive and lasting impact in the
+        world of pet adoption. Join us in building a community that fosters
+        lifelong bonds between dogs and their adoptive families.
+      </p>
     </div>
   );
 }

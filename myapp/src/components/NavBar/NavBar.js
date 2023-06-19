@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  const showNavbar = () => {
+  const toggleNavbar = () => {
     setIsNavbarOpen((prevState) => !prevState);
+  };
+
+  const closeNavbar = () => {
+    setIsNavbarOpen(false);
+    window.scrollTo(0, 0);
   };
 
   return (
     <nav id="nav">
       <div className="nav-container">
-        <button className="nav-btn" onClick={showNavbar}>
+        <button className="nav-btn" onClick={toggleNavbar}>
           {isNavbarOpen ? (
             <FaTimes className="nav-icon" />
           ) : (
@@ -20,18 +26,25 @@ function Navbar() {
           )}
         </button>
         <div className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`}>
-          <a href="/#" className="nav-link">
+          <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
-          </a>
-          <a href="/#" className="nav-link">
-            My work
-          </a>
-          <a href="/#" className="nav-link">
-            Blog
-          </a>
-          <a href="/#" className="nav-link">
-            About me
-          </a>
+          </Link>
+          <Link to="/about-us" className="nav-link" onClick={closeNavbar}>
+            About Us
+          </Link>
+          <Link to="/info-pack" className="nav-link" onClick={closeNavbar}>
+            Info Pack
+          </Link>
+          <Link
+            to="/application-form"
+            className="nav-link"
+            onClick={closeNavbar}
+          >
+            Application Form
+          </Link>
+          <Link to="/stretch-goals" className="nav-link" onClick={closeNavbar}>
+            Stretch Goals
+          </Link>
         </div>
       </div>
     </nav>

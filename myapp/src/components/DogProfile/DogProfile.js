@@ -1,39 +1,71 @@
-import PhotoCarousel from "./PhotoCarousel.js";
+// import PhotoCarousel from "./PhotoCarousel.js";
 import "./DogProfile.css";
-import { BsGenderAmbiguous } from 'react-icons/bs';
-import { FiClock } from 'react-icons/fi';
-import { FaDog } from 'react-icons/fa';
-import { BsFillBarChartFill } from 'react-icons/bs';
-import { FaMapMarkedAlt } from 'react-icons/fa';
-// AHAHAAHAHAAHAHAHAHAAHA
+import { Link, useParams } from "react-router-dom";
+import { BsGenderAmbiguous } from "react-icons/bs";
+import { FiClock } from "react-icons/fi";
+import { FaDog } from "react-icons/fa";
+import { BsFillBarChartFill } from "react-icons/bs";
+import { FaMapMarkedAlt } from "react-icons/fa";
+import SwiperComp from "../Swiper/Swiper.js";
 
+// this page breaks because the dogData is not being
+// passed in from the App.js and is null when refreshed
 
+function DogProfile({ dogData }) {
+  const { id } = useParams();
+  // fin the dog object with this id
+  const dog = dogData.find((dog) => dog.id === parseInt(id));
+  console.log(dog);
 
-function DogProfile() {
+  if (!dogData) {
+    return null;
+  }
+
   return (
-    <div>
-      <PhotoCarousel />
-      <div className="bannerTagLine">
-        <p>Placeholder text</p>
-        <p>Placeholder text</p>
+    <div className="totalDogInfo">
+      <div className="offsetdiv"> </div>
+      <div className="swiper">
+        <SwiperComp dogData={dog} />
       </div>
 
-      <div className="buttons">
-      <button className="button1">Adopt Me!</button>
-      <button className="button2">How To Care For Me</button>
-      </div>
-
-      <div className="dogProfile">
-        <p>ID</p>
-        <h1>Dog Name: "props"</h1>
-        <p> <BsGenderAmbiguous/> Gender: "props"</p>
-        <p> <FiClock/> Age: "props"</p>
-        <p><FaDog/><FaDog/> Size: "props"</p>
-        <p><BsFillBarChartFill/> Activity Level: "props"</p>
-        <p><FaMapMarkedAlt/> Location: "props"</p>
+      <div className="dogInfo">
+        <div className="dogProfileButtons">
+          <Link to="/application-form">
+            <button className="button1">Adopt Me!</button>
+          </Link>
+          <Link to="/info-pack">
+            <button className="button2">How To Care For Me</button>
+          </Link>
         </div>
-        
 
+        {dogData && (
+          <div className="dogStats">
+            <h1>{dog.name}</h1>
+            <div className="leftAlignDogInfo">
+              <p>ID #:{dog.id}</p>
+              <p>
+                {" "}
+                <BsGenderAmbiguous /> Gender: {dog.sex}
+              </p>
+
+              <p>
+                {" "}
+                <FiClock /> Age: {dog.age}
+              </p>
+              <p>
+                <FaDog />
+                <FaDog /> Size: {dog.size}
+              </p>
+              <p>
+                <BsFillBarChartFill /> Activity Level: {dog.activity_level}
+              </p>
+              <p>
+                <FaMapMarkedAlt /> Location: {dog.location}
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,19 +1,27 @@
 #nav {
-  position: relative;
+  position: fixed;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.63);
   color: black;
+
   margin-top: -2vh;
-  width: 95%;
+  width: 100%;
 }
 #nav .nav-link:hover {
   color: #fd8b49;
 }
 
+.nav-link {
+  box-sizing: border-box;
+}
+.nav-link:last-child {
+  padding-right: 30px;
+}
 #nav .header-nav a {
   margin: 0 1rem;
   color: black;
@@ -29,10 +37,11 @@
   display: flex;
   padding: 5px;
   cursor: pointer;
-  background: transparent;
+  background: #fd8b49;
   border: none;
+  border-radius: 5px;
   outline: none;
-  color: black;
+  color: rgb(255, 255, 255);
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
@@ -61,27 +70,55 @@
 
   #nav .header-nav {
     position: fixed;
+
     top: 80px; /* Adjust the top value to match the height of the header */
     left: 0;
     height: calc(
-      100vh - 80px
+      60vh
     ); /* Adjust the height to fill the remaining viewport height */
-    width: 100%;
+    width: 50%;
+    border-radius: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: white;
+    background-color: #00a3a3;
     transform: translateY(-100%);
     visibility: hidden;
-    z-index: -1; /* Add a negative z-index to hide the nav initially */
+    z-index: 10; /* Add a negative z-index to hide the nav initially */
   }
 
   #nav .header-nav.responsive_nav {
     transform: translateY(0);
     visibility: visible;
-    z-index: 1; /* Increase the z-index to bring the nav above other elements */
+    text-align: center;
+    z-index: -1; /* Increase the z-index to bring the nav above other elements */
+    margin-left: -20vw;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
   }
 
   #nav .header-nav .nav-close-btn {
@@ -91,6 +128,7 @@
   }
 
   #nav .header-nav a {
+    color: #fff;
     font-size: 1.5rem;
   }
 }
