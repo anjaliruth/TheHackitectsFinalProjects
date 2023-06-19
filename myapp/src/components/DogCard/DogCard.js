@@ -82,12 +82,18 @@ export default function DogCard({ dogData }) {
         {/* image, name, breed, location, sex, age, button */}
         <div className="dogGallery">
           {dogData.map((info, index) => (
-            <div key={index} className="ind">
-              <img src={info.photo} alt="dog card" className="dogGridPhoto" />
+            <div key={info.id} className="ind">
+              <img
+                src={info.dogPics[0]?.photoLink}
+                alt="dog card"
+                className="dogGridPhoto"
+              />
 
               <div className="indDogDatawButton">
                 <div className="indDogData">
-                  <h2 className="dogName">{info.name}</h2>
+                  <h2 className="dogName">
+                    {info.name} {info.id}
+                  </h2>
                   <p>{info.breed}</p>
                   <p>{info.location}</p>
                   <p>

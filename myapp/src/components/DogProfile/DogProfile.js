@@ -8,16 +8,20 @@ import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 
-function DogProfile({ dogData }) {
+// this page breaks because the dogData is not being
+// passed in from the App.js and is null when refreshed
 
+function DogProfile({ dogData }) {
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
+  console.log(dog);
 
+  if (!dogData) {
+    return null;
+  }
 
   return (
-    
-
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <div className="swiper">
@@ -34,35 +38,35 @@ function DogProfile({ dogData }) {
           </Link>
         </div>
 
-        { dogData && <div className="dogStats">
-          <h1>{dogData[id - 1].name}</h1>
-          <div className="leftAlignDogInfo">
-            <p>ID #:{dogData[id - 1].id}</p>
-            <p>
-              {" "}
-              <BsGenderAmbiguous /> Gender: {dogData[id - 1].sex}
-            </p>
+        {dogData && (
+          <div className="dogStats">
+            <h1>{dog.name}</h1>
+            <div className="leftAlignDogInfo">
+              <p>ID #:{dog.id}</p>
+              <p>
+                {" "}
+                <BsGenderAmbiguous /> Gender: {dog.sex}
+              </p>
 
-            <p>
-              {" "}
-              <FiClock /> Age: {dogData[id - 1].age}
-            </p>
-            <p><FaDog/><FaDog/> Size: {dogData[id - 1].size}</p>
-            <p><BsFillBarChartFill/> Activity Level: {dogData[id - 1].activity_level}</p>
-            <p>
-              <FaMapMarkedAlt /> Location: {dogData[id - 1].location}
-            </p>
+              <p>
+                {" "}
+                <FiClock /> Age: {dog.age}
+              </p>
+              <p>
+                <FaDog />
+                <FaDog /> Size: {dog.size}
+              </p>
+              <p>
+                <BsFillBarChartFill /> Activity Level: {dog.activity_level}
+              </p>
+              <p>
+                <FaMapMarkedAlt /> Location: {dog.location}
+              </p>
+            </div>
           </div>
-        </div>}
+        )}
       </div>
-  
-
-      <div className="dogphotos"></div>
-
-      
     </div>
-    
-    
   );
 }
 
