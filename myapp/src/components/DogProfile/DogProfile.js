@@ -1,6 +1,6 @@
 import PhotoCarousel from "./PhotoCarousel.js";
 import "./DogProfile.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BsGenderAmbiguous } from "react-icons/bs";
 import { FiClock } from "react-icons/fi";
 import { FaDog } from "react-icons/fa";
@@ -9,23 +9,29 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
-  const {id} = useParams();
-  // console.log(dogData)
-  // console.log("id",id)
-  // console.log(dogData.length)
+
+  const { id } = useParams();
+  // fin the dog object with this id
+  const dog = dogData.find((dog) => dog.id === parseInt(id));
+
+
   return (
     
 
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <div className="swiper">
-        <SwiperComp />
+        <SwiperComp dogData={dog} />
       </div>
 
       <div className="dogInfo">
         <div className="dogProfileButtons">
-          <button className="button1">Adopt Me!</button>
-          <button className="button2">How To Care For Me</button>
+          <Link to="/application-form">
+            <button className="button1">Adopt Me!</button>
+          </Link>
+          <Link to="/info-pack">
+            <button className="button2">How To Care For Me</button>
+          </Link>
         </div>
 
         { dogData && <div className="dogStats">
@@ -36,6 +42,7 @@ function DogProfile({ dogData }) {
               {" "}
               <BsGenderAmbiguous /> Gender: {dogData[id - 1].sex}
             </p>
+
             <p>
               {" "}
               <FiClock /> Age: {dogData[id - 1].age}

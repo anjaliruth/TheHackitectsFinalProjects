@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 import "./DogCard.css";
@@ -76,8 +75,6 @@ export default function DogCard({ dogData }) {
   }
   return (
     <div>
-      <HomePage />
-
       <div className="individualDogCard">
         <h1 className="dogCardTitle">
           Connecting you to dogs available for adoption today...

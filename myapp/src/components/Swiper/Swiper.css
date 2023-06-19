@@ -1,9 +1,40 @@
+/* .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4vw;
+  max-height: 400px;
+  max-width: 400px;
+} */
+
 .swiper-container {
-  max-width: 12vw; /* Set the maximum width you desire */
+  height: 42vh;
+  width: 19vw; /* Set the maximum width you desire */
   margin: 0 auto; /* Center the Swiper horizontally */
+  border-radius: 20px;
 }
 
 .carousel-image {
-  border-radius: 10px;
+  object-fit: cover;
+  height: 42vh;
+  width: 19vw;
+  border-radius: 17px;
   margin-left: 3px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+  .swiper-container {
+    height: 42vh;
+    width: 60vw;
+    margin: 0 auto;
+    z-index: -5;
+  }
+
+  .carousel-image {
+    height: 42vh;
+    width: 60vw;
+    border-radius: 10px;
+    margin-left: 3px;
+    z-index: -5;
+  }
 }
