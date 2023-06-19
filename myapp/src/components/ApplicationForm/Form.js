@@ -38,6 +38,10 @@ export default function MyForm() {
           className="appFormImage"
         />
 
+        <h4 className="application-instruction">
+          Please enter your details below
+        </h4>
+
         <div className="form-container">
           <label>
             First Name:

@@ -47,6 +47,7 @@ export default function ApplicationForm() {
       <section>
         <Form />
       </section>
+
     </>
   );
 }
