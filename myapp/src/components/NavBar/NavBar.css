@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.63);
   color: black;
 
   margin-top: -2vh;

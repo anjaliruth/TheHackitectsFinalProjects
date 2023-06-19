@@ -1,6 +1,6 @@
 import PhotoCarousel from "./PhotoCarousel.js";
 import "./DogProfile.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { BsGenderAmbiguous } from "react-icons/bs";
 import { FiClock } from "react-icons/fi";
 import { FaDog } from "react-icons/fa";
@@ -22,8 +22,12 @@ function DogProfile({ dogData }) {
 
       <div className="dogInfo">
         <div className="dogProfileButtons">
-          <button className="button1">Adopt Me!</button>
-          <button className="button2">How To Care For Me</button>
+          <Link to="/application-form">
+            <button className="button1">Adopt Me!</button>
+          </Link>
+          <Link to="/info-pack">
+            <button className="button2">How To Care For Me</button>
+          </Link>
         </div>
         <div className="dogStats">
           <h1>{dogData[id - 1].name}</h1>

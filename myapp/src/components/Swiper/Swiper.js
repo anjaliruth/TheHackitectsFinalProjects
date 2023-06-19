@@ -10,7 +10,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function SwiperComp({ dogData }) {
-  const photos = Array.isArray(dogData.swiperPhoto) ? dogData.swiperPhoto : [dogData.swiperPhoto];
+  const photos = Array.isArray(dogData.swiperPhoto)
+    ? dogData.swiperPhoto
+    : [dogData.swiperPhoto];
 
   return (
     <div className="swiper-container">
@@ -28,7 +30,7 @@ export default function SwiperComp({ dogData }) {
           <SwiperSlide key={index}>
             <div className="carousel">
               <img
-                className="carousel-image "
+                className="carousel-image"
                 src={photo}
                 alt={`Dog ${dogData.id}`}
               />
