@@ -38,6 +38,7 @@ import Sookie1 from "./Media/Sookie/Screenshot 2023-06-08 at 10.47.58.png";
 import Sookie2 from "./Media/Sookie/Screenshot 2023-06-08 at 10.48.42.png";
 import Sookie3 from "./Media/Sookie/WhatsApp Image 2023-06-05 at 17.30.35.jpeg";
 import Sookie4 from "./Media/Sookie/WhatsApp Image 2023-06-05 at 17.31.10.jpeg";
+import frivid from "../src/Media/vecteezy_brown-puppy-slow-motion-of-a-cute-puppy-playing-in-the-park_1622765.mp4";
 import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 
 const dogData = [
@@ -45,6 +46,7 @@ const dogData = [
     id: 1,
     photo: fridaImage,
     swiperPhoto: [fridaImage, Frida1, Frida2, Frida4, Frida5],
+    video: [frivid],
     name: "Frida",
     breed: "Pug",
     location: "London",
@@ -108,6 +110,56 @@ const dogData = [
     location: "Newcastle",
     sex: "Female",
     age: 6,
+  },
+  {
+    id: 7,
+    // photo: buddyImage,
+    // swiperPhoto: [buddyImage, Buddy1, Buddy2, Buddy3, Buddy4],
+    name: "Buddy",
+    breed: "Labrador Retriever",
+    location: "Glasgow",
+    sex: "Male",
+    age: 3,
+  },
+  {
+    id: 8,
+    // photo: lunaImage,
+    // swiperPhoto: [lunaImage, Luna1, Luna2, Luna3, Luna4],
+    name: "Luna",
+    breed: "Golden Retriever",
+    location: "Edinburgh",
+    sex: "Female",
+    age: 1,
+  },
+  {
+    id: 9,
+    // photo: rockyImage,
+    // swiperPhoto: [rockyImage, Rocky1, Rocky2, Rocky3, Rocky4, Rocky5],
+    name: "Rocky",
+    breed: "Bulldog",
+    location: "Bristol",
+    sex: "Male",
+    age: 5,
+  },
+  {
+    id: 10,
+    // photo: daisyImage,
+    // swiperPhoto: [daisyImage, Daisy1, Daisy2, Daisy3, Daisy4],
+    name: "Daisy",
+    breed: "Beagle",
+    location: "Cardiff",
+    sex: "Female",
+    age: 2,
+  },
+  {
+    id: 11,
+    // photo: maxImage,
+    // swiperPhoto: [maxImage, Max1, Max2, Max3, Max4, Max5],
+    name: "Max",
+    breed: "German Shepherd",
+    location: "Liverpool",
+    sex: "Male",
+    age: 4,
   },
 ];
 
