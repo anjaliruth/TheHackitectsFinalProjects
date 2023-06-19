@@ -91,9 +91,7 @@ export default function DogCard({ dogData }) {
 
               <div className="indDogDatawButton">
                 <div className="indDogData">
-                  <h2 className="dogName">
-                    {info.name} {info.id}
-                  </h2>
+                  <h2 className="dogName">{info.name}</h2>
                   <p>{info.breed}</p>
                   <p>{info.location}</p>
                   <p>

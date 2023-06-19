@@ -12,8 +12,8 @@ import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 
 const supabase = createClient(
-  "https://ufjunsgwcenjcnrrubci.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmanVuc2d3Y2VuamNucnJ1YmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODY4Mjg1NzcsImV4cCI6MjAwMjQwNDU3N30.TbQDVBqgY3X-tz0r8_EBd5WqsWCrZCPBu3INjOHy5kA"
+  process.env.REACT_APP_SUPABASE_URL,
+  process.env.REACT_APP_SUPABASE_KEY
 );
 
 function App() {
