@@ -9,11 +9,15 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 
 function DogProfile({ dogData }) {
+
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
 
+
   return (
+    
+
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <div className="swiper">
@@ -29,7 +33,8 @@ function DogProfile({ dogData }) {
             <button className="button2">How To Care For Me</button>
           </Link>
         </div>
-        <div className="dogStats">
+
+        { dogData && <div className="dogStats">
           <h1>{dogData[id - 1].name}</h1>
           <div className="leftAlignDogInfo">
             <p>ID #:{dogData[id - 1].id}</p>
@@ -42,41 +47,22 @@ function DogProfile({ dogData }) {
               {" "}
               <FiClock /> Age: {dogData[id - 1].age}
             </p>
-            {/* <p><FaDog/><FaDog/> Size: {info.}</p> */}
-            {/* <p><BsFillBarChartFill/> Activity Level: "props"</p> */}
+            <p><FaDog/><FaDog/> Size: {dogData[id - 1].size}</p>
+            <p><BsFillBarChartFill/> Activity Level: {dogData[id - 1].activity_level}</p>
             <p>
               <FaMapMarkedAlt /> Location: {dogData[id - 1].location}
             </p>
           </div>
-        </div>
+        </div>}
       </div>
-      {/* ))} */}
+  
 
       <div className="dogphotos"></div>
 
-      {/* <div className="dogInfo">
-          <p>ID</p>
-          <h1>Dog Name: "props"</h1>
-          <p>
-            {" "}
-            <BsGenderAmbiguous /> Gender: "props"
-          </p>
-          <p>
-            {" "}
-            <FiClock /> Age: "props"
-          </p>
-          <p>
-            <FaDog />
-            <FaDog /> Size: "props"
-          </p>
-          <p>
-            <BsFillBarChartFill /> Activity Level: "props"
-          </p>
-          <p>
-            <FaMapMarkedAlt /> Location: "props"
-          </p>
-        </div> */}
+      
     </div>
+    
+    
   );
 }
 

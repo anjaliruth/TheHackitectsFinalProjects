@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@supabase/auth-ui-react": "^0.4.2",
+    "@supabase/supabase-js": "^2.25.0"
+  }
+}
