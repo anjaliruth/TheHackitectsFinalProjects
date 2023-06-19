@@ -6,7 +6,6 @@ import DogProfile from "./components/DogProfile/DogProfile";
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
-import frivid from "../src/Media/vecteezy_brown-puppy-slow-motion-of-a-cute-puppy-playing-in-the-park_1622765.mp4";
 import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
@@ -17,7 +16,7 @@ const supabase = createClient(
 );
 
 function App() {
-  const [session, setSession] = useState(null);
+  const [, setSession] = useState(null);
   const [dogData, setDogData] = useState(null);
 
   useEffect(() => {
@@ -36,7 +35,7 @@ function App() {
 
   useEffect(() => {
     async function getDogData() {
-      const { data, error } = await supabase.from("dogData").select(`
+      const { data } = await supabase.from("dogData").select(`
       *, 
       dogPics ( id, photoLink )
     `);

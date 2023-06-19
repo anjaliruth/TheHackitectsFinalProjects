@@ -1,4 +1,4 @@
-import PhotoCarousel from "./PhotoCarousel.js";
+// import PhotoCarousel from "./PhotoCarousel.js";
 import "./DogProfile.css";
 import { Link, useParams } from "react-router-dom";
 import { BsGenderAmbiguous } from "react-icons/bs";
