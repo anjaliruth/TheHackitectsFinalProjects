@@ -46,15 +46,16 @@ align-items: center;    */
 } */
 
 .backButton{
-    background-color: #4CAF50; /* Green */
+    background-color: #F5F5F5; /* Green */
     border: none;
-    color: white;
+    color: #00bdbd;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 18px;
+    margin-left: 25px;
   }
 
 .swiper{
@@ -102,7 +103,7 @@ margin-bottom: 25px;
     max-width: 400px;
     justify-content: center;
     gap: 40px;
-    background-color: aquamarine;
+    background-color: white;
 
   }
 
@@ -120,3 +121,35 @@ margin-bottom: 25px;
   height: 80px
   
   }
+
+ .smalldog {
+  font-size: 5px;
+ }
+
+ .bigdog {
+  font-size: 10px;
+ }
+
+ .button1 {
+  padding: 10px 25px;
+  margin: 20px 0px 20px 0px;
+  background-color: #FD8B49;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button2 {
+  padding: 10px 25px;
+  margin: 20px 0px 20px 0px;
+  background-color: #FD8B49;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}

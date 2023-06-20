@@ -8,6 +8,7 @@ import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 import { TiArrowBack } from "react-icons/ti";
+import { IoPaw } from "react-icons/io5";
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
@@ -24,13 +25,13 @@ function DogProfile({ dogData }) {
 
   return (
     <div className="totalDogInfo">
-      <div className="offsetdiv"> </div>
-      <Link to="/dogGrid">
-        <button  className="backButton"Back><TiArrowBack/></button>
-      </Link>
-      <div className="swiper">
-        <SwiperComp dogData={dog} />
-      </div>
+  <div className="offsetdiv"></div>
+  <div className="swiper">
+    <Link to="/dogGrid" className="backButton">
+      <TiArrowBack />Back to the dogs
+    </Link>
+    <SwiperComp dogData={dog} />
+  </div>
 
       <div className="dogInfo">
         <div className="dogProfileButtons">
@@ -47,6 +48,7 @@ function DogProfile({ dogData }) {
             <h1>{dog.name}</h1>
             <div className="leftAlignDogInfo">
               <p>ID #:{dog.id}</p>
+              <p><IoPaw/> Breed: {dog.breed}</p>
               <p>
                 {" "}
                 <BsGenderAmbiguous /> Gender: {dog.sex}
@@ -57,8 +59,8 @@ function DogProfile({ dogData }) {
                 <FiClock /> Age: {dog.age}
               </p>
               <p>
-                <FaDog />
-                <FaDog /> Size: {dog.size}
+                <FaDog className="smalldog" />
+                <FaDog className="bigdog" /> Size: {dog.size}
               </p>
               <p>
                 <BsFillBarChartFill /> Activity Level: {dog.activity_level}
