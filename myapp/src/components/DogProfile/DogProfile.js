@@ -24,16 +24,20 @@ function DogProfile({ dogData }) {
   }
 
   return (
-    <div className="totalDogInfo">
-  <div className="offsetdiv"></div>
-  <div className="swiper">
+    <>
+    <div className="backbutondiv">
     <Link to="/dogGrid" className="backButton">
       <TiArrowBack />Back to the dogs
     </Link>
+    </div>
+    <div className="totalDogInfo">
+  
+  <div className="swiperandbuttons">
+  <div className="swiper">
     <SwiperComp dogData={dog} />
   </div>
 
-      <div className="dogInfo">
+  
         <div className="dogProfileButtons">
           <Link to="/application-form">
             <button className="button1">Adopt Me!</button>
@@ -42,6 +46,8 @@ function DogProfile({ dogData }) {
             <button className="button2">How To Care For Me</button>
           </Link>
         </div>
+        </div>
+      
 
         {dogData && (
           <div className="dogStats">
@@ -71,8 +77,9 @@ function DogProfile({ dogData }) {
             </div>
           </div>
         )}
-      </div>
+     
     </div>
+    </>
   );
 }
 

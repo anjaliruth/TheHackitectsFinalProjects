@@ -44,18 +44,24 @@ align-items: center;    */
 /* .App {
     background-color: aqua;
 } */
+.backbutondiv{
+  display: flex;
+}
 
 .backButton{
+    display: flex;
     background-color: #F5F5F5; /* Green */
     border: none;
     color: #00bdbd;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 10px;
     font-size: 18px;
     margin-left: 25px;
+    width: 16%;
+    /* height: 15%; */
   }
 
 .swiper{
@@ -63,22 +69,60 @@ align-items: center;    */
 }
 
 .totalDogInfo {
+    display: flex; 
+    flex-wrap: wrap;
     height: 100vh;
+    justify-content: space-around;
       /* background-color: pink */
+    align-content: center;
+    align-items: center;
+  }
+  .totalDogInfo:first-child{
+    display:flex ;
+    align-content: flex-start;
+  }
+
+  .dogProfileButtons{ 
+    display: flex;
+    background-color: #FD8B49;
+    /* justify-content: space-around; */
+    align-items: center; 
+
+  
+  }
+  .swiper{
+    /* display: flex;
+    background-color: #F5F5F5;
+    border-radius: 10%;
+    width: 50%;
+    height: 100%; */
+    
+  }
+
+  .swiperandbuttons{
+
+    /* flex-direction: column; */
+    background-color: bisque;
+    /* flex-grow: 2; */
   }
   
   .dogStats{
+
     display: flex;
     max-width: 400px;
-    width: 40%;
+    max-height: 400px;
+    height: 60;
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     justify-content: center;
     background-color: #f5f5f5;
     border-radius: 10%;
+    /* flex-grow: 1; */
   }
-
+.backButton{
+  justify-content: center;
+}
   .dogStats > p {
 margin: 5px;
   }
