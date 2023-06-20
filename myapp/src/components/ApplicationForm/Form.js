@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Form.css";
 import AppFormImage from "../../Media/AppFormImage.jpg";
+import {supabase} from "../../App.js";
+
 export default function MyForm() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -23,10 +25,36 @@ export default function MyForm() {
     setFormData((prevData) => ({ ...prevData, homeVideo: file }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+  const handleSubmit = async (event) => {
+    event.preventDefault(formData);
+    console.log("formData", formData)
+  
+    try {
+      // Store form data in the Supabase table
+      const { data, error } = await supabase
+        .from("Application_Input")
+        .insert([formData]);
+      
+      if (error) {
+        console.error("Error inserting data:", error);
+      } else {
+        console.log("Data inserted successfully:", data);
+        // Reset form data after successful submission
+        setFormData({
+          firstName: "",
+          lastName: "",
+          dogId: "",
+          address: "",
+          postCode: "",
+          homeVideo: null,
+          country: "",
+          city: "",
+        });
+      }
+    } catch (error) {
+      console.error("Error inserting data:", error);
+    }
+
   };
 
   return (
