@@ -45,6 +45,17 @@ align-items: center;    */
     background-color: aqua;
 } */
 
+.backButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 30px;
+  }
 
 .swiper{
     z-index: 0;

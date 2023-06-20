@@ -7,6 +7,7 @@ import { FaDog } from "react-icons/fa";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
+import { TiArrowBack } from "react-icons/ti";
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
@@ -25,7 +26,7 @@ function DogProfile({ dogData }) {
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
       <Link to="/dogGrid">
-        <button className="backButton">Back</button>
+        <button  className="backButton"Back><TiArrowBack/></button>
       </Link>
       <div className="swiper">
         <SwiperComp dogData={dog} />
