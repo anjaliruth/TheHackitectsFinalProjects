@@ -24,6 +24,9 @@ function DogProfile({ dogData }) {
   return (
     <div className="totalDogInfo">
       <div className="offsetdiv"> </div>
+      <Link to="/dogGrid">
+        <button className="backButton">Back</button>
+      </Link>
       <div className="swiper">
         <SwiperComp dogData={dog} />
       </div>
