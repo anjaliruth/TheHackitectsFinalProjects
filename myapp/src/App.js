@@ -69,7 +69,7 @@ function App() {
         {/* Add more Route components for other paths */}
       </Routes>
     </div>
-  );
+  ); 
 }
 
 export default App;
