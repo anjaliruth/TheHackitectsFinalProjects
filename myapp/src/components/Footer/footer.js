@@ -23,10 +23,16 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
+import footerLogo from "../../Media/New logo 2 drop shadow.png"
 
 const Footer = () => {
   return (
+    
+
     <footer className="footer">
+      <div className="footerLogo">
+        <img src={footerLogo} alt="Paws For affection" className="footerlogo" />
+        </div>
       <div className="footer-social">
         <FaTwitterSquare />
         <FaFacebookSquare />
@@ -34,16 +40,16 @@ const Footer = () => {
         <FaLinkedin />
         <FaYoutubeSquare />
       </div>
-
       <div className="footer-contents">
         {/* <div className="footer-links"> */}
         <a href="/">Home</a>
-        <a href="/pets">Contact Us</a>
-        <a href="/donate">About Us</a>
-        <a href="/about">Privacy</a>
-        <a href="/contact">Accessibility</a>
-        <a href="/contact">Legal</a>
-        <a href="/contact">Cookies Settings</a>
+        <a>Contact Us</a>
+        {/* need to get about us link working properly below */}
+        <a href="../AboutUs/AboutUs.js">About Us</a>
+        <a>Privacy</a>
+        <a>Accessibility</a>
+        <a>Legal</a>
+        <a>Cookies Settings</a>
         {/* </div> */}
       </div>
       <div className="footer-bottom">
@@ -54,3 +60,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
