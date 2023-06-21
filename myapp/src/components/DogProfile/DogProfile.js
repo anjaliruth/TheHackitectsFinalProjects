@@ -43,7 +43,7 @@ function DogProfile({ dogData }) {
             <button className="button1">Adopt Me!</button>
           </Link>
           <Link to="/info-pack">
-            <button className="button2">How To Care For Me</button>
+            <button className="button2">Adoption Tips</button>
           </Link>
         </div>
         </div>
