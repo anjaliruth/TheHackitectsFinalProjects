@@ -18,26 +18,41 @@
 
 import React from "react";
 import "./Footer.css";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutubeSquare } from "react-icons/fa";
+import { GrTiktok } from "react-icons/gr";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-inner">
+      
+      <div className="footer-social">
+          <FaTwitterSquare />
+          <FaFacebookSquare />
+          <FaInstagramSquare />
+          <FaLinkedin />
+          <FaYoutubeSquare />
+          <GrTiktok />
+        </div>
+        
+      <div className="footer-contents">
         <div className="footer-links">
           <a href="/">Home</a>
-          <a href="/pets">Pets</a>
-          <a href="/donate">Donate</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <a href="/pets">Contact Us</a>
+          <a href="/donate">About Us</a>
+          <a href="/about">Privacy</a>
+          <a href="/contact">Accessibility</a>
+          <a href="/contact">Legal</a>
+          <a href="/contact">Cookies Settings</a>
         </div>
-        <div className="footer-social">
-          <a href="#" className="social-icon">Facebook</a>
-          <a href="#" className="social-icon">Twitter</a>
-          <a href="#" className="social-icon">Instagram</a>
-        </div>
+        
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Wood Green. All rights reserved.</p>
+        <p>&copy; 2023 Paws For Affection. All rights reserved.</p>
       </div>
     </footer>
   );
