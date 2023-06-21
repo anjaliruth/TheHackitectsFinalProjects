@@ -26,14 +26,15 @@ function DogProfile({ dogData }) {
 
   return (
     <>
+    <div className="paddingdiv">
+    <div className="totalDogInfo">
+  
+  <div className="swiperandbuttons">
     <div className="backbutondiv">
     <Link to="/dogGrid" className="backButton">
       <TiArrowBack />Back to the dogs
     </Link>
     </div>
-    <div className="totalDogInfo">
-  
-  <div className="swiperandbuttons">
   <div className="swiper">
     <SwiperComp dogData={dog} />
   </div>
@@ -52,7 +53,7 @@ function DogProfile({ dogData }) {
 
         {dogData && (
           <div className="dogStats">
-            <h1>{dog.name}</h1>
+            <h1 id="dogname"><strong>{dog.name}</strong></h1>
             <div className="leftAlignDogInfo">
               <p> <strong>ID #:</strong>{dog.id}</p>
               <p><IoPaw/> <strong> Breed: </strong> {dog.breed}</p>
@@ -79,6 +80,12 @@ function DogProfile({ dogData }) {
           </div>
         )}
      
+    </div>
+    <div className="dogProfileDescription">
+    <h1>Support & health</h1>
+    <p>how much training do i need?</p>
+    <p>how much training do i need?</p>
+    </div>
     </div>
     </>
   );

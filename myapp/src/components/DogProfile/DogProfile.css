@@ -63,6 +63,12 @@ align-items: center;    */
     width: 16%;
     /* height: 15%; */
   }
+  #dogname{
+    color: #004953;
+    font-size: 300%;
+    /* color: white; */
+    margin: 4%;
+  }
 
 .swiper{
     z-index: 0;
@@ -109,15 +115,15 @@ align-items: center;    */
   .dogStats{
 
     display: flex;
-    max-width: 400px;
-    max-height: 400px;
-    height: 45%;
+    max-width: 500px;
+    max-height: 500px;
+    height: 55%;
     width: 60%;
     flex-direction: column;
-    /* margin: 0 auto; */
     text-align: center;
     justify-content: center;
     background-color: #f5f5f5;
+    /* margin: 0 auto; */
     border-radius: 10%;
     /* flex-grow: 1; */
   }
@@ -125,6 +131,9 @@ align-items: center;    */
 
 .backButton{
   justify-content: center;
+  height: 5%;
+  width: 30%;
+  margin-bottom: 3%;
 }
   .dogStats > p {
 margin: 5px;
@@ -144,7 +153,7 @@ margin-bottom: 25px;
      /* flex-grow: 2; */
     /* height: auto; */
     /* width: auto; */
-    padding-bottom: 10%;
+    padding: 3%;
     /* margin: 15%; */
     /* /* width: 40%; */
     height: 5%;
@@ -153,6 +162,8 @@ margin-bottom: 25px;
     /* flex:auto; */
     /* border-style: none none dotted; */
     border-width: 2px;
+    color: #004953;
+
   }
 
   .dogProfile {
