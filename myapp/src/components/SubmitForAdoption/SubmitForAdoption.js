@@ -1,30 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
-import { v4 as uuid } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 
 export default function SubmitForAdoption() {
   const [userId, setUserId] = useState("");
-  const [media, setMedia] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     breed: "",
     location: "",
     sex: "",
     activity_level: "",
+    size: "",
+    age: "",
   });
 
-  const getUser = async () => {
+  const getUserid = async () => {
     try {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (user !== null) {
-        setUserId(user.id);
+      const { user, error } = await supabase.auth.getUser();
+      if (error) {
+        console.log(error);
       } else {
-        setUserId("");
+        if (user !== null) {
+          setUserId(user.id);
+        } else {
+          setUserId("");
+        }
       }
     } catch (e) {
       console.log(e);
@@ -32,16 +35,18 @@ export default function SubmitForAdoption() {
   };
 
   useEffect(() => {
-    getUser();
-  }, [userId]);
+    getUserid();
+  }, []);
 
   async function uploadImage(e) {
     let file = e.target.files[0];
 
     const { data, error } = await supabase.storage
       .from("dogDataPics")
-      .upload(userId + "/" + uuid(), file);
+      .upload(userId + "/" + uuidv4(), file);
+
     if (data) {
+      // Perform any necessary actions after successful upload
     } else {
       console.log(error);
     }
@@ -53,7 +58,7 @@ export default function SubmitForAdoption() {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent form submission and page refresh
+    event.preventDefault();
 
     try {
       // Store form data in the Supabase table
@@ -70,6 +75,8 @@ export default function SubmitForAdoption() {
           location: "",
           sex: "",
           activity_level: "",
+          size: "",
+          age: "",
         });
       }
     } catch (error) {
@@ -138,6 +145,28 @@ export default function SubmitForAdoption() {
                   type="text"
                   name="activity_level"
                   value={formData.activity_level}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Size:
+                <input
+                  type="text"
+                  name="size"
+                  value={formData.size}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Age:
+                <input
+                  type="text"
+                  name="age"
+                  value={formData.age}
                   onChange={handleChange}
                   required
                 />
