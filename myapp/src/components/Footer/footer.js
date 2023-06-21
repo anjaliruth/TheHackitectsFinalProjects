@@ -23,33 +23,28 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
-import { GrTiktok } from "react-icons/gr";
-
 
 const Footer = () => {
   return (
     <footer className="footer">
-      
       <div className="footer-social">
-          <FaTwitterSquare />
-          <FaFacebookSquare />
-          <FaInstagramSquare />
-          <FaLinkedin />
-          <FaYoutubeSquare />
-          <GrTiktok />
-        </div>
-        
+        <FaTwitterSquare />
+        <FaFacebookSquare />
+        <FaInstagramSquare />
+        <FaLinkedin />
+        <FaYoutubeSquare />
+      </div>
+
       <div className="footer-contents">
-        <div className="footer-links">
-          <a href="/">Home</a>
-          <a href="/pets">Contact Us</a>
-          <a href="/donate">About Us</a>
-          <a href="/about">Privacy</a>
-          <a href="/contact">Accessibility</a>
-          <a href="/contact">Legal</a>
-          <a href="/contact">Cookies Settings</a>
-        </div>
-        
+        {/* <div className="footer-links"> */}
+        <a href="/">Home</a>
+        <a href="/pets">Contact Us</a>
+        <a href="/donate">About Us</a>
+        <a href="/about">Privacy</a>
+        <a href="/contact">Accessibility</a>
+        <a href="/contact">Legal</a>
+        <a href="/contact">Cookies Settings</a>
+        {/* </div> */}
       </div>
       <div className="footer-bottom">
         <p>&copy; 2023 Paws For Affection. All rights reserved.</p>
@@ -59,5 +54,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
