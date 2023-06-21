@@ -77,18 +77,28 @@ function DogProfile({ dogData }) {
                 <FaMapMarkedAlt /><strong> Location:</strong> {dog.location}
               </p>
             </div>
-          </div>
-        )}
-     
+            </div>
+          )}
+      
+      </div>
+
+     <div className="dogProfileDescription">
+      <h1> Support & health</h1>
+      <p> How much training do I need?</p>
+      <p> Can I be left alone?</p>
+      <p> Do I have any medical conditions? </p>
     </div>
-    <div className="dogProfileDescription">
-    <h1>Support & health</h1>
-    <p>how much training do i need?</p>
-    <p>how much training do i need?</p>
+
+     <div className="dogProfileDescription2">
+      <h1> Who can I live with? </h1>
+      <p> Can I live with children?</p>
+      <p> Can I live with cats?</p>
+      <p> Can I live with other dogs?</p>
     </div>
-    </div>
-    </>
-  );
-}
+    
+      </div>
+      </>
+    );
+  }
 
 export default DogProfile;
