@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
-import { Auth } from "@supabase/auth-ui-react";
-import { ThemeSupa } from "@supabase/auth-ui-shared";
 
 export default function SubmitForAdoption() {
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     breed: "",
@@ -16,27 +14,6 @@ export default function SubmitForAdoption() {
     size: "",
     age: "",
   });
-
-  const getUserid = async () => {
-    try {
-      const { user, error } = await supabase.auth.getUser();
-      if (error) {
-        console.log(error);
-      } else {
-        if (user !== null) {
-          setUserId(user.id);
-        } else {
-          setUserId("");
-        }
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  useEffect(() => {
-    getUserid();
-  }, []);
 
   async function uploadImage(e) {
     let file = e.target.files[0];
@@ -50,6 +27,10 @@ export default function SubmitForAdoption() {
     } else {
       console.log(error);
     }
+  }
+
+  async function signOut() {
+    const { error } = await supabase.auth.signOut();
   }
 
   const handleChange = (event) => {
@@ -86,107 +67,105 @@ export default function SubmitForAdoption() {
 
   return (
     <div className="">
-      {userId !== "" ? (
-        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="offsetDiv"></div>
-          <div className="form-container-w-image">
-            <h4 className="application-instruction">
-              Please enter your details below
-            </h4>
+      (
+      <form onSubmit={handleSubmit}>
+        <div className="offsetDiv"></div>
+        <div className="form-container-w-image">
+          <h4 className="application-instruction">
+            Please enter your details below
+          </h4>
 
-            <div className="form-container">
-              <label>
-                Dog name:
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+          <div className="form-container">
+            <label>
+              Dog name:
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </label>
 
-              <label>
-                Breed:
-                <input
-                  type="text"
-                  name="breed"
-                  value={formData.breed}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-              <label>
-                Location:
-                <input
-                  type="text"
-                  name="location"
-                  value={formData.location}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-              <label>
-                Sex:
-                <input
-                  type="text"
-                  name="sex"
-                  value={formData.sex}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+            <label>
+              Breed:
+              <input
+                type="text"
+                name="breed"
+                value={formData.breed}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>
+              Location:
+              <input
+                type="text"
+                name="location"
+                value={formData.location}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>
+              Sex:
+              <input
+                type="text"
+                name="sex"
+                value={formData.sex}
+                onChange={handleChange}
+                required
+              />
+            </label>
 
-              <label>
-                Activity Level:
-                <input
-                  type="text"
-                  name="activity_level"
-                  value={formData.activity_level}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+            <label>
+              Activity Level:
+              <input
+                type="text"
+                name="activity_level"
+                value={formData.activity_level}
+                onChange={handleChange}
+                required
+              />
+            </label>
 
-              <label>
-                Size:
-                <input
-                  type="text"
-                  name="size"
-                  value={formData.size}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+            <label>
+              Size:
+              <input
+                type="text"
+                name="size"
+                value={formData.size}
+                onChange={handleChange}
+                required
+              />
+            </label>
 
-              <label>
-                Age:
-                <input
-                  type="text"
-                  name="age"
-                  value={formData.age}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+            <label>
+              Age:
+              <input
+                type="text"
+                name="age"
+                value={formData.age}
+                onChange={handleChange}
+                required
+              />
+            </label>
 
-              <label>
-                Dog Photo:
-                <input
-                  type="file"
-                  name="dogPics"
-                  accept="image/*"
-                  onChange={(e) => uploadImage(e)}
-                  required
-                />
-              </label>
-              <button type="submit">Submit</button>
-            </div>
+            <label>
+              Dog Photo:
+              <input
+                type="file"
+                name="dogPics"
+                accept="image/*"
+                onChange={(e) => uploadImage(e)}
+                required
+              />
+            </label>
+            <button type="submit">Submit</button>
           </div>
-        </form>
-      )}
+        </div>
+      </form>
+      <button onClick={signOut}>Sign Out</button>
     </div>
   );
 }
