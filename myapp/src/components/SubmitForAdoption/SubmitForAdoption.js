@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
-import { uuid } from "@supabase/gotrue-js/dist/module/lib/helpers";
+import { v4 as uuid } from "uuid";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 
@@ -9,13 +9,11 @@ export default function SubmitForAdoption() {
   const [userId, setUserId] = useState("");
   const [media, setMedia] = useState([]);
   const [formData, setFormData] = useState({
-    id: uuid(),
     name: "",
     breed: "",
     location: "",
     sex: "",
     activity_level: "",
-    dogPics: "",
   });
 
   const getUser = async () => {
@@ -59,9 +57,7 @@ export default function SubmitForAdoption() {
 
     try {
       // Store form data in the Supabase table
-      const { data, error } = await supabase
-        .from("Application_Input")
-        .insert([formData]);
+      const { data, error } = await supabase.from("dogData").insert([formData]);
 
       if (error) {
         console.error("Error inserting data:", error);
@@ -69,13 +65,11 @@ export default function SubmitForAdoption() {
         console.log("Data inserted successfully:", data);
         // Reset form data after successful submission
         setFormData({
-          id: uuid(),
           name: "",
           breed: "",
           location: "",
           sex: "",
           activity_level: "",
-          dogPics: "",
         });
       }
     } catch (error) {
