@@ -7,6 +7,8 @@ import { FaDog } from "react-icons/fa";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
+import { TiArrowBack } from "react-icons/ti";
+import { IoPaw } from "react-icons/io5";
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
@@ -22,13 +24,20 @@ function DogProfile({ dogData }) {
   }
 
   return (
+    <>
+    <div className="backbutondiv">
+    <Link to="/dogGrid" className="backButton">
+      <TiArrowBack />Back to the dogs
+    </Link>
+    </div>
     <div className="totalDogInfo">
-      <div className="offsetdiv"> </div>
-      <div className="swiper">
-        <SwiperComp dogData={dog} />
-      </div>
+  
+  <div className="swiperandbuttons">
+  <div className="swiper">
+    <SwiperComp dogData={dog} />
+  </div>
 
-      <div className="dogInfo">
+  
         <div className="dogProfileButtons">
           <Link to="/application-form">
             <button className="button1">Adopt Me!</button>
@@ -37,12 +46,15 @@ function DogProfile({ dogData }) {
             <button className="button2">How To Care For Me</button>
           </Link>
         </div>
+        </div>
+      
 
         {dogData && (
           <div className="dogStats">
             <h1>{dog.name}</h1>
             <div className="leftAlignDogInfo">
               <p>ID #:{dog.id}</p>
+              <p><IoPaw/> Breed: {dog.breed}</p>
               <p>
                 {" "}
                 <BsGenderAmbiguous /> Gender: {dog.sex}
@@ -53,8 +65,8 @@ function DogProfile({ dogData }) {
                 <FiClock /> Age: {dog.age}
               </p>
               <p>
-                <FaDog />
-                <FaDog /> Size: {dog.size}
+                <FaDog className="smalldog" />
+                <FaDog className="bigdog" /> Size: {dog.size}
               </p>
               <p>
                 <BsFillBarChartFill /> Activity Level: {dog.activity_level}
@@ -65,8 +77,9 @@ function DogProfile({ dogData }) {
             </div>
           </div>
         )}
-      </div>
+     
     </div>
+    </>
   );
 }
 

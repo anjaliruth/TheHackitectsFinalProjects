@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import "./Form.css";
 import AppFormImage from "../../Media/AppFormImage.jpg";
+import { supabase } from "../../App.js";
+import { uuid } from "@supabase/gotrue-js/dist/module/lib/helpers";
+
 export default function MyForm() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    dogId: "",
+    id: uuid(),
+    first_name: "",
+    last_name: "",
+    dog_id: "",
     address: "",
-    postCode: "",
-    homeVideo: null,
+    postcode: "",
+    your_home: null,
     country: "",
     city: "",
   });
-  console.log("formData", formData);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -20,13 +24,38 @@ export default function MyForm() {
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    setFormData((prevData) => ({ ...prevData, homeVideo: file }));
+    setFormData((prevData) => ({ ...prevData, your_home: file }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent form submission and page refresh
+
+    try {
+      // Store form data in the Supabase table
+      const { data, error } = await supabase
+        .from("Application_Input")
+        .insert([formData]);
+
+      if (error) {
+        console.error("Error inserting data:", error);
+      } else {
+        console.log("Data inserted successfully:", data);
+        // Reset form data after successful submission
+        setFormData({
+          id: uuid(),
+          first_name: "",
+          last_name: "",
+          dog_id: "",
+          address: "",
+          postcode: "",
+          your_home: null,
+          country: "",
+          city: "",
+        });
+      }
+    } catch (error) {
+      console.error("Error inserting data:", error);
+    }
   };
 
   return (
@@ -46,8 +75,8 @@ export default function MyForm() {
             First Name:
             <input
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="first_name"
+              value={formData.first_name}
               onChange={handleChange}
               required
             />
@@ -56,8 +85,8 @@ export default function MyForm() {
             Last Name:
             <input
               type="text"
-              name="lastName"
-              value={formData.lastName}
+              name="last_name"
+              value={formData.last_name}
               onChange={handleChange}
               required
             />
@@ -66,8 +95,8 @@ export default function MyForm() {
             Dog ID:
             <input
               type="text"
-              name="dogId"
-              value={formData.dogId}
+              name="dog_id"
+              value={formData.dog_id}
               onChange={handleChange}
               required
             />
@@ -86,8 +115,8 @@ export default function MyForm() {
             Postcode:
             <input
               type="text"
-              name="postCode"
-              value={formData.postCode}
+              name="postcode"
+              value={formData.postcode}
               onChange={handleChange}
               required
             />

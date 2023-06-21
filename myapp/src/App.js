@@ -9,8 +9,9 @@ import HomePage from "./components/HomePage/HomePage";
 import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
+import DogCard from "./components/DogCard/DogCard";
 
-const supabase = createClient(
+export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
   process.env.REACT_APP_SUPABASE_KEY
 );
@@ -37,7 +38,7 @@ function App() {
     async function getDogData() {
       const { data } = await supabase.from("dogData").select(`
       *, 
-      dogPics ( id, photoLink )
+      dogPics (*)
     `);
       setDogData(data);
       console.log(data);
@@ -46,20 +47,12 @@ function App() {
     getDogData();
   }, []);
 
-  // useEffect(()=>
-  // async function getDogData(){
-  //   const response = await fetch("https://app.supabase.com/project/ufjunsgwcenjcnrrubci/settings/api")
-  //   console.log("response",response)
-  //   console.log("response",response)
-  //   console.log("hello")
-  // }, [])
-
   return (
     <div>
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<HomePage dogData={dogData} />} />
+        <Route path="/" element={<HomePage dogData={dogData || []} />} />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="info-pack" element={<InfoPack />} />
         <Route
@@ -71,6 +64,7 @@ function App() {
 
         <Route path="application-form" element={<ApplicationForm />} />
         {/* Add more Route components for other paths */}
+        <Route path="dogGrid" element={dogData &&<DogCard dogData={dogData}/>}/>
       </Routes>
     </div>
   );
