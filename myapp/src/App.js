@@ -10,7 +10,7 @@ import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer/Footer";
 
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
