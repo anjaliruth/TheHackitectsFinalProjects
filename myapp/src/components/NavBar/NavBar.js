@@ -33,6 +33,9 @@ function Navbar() {
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
           </Link>
+          <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
+           Adopter Side
+          </Link>
           <Link to="/about-us" className="nav-link" onClick={closeNavbar}>
             About Us
           </Link>

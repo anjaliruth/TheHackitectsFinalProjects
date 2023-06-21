@@ -10,6 +10,7 @@ import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
+import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
 
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
@@ -54,6 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage dogData={dogData || []} />} />
         <Route path="about-us" element={<AboutUs />} />
+        <Route path="submitAdoption" element={<SubmitForAdoption/>} />
         <Route path="info-pack" element={<InfoPack />} />
         <Route
           path="/:id"
