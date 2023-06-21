@@ -1,14 +1,15 @@
 // import PhotoCarousel from "./PhotoCarousel.js";
 import "./DogProfile.css";
 import { Link, useParams } from "react-router-dom";
-import { BsGenderAmbiguous } from "react-icons/bs";
-import { FiClock } from "react-icons/fi";
 import { FaDog } from "react-icons/fa";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import SwiperComp from "../Swiper/Swiper.js";
 import { TiArrowBack } from "react-icons/ti";
 import { IoPaw } from "react-icons/io5";
+import { ImClock } from "react-icons/im";
+import { FaTransgender } from "react-icons/fa";
+
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
@@ -57,12 +58,12 @@ function DogProfile({ dogData }) {
               <p><IoPaw/> <strong> Breed: </strong> {dog.breed}</p>
               <p>
                 {" "}
-                <BsGenderAmbiguous /> <strong> Gender:</strong> {dog.sex}
+                <FaTransgender/> <strong> Gender:</strong> {dog.sex}
               </p>
 
               <p>
                 {" "}
-                <FiClock /> <strong>Age:</strong> {dog.age}
+                 <strong><ImClock/> Age:</strong> {dog.age}
               </p>
               <p>
                 <FaDog className="smalldog" />
