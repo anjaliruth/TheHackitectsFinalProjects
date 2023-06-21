@@ -53,26 +53,26 @@ function DogProfile({ dogData }) {
           <div className="dogStats">
             <h1>{dog.name}</h1>
             <div className="leftAlignDogInfo">
-              <p>ID #:{dog.id}</p>
-              <p><IoPaw/> Breed: {dog.breed}</p>
+              <p> <strong>ID #:</strong>{dog.id}</p>
+              <p><IoPaw/> <strong> Breed: </strong> {dog.breed}</p>
               <p>
                 {" "}
-                <BsGenderAmbiguous /> Gender: {dog.sex}
+                <BsGenderAmbiguous /> <strong> Gender:</strong> {dog.sex}
               </p>
 
               <p>
                 {" "}
-                <FiClock /> Age: {dog.age}
+                <FiClock /> <strong>Age:</strong> {dog.age}
               </p>
               <p>
                 <FaDog className="smalldog" />
-                <FaDog className="bigdog" /> Size: {dog.size}
+                <FaDog className="bigdog" /> <strong>Size:</strong> {dog.size}
               </p>
               <p>
-                <BsFillBarChartFill /> Activity Level: {dog.activity_level}
+                <BsFillBarChartFill /> <strong>Activity Level: </strong>{dog.activity_level}
               </p>
               <p>
-                <FaMapMarkedAlt /> Location: {dog.location}
+                <FaMapMarkedAlt /><strong> Location:</strong> {dog.location}
               </p>
             </div>
           </div>
