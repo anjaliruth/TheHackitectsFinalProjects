@@ -17,22 +17,20 @@
 // export default footer;
 
 import React from "react";
-import "./Footer.css";
+import "./Footer1.css";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
-import footerLogo from "../../Media/New logo 2 drop shadow.png"
+import footerLogo from "../../Media/New logo 2 drop shadow.png";
 
-const Footer = () => {
+const Footer1 = () => {
   return (
-    
-
     <footer className="footer">
       <div className="footerLogo">
         <img src={footerLogo} alt="Paws For affection" className="footerlogo" />
-        </div>
+      </div>
       <div className="footer-social">
         <FaTwitterSquare />
         <FaFacebookSquare />
@@ -59,6 +57,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
-
-
+export default Footer1;

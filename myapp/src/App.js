@@ -12,7 +12,7 @@ import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
 import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer1";
 
 
 export const supabase = createClient(
