@@ -62,15 +62,16 @@ export default function MyForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-container-w-image">
+      <div className="applicationInstrictions-w-pic">
+        <h4 className="application-instruction">
+          Please enter your details
+        </h4>
         <img
           src={AppFormImage}
           alt="happy dog and boy"
           className="appFormImage"
         />
-        <h4 className="application-instruction">
-          Please enter your details below
-        </h4>
-
+        </div>
         <div className="form-container">
           <label>
             First Name:
