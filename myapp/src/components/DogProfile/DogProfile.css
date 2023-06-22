@@ -251,9 +251,10 @@ margin-bottom: 25px;
 
 /* #004953 */
 
-.dogProfileDescription2 {
+.dogProfileDescription,.dogProfileDescription1,.dogProfileDescription2,.dogProfileDescription3 {
 
-
+text-align: center;
+color: #004953;
 
 
 

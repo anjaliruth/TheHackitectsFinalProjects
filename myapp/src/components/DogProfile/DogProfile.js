@@ -84,18 +84,43 @@ function DogProfile({ dogData }) {
 
      <div className="dogProfileDescription">
       <h1> Support & health</h1>
-      <p> How much training do I need?</p>
+      <p> Am I Toliet Trained?</p>
+      <p>{dog.toilet_trained}</p>
       <p> Can I be left alone?</p>
+      <p>{dog.left_alone}</p>
       <p> Do I have any medical conditions? </p>
+      <p></p>
     </div>
 
      <div className="dogProfileDescription2">
       <h1> Who can I live with? </h1>
       <p> Can I live with children?</p>
+      <p></p>
       <p> Can I live with cats?</p>
+      <p></p>
       <p> Can I live with other dogs?</p>
+      <p></p>
+      <p> Can I live with other small animals?</p>
+      <p></p>
+      <p> Additional info</p>
+      <p></p>
+    </div>
+
+    <div className="dogProfileDescription3">
+      <h1> About {dog.name}</h1>
+      <p> What kind of family am I looking for?</p>
+      <p></p>
+      <p> What type of environment would suit me?</p>
+      <p></p>
+      <p> About</p>
+      <p></p>
+    
     </div>
     
+
+
+
+
       </div>
       </>
     );
