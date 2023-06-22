@@ -3,6 +3,7 @@ import "./Form.css";
 import AppFormImage from "../../Media/AppFormImage.jpg";
 import { supabase } from "../../App.js";
 import { uuid } from "@supabase/gotrue-js/dist/module/lib/helpers";
+import { Link } from "react-router-dom";
 
 export default function MyForm() {
   const [formData, setFormData] = useState({
@@ -151,7 +152,9 @@ export default function MyForm() {
               required
             />
           </label>
+          <Link to="/ConfirmationScreen">
           <button type="submit">Submit</button>
+          </Link>
         </div>
       </div>
     </form>

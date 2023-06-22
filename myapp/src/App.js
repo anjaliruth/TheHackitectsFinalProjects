@@ -13,6 +13,7 @@ import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
 import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
 import Footer from "./components/Footer/Footer1";
+import ConfirmationScreen from "./components/ConfirmationScreen/ConfirmationScreen";
 
 
 export const supabase = createClient(
@@ -73,8 +74,10 @@ function App() {
           path="dogGrid"
           element={dogData && <DogCard dogData={dogData} />}
         />
+        <Route path="ConfirmationScreen" element={<ConfirmationScreen />} />
       </Routes>
       <Footer />
+    
     </div>
   );
 }
