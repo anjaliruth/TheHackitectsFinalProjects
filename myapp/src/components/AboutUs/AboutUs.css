@@ -1,6 +1,6 @@
 .aboutUsPara {
-    /* background-color: #F5F5F5; */
-    background-color: #00bdbd;
+    background-color: #F5F5F5;
+    /* background-color: #00bdbd; */
     width: 350px;
     text-align: center;
     margin: 0 auto;
@@ -16,7 +16,11 @@
     height: 32px;
     margin-bottom: 6vh;
     text-align: center;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+    
 
 .aboutUsSubheading{
     font-size: 28px;
@@ -63,10 +67,7 @@
 #sookiePic {
     -webkit-box-shadow: -16px 19px 14px 8px #00a3a370;
     box-shadow: -16px 19px 14px 8px #00a3a370;
-  
-    /* -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;   */
-}
+  }
 
 #fridaPic {
     -webkit-box-shadow: -16px 19px 14px 8px #fd8b496b;
