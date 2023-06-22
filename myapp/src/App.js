@@ -10,6 +10,7 @@ import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
+import Footer from "./components/Footer/Footer";
 
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
@@ -64,8 +65,12 @@ function App() {
 
         <Route path="application-form" element={<ApplicationForm />} />
         {/* Add more Route components for other paths */}
-        <Route path="dogGrid" element={dogData &&<DogCard dogData={dogData}/>}/>
+        <Route
+          path="dogGrid"
+          element={dogData && <DogCard dogData={dogData} />}
+        />
       </Routes>
+      <Footer />
     </div>
   );
 }
