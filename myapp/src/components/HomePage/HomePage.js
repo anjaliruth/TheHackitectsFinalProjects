@@ -12,9 +12,15 @@ export default function HomePage({ dogData }) {
       <section className="section1">
         <div className="homePage">
           <h2 className="homePageTitle">
-            Paws For Affection, Your Companion in Adopting a Fur-ever friend.
+            Paws For Affection,<br></br> Your Companion in Adopting a Fur-ever friend.
           </h2>
         </div>
+        <div className="scrollForDogs">
+          <h3 >Scroll down for dogs!</h3>
+          <span class="material-symbols-outlined">
+expand_more
+</span>
+</div>
        
       </section>
       <Filter dogData={dogData} />
