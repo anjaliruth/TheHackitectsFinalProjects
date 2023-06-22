@@ -1,0 +1,27 @@
+import { test, expect } from '@playwright/test';
+
+
+test('has title', async ({ page }) => {
+    await page.goto('http://localhost:3000/');
+    
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle("Paws For Affection");
+});
+
+
+
+test('should allow the user to scroll down the page onto the dog grid', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  await page.evaluate(() => window.scrollTo(0, 500)); // Scroll to the specified position
+
+  const scrollY = await page.evaluate(() => window.scrollY); // Get the current scroll position
+  expect(scrollY).toBe(500);
+});
+
+test('find the more info button on the dog card and click on it', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  const moreInfoButton = await page.waitForSelector('[aria-label="moreinfo"]'); // Wait for the button to be available
+  await moreInfoButton.click();
+});
+
+
