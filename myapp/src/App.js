@@ -12,6 +12,8 @@ import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
 import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
+import Footer from "./components/Footer/Footer";
+
 
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
@@ -72,6 +74,7 @@ function App() {
           element={dogData && <DogCard dogData={dogData} />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }
