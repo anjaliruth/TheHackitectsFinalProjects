@@ -37,7 +37,7 @@ function DogProfile({ dogData }) {
     <SwiperComp dogData={dog} />
   </div>
 
-  
+  <h1>test</h1>
         <div className="dogProfileButtons">
           <Link to="/application-form">
             <button className="button1">Adopt Me!</button>
