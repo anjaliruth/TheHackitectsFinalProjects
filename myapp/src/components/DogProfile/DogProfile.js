@@ -9,11 +9,16 @@ import { TiArrowBack } from "react-icons/ti";
 import { IoPaw } from "react-icons/io5";
 import { ImClock } from "react-icons/im";
 import { FaTransgender } from "react-icons/fa";
+import React, { useEffect } from 'react';
+
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
 
 function DogProfile({ dogData }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
