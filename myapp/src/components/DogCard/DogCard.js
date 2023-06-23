@@ -67,9 +67,7 @@ export default function DogCard({ dogData }) {
   return (
     <div>
       <div className="individualDogCard">
-        <h1 className="dogCardTitle">
-          Connecting you to dogs available for adoption today...
-        </h1>
+       
         {/* image, name, breed, location, sex, age, button */}
         <div className="dogGallery">
           {dogData.map((info, index) => (

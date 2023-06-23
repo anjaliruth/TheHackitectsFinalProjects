@@ -1,17 +1,26 @@
 .homePage {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   background-color: rgb(245, 245, 245, 0.5);
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   border-radius: 15px;
   padding: 10px;
+  text-align:center;
 }
 
+
+.scrollForDogs{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .homePageTitle{
     display: flex; 
     justify-content: center;

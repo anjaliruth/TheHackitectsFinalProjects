@@ -49,9 +49,7 @@ function Navbar() {
           >
             Application Form
           </Link>
-          <Link to="/stretch-goals" className="nav-link" onClick={closeNavbar}>
-            Stretch Goals
-          </Link>
+         
         </div>
       </div>
     </nav>
