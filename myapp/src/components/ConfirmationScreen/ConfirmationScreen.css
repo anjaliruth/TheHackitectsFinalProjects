@@ -1,0 +1,35 @@
+.dummydiv {
+    height: 80px;
+
+}
+
+.ConfirmationScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.ConfirmationPageContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dogWithBowlImage{
+    max-width: 150px; 
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.ConfirmationText{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .SuccessHeader{
+        margin-top: 150px;
+    }
+}
