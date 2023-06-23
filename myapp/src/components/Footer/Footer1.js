@@ -1,5 +1,4 @@
 // import React from "react";
-
 // const footer = () => {
 //   return (
 //     <div className="footer-container">
@@ -15,7 +14,6 @@
 //   );
 // };
 // export default footer;
-
 import React from "react";
 import "./Footer1.css";
 import { FaTwitterSquare } from "react-icons/fa";
@@ -24,12 +22,15 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
 import footerLogo from "../../Media/New logo 2 drop shadow.png";
-
-const Footer1 = () => {
+import { Link } from "react-router-dom";
+export default function Footer1() {
+  function topOfPage() {
+    window.scrollTo(0, 0);
+  }
   return (
     <footer className="footer">
       <div className="footerLogo">
-        <img src={footerLogo} alt="Paws For affection" className="footerlogo" />
+        <img src={footerLogo} alt="Paws For Affection" className="footerlogo" />
       </div>
       <div className="footer-social">
         <FaTwitterSquare />
@@ -39,22 +40,23 @@ const Footer1 = () => {
         <FaYoutubeSquare />
       </div>
       <div className="footer-contents">
-        {/* <div className="footer-links"> */}
-        <a href="/">Home</a>
-        <a>Contact Us</a>
-        {/* need to get about us link working properly below */}
-        <a href="../AboutUs/AboutUs.js">About Us</a>
-        <a>Privacy</a>
-        <a>Accessibility</a>
-        <a>Legal</a>
-        <a>Cookies Settings</a>
-        {/* </div> */}
+        <div className="footer-links">
+          <Link to="/" onClick={topOfPage} className="footer-contents">
+            <p className="footer-contents-p">Home</p>
+          </Link>
+          <p className="footer-contents-p">Contact Us</p>
+          <Link to="/about-us" onClick={topOfPage} className="footer-contents">
+            <p className="footer-contents-p">About Us</p>
+          </Link>
+          <p className="footer-contents-p">Privacy</p>
+          <p className="footer-contents-p">Accessibility</p>
+          <p className="footer-contents-p">Legal</p>
+          <p className="footer-contents-p">Cookies Settings</p>
+        </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2023 Paws For Affection. All rights reserved.</p>
       </div>
     </footer>
   );
-};
-
-export default Footer1;
+}
