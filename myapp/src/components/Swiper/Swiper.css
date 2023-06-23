@@ -8,15 +8,16 @@
 } */
 
 .swiper-container {
-  height: 54vh;
+  object-fit: cover;
+  height: 65vh;
   width: 44vw; /* Set the maximum width you desire */
   margin: 0 auto; /* Center the Swiper horizontally */
   border-radius: 20px;
 }
 
 .carousel-image {
-  object-fit: cover;
-  height: 54vh;
+  object-fit: contain;
+  height: 65vh;
   width: 44vw;
   border-radius: 17px;
   margin-left: 3px;
