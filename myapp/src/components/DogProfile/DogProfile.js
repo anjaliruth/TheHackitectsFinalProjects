@@ -31,7 +31,7 @@ function DogProfile({ dogData }) {
           <div className="swiperandbuttons">
           <div className="dummyDiv"></div>
             <div className="backbutondiv">
-              <Link to="/dogGrid" className="backButton">
+              <Link to="/Filter" className="backButton">
                 <TiArrowBack />
                 Back to the dogs
               </Link>
