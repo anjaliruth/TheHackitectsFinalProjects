@@ -39,7 +39,7 @@
 
 .appFormImage{
   max-width: 310px;
-  margin: 130px auto;
+  margin: 40px auto;
   margin-bottom: -10px;
   border-radius: 20px;
 }
@@ -71,12 +71,19 @@ button[type="submit"] {
 }
 
 .application-instruction {
-  margin: 0px auto;
+  margin: 0 auto;
+ width: 450px;
+ text-align: center;
   padding: 10px 21px;
   background-color: #FD8B49;
   color: #004953;
   font-size: 18px;
   border-radius: 5px;
+}
+.applicationInstrictions-w-pic{
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -86,6 +93,6 @@ button[type="submit"] {
     justify-content: space-around;
   }
   .appFormImage{
-    max-width: 700px;
+    max-width: 500px;
   }
 }
