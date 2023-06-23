@@ -89,7 +89,7 @@ export default function DogCard({ dogData }) {
                 </div>
                 <div className="moreInfoButton">
                   <Link to={`/${info.id}`}>
-                    <button>More Info!</button>
+                    <button className= "buttonstyling">More Info!</button>
                   </Link>
                 </div>
               </div>
