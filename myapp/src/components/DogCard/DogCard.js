@@ -89,7 +89,9 @@ export default function DogCard({ dogData }) {
                 </div>
                 <div className="moreInfoButton">
                   <Link to={`/${info.id}`}>
-                    <button>More Info!</button>
+                    <button onClick={()=> {
+                       window.scrollTo(0, 0);
+                    }}>More Info!</button>
                   </Link>
                 </div>
               </div>

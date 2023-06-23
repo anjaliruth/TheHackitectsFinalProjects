@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import DogCard from "../DogCard/DogCard.js";
 import "./Filter.css";
-
+import sadDog from "../../Media/sadDog.png"
 export default function Filter({ dogData }) {
   const [ageFilter, setAgeFilter] = useState("All Ages");
   const [activityLevelFilter, setActivityLevelFilter] = useState(
@@ -105,7 +105,10 @@ export default function Filter({ dogData }) {
       {filteredDogData.length > 0 ? (
         <DogCard dogData={filteredDogData} />
       ) : (
-        <h1>No dogs matching the filters.</h1>
+        <div className="noFilterDiv">
+        <img src={sadDog} alt="sad Dog" className="sadDog"/>
+        <h1 className="noFilterHeading">Sorry, there are no dogs matching the filters.</h1>
+        </div>
       )}
     </div>
   );
