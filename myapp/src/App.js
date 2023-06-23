@@ -10,6 +10,12 @@ import ApplicationForm from "./components/ApplicationForm/ApplicationForm";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
+import Login from "./components/SubmitForAdoption/Login";
+import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
+import Footer from "./components/Footer/Footer1";
+import ConfirmationScreen from "./components/ConfirmationScreen/ConfirmationScreen";
+import Filter from "./components/HomePage/Filter";
+
 
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
@@ -54,6 +60,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage dogData={dogData || []} />} />
         <Route path="about-us" element={<AboutUs />} />
+        <Route path="submitAdoption" element={<Login />} />
         <Route path="info-pack" element={<InfoPack />} />
         <Route
           path="/:id"
@@ -64,8 +71,18 @@ function App() {
 
         <Route path="application-form" element={<ApplicationForm />} />
         {/* Add more Route components for other paths */}
-        <Route path="dogGrid" element={dogData &&<DogCard dogData={dogData}/>}/>
+        <Route
+          path="dogGrid"
+          element={dogData && <DogCard dogData={dogData} />}
+        />
+
+        <Route path="ConfirmationScreen" element={<ConfirmationScreen />} />
+
+        <Route path="Filter" element={dogData && <Filter dogData={dogData}  />} />
+
       </Routes>
+      <Footer />
+    
     </div>
   );
 }
