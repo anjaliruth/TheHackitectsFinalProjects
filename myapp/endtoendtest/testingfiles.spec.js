@@ -24,4 +24,19 @@ test('find the more info button on the dog card and click on it', async ({ page 
   await moreInfoButton.click();
 });
 
+test ('should allow the user to click on the more info button and see the dog details', async ({ page }) => {
+await page.goto('http://localhost:3000/');
+const button = await page.getByRole('button').nth(0);
+await button.click();
+const dogID = await page.getByRole('h2');
+expect(page).toHaveURL(dogID)
+
+//check to seee if the dog id in h2 matches the id in the url
+
+// expect(h2).toHaveId(dogName),expect(page).toHaveURL(dogID)
+
+});
+
+// find elemt id for eith the div or p tage for the dog 
+
 
