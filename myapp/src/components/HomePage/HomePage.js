@@ -18,14 +18,16 @@ export default function HomePage({ dogData }) {
         </div>
         <div className="scrollForDogs">
           <h3>Scroll down for dogs!</h3>
-          <img
-            src={downarrow}
-            onClick={() => {
-              window.scrollTo(0, 1000);
-            }}
-            id="scrollArrow"
-            alt="scroll down arrow"
-          ></img>
+          <div className="arrowContainer">
+            <img
+              src={downarrow}
+              onClick={() => {
+                window.scrollTo(0, 1000);
+              }}
+              id="scrollArrow"
+              alt="scroll down arrow"
+            ></img>
+          </div>
         </div>
       </section>
       <Filter dogData={dogData} />
