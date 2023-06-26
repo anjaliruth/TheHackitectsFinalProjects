@@ -16,7 +16,9 @@ export default function InfoPack() {
               dog
             </h1>
           </div>
-          <h2 className="infoHeader">Do Your Research First</h2>
+          <h2 className="infoHeader">
+            Do Your <span id="researchColour">Research</span> First
+          </h2>
           <div id="paraImgContainer1">
             <div className="infoPackContent">
               <p id="para1">
@@ -44,7 +46,7 @@ export default function InfoPack() {
 
         <section className="dogsrus">
           <h2 className="infoHeader" id="section2-title">
-            When You First Bring Home Your New Dog…
+            When You First Bring <span id="homeColour">Home</span> Your New Dog…
           </h2>
           <div id="paraImgContainer2">
             <div className="infoPackContent">
@@ -111,7 +113,7 @@ export default function InfoPack() {
 
         <section className="dogsrus">
           <h2 className="infoHeader" id="section3-title">
-            Understand the Cost
+            Understand the <span id="costColour">Cost</span>
           </h2>
           <div id="paraImgContainer3">
             <div className="infoPackContent">

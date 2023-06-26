@@ -1,3 +1,43 @@
+:root {
+  --fontBold: 700;
+}
+
+#researchColour {
+  color: #00a3a370;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+#researchColour:hover {
+  color: #00a3a3;
+  transition: color 0.5s ease-in;
+}
+
+#homeColour {
+  color: #fd8b49dc;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+#homeColour:hover {
+  color: #e9a781dc;
+  transition: color 0.5s ease-in;
+}
+
+#costColour {
+  color: #004953b7;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+#costColour:hover {
+  color: #46d7ebb7;
+  font-weight: var(--fontBold);
+  transition: color 0.5s ease-in;
+}
+
 .infoContainer {
   display: flex;
   flex-direction: column;
