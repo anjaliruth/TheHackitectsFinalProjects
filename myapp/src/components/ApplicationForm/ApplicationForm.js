@@ -118,7 +118,7 @@ function ApplicationForm() {
       <div className="break">
         <h4 className="application-instruction">Please enter your details</h4>
       </div>
-//       <section className="application-form">
+{/* //       <section className="application-form">
 //         <h1 className="application-form-title">Application Form</h1>
 //       </section>
 
@@ -154,7 +154,7 @@ function ApplicationForm() {
 //             need any advice or support, we're just a phone call away or you can
 //             browse our dog advice section.
 //           </p>
-//         </div>
+//         </div> */}
       <section>
         <Form />
       </section>
