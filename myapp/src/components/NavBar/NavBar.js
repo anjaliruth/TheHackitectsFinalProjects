@@ -23,9 +23,9 @@ function Navbar() {
           )}
         </button>
         <div className="ourLogo">
-        
+        <Link to="/"> 
         <img src={logo} alt="Paws For affection" className="logo" />
-        </div>
+        </Link> 
         {/* <div>
           <img className=“logo” src={logo} alt=“Paws for Affection logo” />
         </div> */}
@@ -52,6 +52,7 @@ function Navbar() {
           </Link>
          
         </div>
+      </div>
       </div>
     </nav>
   );

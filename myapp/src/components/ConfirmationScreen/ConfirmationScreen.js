@@ -6,8 +6,8 @@ import { TiArrowBack } from "react-icons/ti";
 export default function ConfirmationScreen() {
     return (
       <div className="ConfirmationScreen">
-<div className="backbutondiv4">
-              <Link to="/Filter" className="backButton4">
+     <div className="backbuttondiv">
+              <Link to="/Filter">
                 <TiArrowBack />
                 Back to the dogs
               </Link>

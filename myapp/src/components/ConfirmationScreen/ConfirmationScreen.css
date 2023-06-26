@@ -11,11 +11,10 @@
     height: 80vh;
 }
 
-.backbutondiv4{
+  .backbuttondiv{
     display: flex;
   }
-
-.backButton4{
+.backButton{
     display: flex;
     background-color: #F5F5F5; /* Green */
     border: none;
