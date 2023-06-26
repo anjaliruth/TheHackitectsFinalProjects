@@ -67,7 +67,6 @@ export default function SubmitForAdoption() {
 
   return (
     <div className="">
-      (
       <form onSubmit={handleSubmit}>
         <div className="offsetDiv"></div>
         <div className="form-container-w-image">
