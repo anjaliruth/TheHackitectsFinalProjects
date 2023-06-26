@@ -1,0 +1,19 @@
+.dummyDiv{
+    height: 80px;
+}
+
+.demoCredentials{
+    margin: 0 auto;
+    width: 20%;
+}
+
+.SupabaseLogin{
+    width: 20%;
+    margin: 0 auto;
+}
+.moreInfo{
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+
+}
