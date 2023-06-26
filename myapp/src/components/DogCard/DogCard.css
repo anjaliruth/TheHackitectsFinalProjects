@@ -1,6 +1,7 @@
 :root {
   --lightBlue: #00bdbd;
   --orange: #fd8b49;
+  --tyrianPurple: #4a154b;
 }
 
 .dogGridPhoto {
@@ -27,6 +28,7 @@
   background-color: var(--lightBlue);
 }
 
+
 .indDogData > p {
   margin: 0;
   font-size: 1.5rem;
@@ -46,12 +48,24 @@
   margin: 0;
 }
 
-.moreInfoButton > button {
+.buttonstyling {
   background-color: var(--orange);
+  color: white;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   padding: 10px;
+  border: black 1px solid;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transform: scale(1);
 }
+
+.buttonstyling:hover {
+  transform: scale(1.1);
+  background-color: var(--tyrianPurple);
+}
+
 
 .dogCardTitle {
   display: flex;

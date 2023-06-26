@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
 
 export default function SubmitForAdoption() {
-  const [userId, setUserId] = useState(null);
+  const [userId] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     breed: "",
@@ -30,7 +30,7 @@ export default function SubmitForAdoption() {
   }
 
   async function signOut() {
-    const { error } = await supabase.auth.signOut();
+    await supabase.auth.signOut();
   }
 
   const handleChange = (event) => {

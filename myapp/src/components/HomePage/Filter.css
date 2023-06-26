@@ -10,6 +10,19 @@
     font-weight: 800;
 }
 
+.noFilterDiv{
+    height: 40vh;
+    text-align: center
+}
+
+.noFilterHeading{
+    text-align: center;
+}
+
+.sadDog{
+    width: 150px;
+}
+
 /* .filterContainer{
     display: flex;
     justify-content: flex-end;

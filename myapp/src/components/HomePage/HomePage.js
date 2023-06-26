@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HomePage.css";
-import DogCard from "../DogCard/DogCard.js";
+// import DogCard from "../DogCard/DogCard.js";
+import downarrow from "../../Media/downarrow.com.png";
 import Filter from "./Filter";
 
 export default function HomePage({ dogData }) {
@@ -17,7 +18,19 @@ export default function HomePage({ dogData }) {
         </div>
         <div className="scrollForDogs">
           <h3>Scroll down for dogs!</h3>
-          <span class="material-symbols-outlined">expand_more</span>
+
+//           <span class="material-symbols-outlined">expand_more</span>
+
+
+          <img
+            src={downarrow}
+            onClick={() => {
+              window.scrollTo(0, 1000);
+            }}
+            id="scrollArrow"
+            alt="scroll down arrow"
+          ></img>
+
         </div>
       </section>
       <Filter dogData={dogData} />
