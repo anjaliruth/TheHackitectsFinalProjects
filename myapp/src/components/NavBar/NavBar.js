@@ -46,8 +46,7 @@ function Navbar() {
           <Link
             to="/application-form"
             className="nav-link"
-            onClick={closeNavbar}
-          >
+            onClick={closeNavbar}>
             Application Form
           </Link>
          

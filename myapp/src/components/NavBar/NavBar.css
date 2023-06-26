@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #00A3A3;
+    background-color: #004953;
     transform: translateY(-100%);
     visibility: hidden;
     z-index: 10; /* Add a negative z-index to hide the nav initially */
@@ -129,7 +129,7 @@
     right: 2rem;
   }
   #nav .header-nav a {
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
   }
 }
@@ -217,7 +217,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #00A3A3;
+    background-color: #004953;
     transform: translateY(-100%);
     visibility: hidden;
     z-index: 10; /* Add a negative z-index to hide the nav initially */
@@ -265,7 +265,7 @@
 
 
 .header-nav.responsive_nav{
-  background-color: green;
+  background-color: #004953;
 }
 
 

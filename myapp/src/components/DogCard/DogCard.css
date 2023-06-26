@@ -1,5 +1,5 @@
 :root {
-  --lightBlue: #00bdbd;
+  --lightBlue: #00BDBD;
   --orange: #fd8b49;
   --tyrianPurple: #4a154b;
 }
@@ -50,7 +50,7 @@
 
 .buttonstyling {
   background-color: var(--orange);
-  color: #004650 ;
+  color: black ;
   font-weight: bold;
   border: none;
   border-radius: 10px;
@@ -64,7 +64,7 @@
 .buttonstyling:hover {
   transform: scale(1.1);
   background-color: var(--tyrianPurple);
-  color: #ffff
+  color: white  
    ;
 }
 
@@ -75,7 +75,7 @@
   flex-wrap: wrap;
   /* center text */
   text-align: center;
-  color: var(--orange);
+  color: #004953;
 }
 
 /* .individualDogCard {
