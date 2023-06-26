@@ -37,7 +37,7 @@ export default function Filter({ dogData }) {
       (locationFilter === "All Locations" || dog.location === locationFilter)
     );
   });
-
+  //
   // if (!dogData) {
   //   return <div>Loading...</div>;
   // } else {
