@@ -26,7 +26,7 @@ export default function AboutUs() {
             className="aboutuspic"
             id="sookiePic"
             src={sookieImage}
-            alt="pic of a dog"
+            alt="A gray and white Schnauzer laying on a bed"
           />
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function AboutUs() {
             className="aboutuspic"
             id="fridaPic"
             src={fridaImage}
-            alt="pic of a dog"
+            alt="A pug in a christmas sweater in the snow"
           />
           <p id="aboutp2" className="aboutUsPara">
             We are dedicated to ensuring that every adoption is a success. Our
@@ -71,7 +71,7 @@ export default function AboutUs() {
             className="aboutuspic"
             id="georgePic"
             src={georgeImage}
-            alt="pic of a dog"
+            alt="A black and brown mixed breed dog laying in the grass"
           />
         </div>
       </div>

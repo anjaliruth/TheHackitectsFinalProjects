@@ -23,7 +23,7 @@ function Navbar() {
           )}
         </button>
         <div className="ourLogo">
-        <img src={logo} alt="Paws For affection" className="logo" />
+        <img src={logo} alt="Paws For affection logo" className="logo" />
         </div>
         {/* <div>
           <img className=“logo” src={logo} alt=“Paws for Affection logo” />
