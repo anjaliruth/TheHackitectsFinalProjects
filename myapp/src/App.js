@@ -11,7 +11,7 @@ import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
-import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
+// import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
 import Footer from "./components/Footer/Footer1";
 
 

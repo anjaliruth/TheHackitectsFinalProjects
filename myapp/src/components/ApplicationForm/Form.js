@@ -128,7 +128,6 @@ export default function MyForm() {
               name="homeVideo"
               accept="video/*"
               onChange={handleFileChange}
-              required
             />
           </label>
           <label>
@@ -151,7 +150,9 @@ export default function MyForm() {
               required
             />
           </label>
-          <button type="submit">Submit</button>
+          <button data-testid="submitButton" type="submit">
+            Submit
+          </button>
         </div>
       </div>
     </form>
