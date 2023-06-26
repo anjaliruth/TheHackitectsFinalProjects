@@ -50,7 +50,7 @@
 
 .buttonstyling {
   background-color: var(--orange);
-  color: white;
+  color: #004650 ;
   font-weight: bold;
   border: none;
   border-radius: 10px;
@@ -64,6 +64,8 @@
 .buttonstyling:hover {
   transform: scale(1.1);
   background-color: var(--tyrianPurple);
+  color: #ffff
+   ;
 }
 
 
