@@ -11,31 +11,41 @@
     height: 80vh;
 }
 
-  .backbuttondiv{
+.backbutondiv{
     display: flex;
   }
+  
+  .backButton{
+      display: flex;
+      background-color: #F5F5F5; /* Green */
+      border: none;
+      color: #00bdbd;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      /* display: inline-block; */
+      border-radius: 10px;
+      font-size: 18px;
+      margin-left: 25px;
+      width: 16%;
+      /* height: 15%; */
+    }
+
+
+
 .backButton{
     display: flex;
-    background-color: #F5F5F5; /* Green */
+
+    background-color: #F5F5F5;
     border: none;
     color: #00bdbd;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    /* display: inline-block; */
     border-radius: 10px;
     font-size: 18px;
-    margin-left: 25px;
-    width: 16%;
-    /* height: 15%; */
-  }
+    font-weight: 600;
+    width: 80%;
+    height: 40%;}
 
-  .backButton4{
-    justify-content: center;
-    height: 5%;
-    width: 30%;
-    margin-bottom: 3%;
-  }
+  
 
 .ConfirmationPageContent{
     display: flex;
