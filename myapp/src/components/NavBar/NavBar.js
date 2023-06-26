@@ -22,6 +22,7 @@ function Navbar() {
             <FaBars className="nav-icon" />
           )}
         </button>
+        
         <div className="ourLogo">
         <img src={logo} alt="Paws For affection logo" className="logo" />
         </div>
