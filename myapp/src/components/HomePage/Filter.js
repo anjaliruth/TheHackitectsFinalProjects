@@ -100,9 +100,13 @@ export default function Filter({ dogData }) {
         >
           <option value="All Locations">All Locations</option>
           {dogData &&
-            dogData.map((dog) => {
-              return <option value={dog.location}>{dog.location}</option>;
-            })}
+            [...new Set(dogData.map((dog) => dog.location))]
+              .sort()
+              .map((location) => (
+                <option key={location} value={location}>
+                  {location}
+                </option>
+              ))}
         </select>
         {/* <option value="Manchester">Manchester</option>
           <option value="London">London</option>
