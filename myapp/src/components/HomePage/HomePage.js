@@ -19,7 +19,7 @@ export default function HomePage({ dogData }) {
         <div className="scrollForDogs">
           <h3>Scroll down for dogs!</h3>
 
-//           <span class="material-symbols-outlined">expand_more</span>
+{/* //           <span class="material-symbols-outlined">expand_more</span> */}
 
 
           <img
