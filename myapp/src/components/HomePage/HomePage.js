@@ -19,6 +19,9 @@ export default function HomePage({ dogData }) {
         <div className="scrollForDogs">
           <h3>Scroll down for dogs!</h3>
 
+//           <span class="material-symbols-outlined">expand_more</span>
+
+
           <img
             src={downarrow}
             onClick={() => {
@@ -27,6 +30,7 @@ export default function HomePage({ dogData }) {
             id="scrollArrow"
             alt="scroll down arrow"
           ></img>
+
         </div>
       </section>
       <Filter dogData={dogData} />
