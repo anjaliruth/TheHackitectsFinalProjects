@@ -39,7 +39,7 @@ export default function Filter({ dogData }) {
 
   return (
     <div>
-      <div className="dummydiv"></div>
+      <div className="dummydiv" id="dogGridTitle"></div>
       {/* Dropdown filters */}
       <h1 className="dogCardTitle">
         Connecting you to dogs available for adoption today...

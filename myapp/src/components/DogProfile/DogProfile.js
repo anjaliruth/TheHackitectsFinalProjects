@@ -9,16 +9,15 @@ import { TiArrowBack } from "react-icons/ti";
 import { IoPaw } from "react-icons/io5";
 import { ImClock } from "react-icons/im";
 import { FaTransgender } from "react-icons/fa";
-import React, { useEffect } from 'react';
+
 
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
 
 function DogProfile({ dogData }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
+
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
@@ -100,7 +99,7 @@ function DogProfile({ dogData }) {
 
         <div className="dogProfileDescription">
           <h1> Support & health</h1>
-          <p> Am I Toliet Trained?</p>
+          <p> Am I Toilet Trained?</p>
           <h2>{dog.toilet_trained}</h2>
           <p> Can I be left alone?</p>
           <h2>{dog.left_alone}</h2>
@@ -122,16 +121,6 @@ function DogProfile({ dogData }) {
           <p></p>
           <h2> Additional info</h2>
           <p className="additionalInfo">{dog.additional_info}</p>
-        </div>
-
-        <div className="dogProfileDescription3">
-          <h1> About {dog.name}</h1>
-          <h2> What kind of family am I looking for?</h2>
-          <p></p>
-          <h2> What type of environment would suit me?</h2>
-          <p></p>
-          <p> About</p>
-          <p></p>
         </div>
       </div>
     </>
