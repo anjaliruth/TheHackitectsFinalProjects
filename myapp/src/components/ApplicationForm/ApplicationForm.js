@@ -1,7 +1,6 @@
 // import * as React from "react";
 // import Form from "./Form";
 // import "./ApplicationForm.css";
-// import timelineImg from "../../Media/A_F.png";
 
 // export default function ApplicationForm() {
 //   return (
@@ -55,7 +54,6 @@ import "./ApplicationForm.css";
 function ApplicationForm() {
   return (
     <>
-
       <div className="dummyDiv"></div>
       <h1 className="application-form-title">Application Form</h1>
 
@@ -118,7 +116,7 @@ function ApplicationForm() {
       <div className="break">
         <h4 className="application-instruction">Please enter your details</h4>
       </div>
-{/* //       <section className="application-form">
+      {/* //       <section className="application-form">
 //         <h1 className="application-form-title">Application Form</h1>
 //       </section>
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import DogCard from "../DogCard/DogCard.js";
 import "./Filter.css";
-import sadDog from "../../Media/sadDog.png"
+import sadDog from "../../Media/sadDog.png";
 export default function Filter({ dogData }) {
   const [ageFilter, setAgeFilter] = useState("All Ages");
   const [activityLevelFilter, setActivityLevelFilter] = useState(
@@ -11,6 +11,7 @@ export default function Filter({ dogData }) {
   const [sizeFilter, setSizeFilter] = useState("All Sizes");
   const [sexFilter, setSexFilter] = useState("All Sexes");
   const [locationFilter, setLocationFilter] = useState("All Locations");
+  // const [isLoading, setIsLoading] = useState(false);
 
   const getAgeRange = (age) => {
     if (age >= 0 && age <= 1) {
@@ -37,6 +38,9 @@ export default function Filter({ dogData }) {
     );
   });
 
+  // if (!dogData) {
+  //   return <div>Loading...</div>;
+  // } else {
   return (
     <div>
       <div className="dummydiv"></div>
@@ -96,18 +100,24 @@ export default function Filter({ dogData }) {
           className="filter"
         >
           <option value="All Locations">All Locations</option>
-          <option value="London">London</option>
-          <option value="Manchester">Manchester</option>
-          <option value="Birmingham">Birmingham</option>
-          <option value="Leicester">Leicester</option>
+          {dogData &&
+            dogData.map((dog) => {
+              return <option value={dog.location}>{dog.location}</option>;
+            })}
         </select>
+        {/* <option value="Manchester">Manchester</option>
+          <option value="London">London</option>
+          <option value="Birmingham">Birmingham</option>
+          <option value="Leicester">Leicester</option> */}
       </div>
       {filteredDogData.length > 0 ? (
         <DogCard dogData={filteredDogData} />
       ) : (
         <div className="noFilterDiv">
-        <img src={sadDog} alt="sad Dog" className="sadDog"/>
-        <h1 className="noFilterHeading">Sorry, there are no dogs matching the filters.</h1>
+          <img src={sadDog} alt="sad Dog" className="sadDog" />
+          <h1 className="noFilterHeading">
+            Sorry, there are no dogs matching the filters.
+          </h1>
         </div>
       )}
     </div>
