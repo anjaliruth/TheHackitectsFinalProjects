@@ -107,6 +107,7 @@ export default function Filter({ dogData }) {
                   {location}
                 </option>
               ))}
+          {/* new Set means each value can only occur once in a set */}
         </select>
         {/* <option value="Manchester">Manchester</option>
           <option value="London">London</option>
