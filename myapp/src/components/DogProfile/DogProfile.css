@@ -80,17 +80,24 @@ align-items: center;    */
 
 .totalDogInfo {
     display: flex; 
-    flex-wrap: wrap;
+    flex-direction:column;
     height: 100vh;
+gap: 20px;
     justify-content: space-around;
       /* background-color: pink */
     align-content: center;
     align-items: center;
+margin-bottom: 20%;
+
+@media screen and (min-width: 768px){
+  flex-direction: row;
+  
+}
   }
-  .totalDogInfo:first-child{
+  /* .totalDogInfo:first-child{
     display:flex ;
     align-content: flex-start;
-  }
+  } */
 
   .dogProfileButtons{ 
     display: flex;
