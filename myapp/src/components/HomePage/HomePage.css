@@ -15,8 +15,6 @@
   border-radius: 15px;
   padding: 10px;
   text-align: center;
-  
-  
 }
 
 .scrollForDogs {
@@ -70,4 +68,18 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .homePage {
+    width: 100%;
+    flex-direction: column;
+  }
+  .homePageTitle {
+    width: 70vw;
+    font-size: 30px;
+  }
+  .scrollForDogs {
+    bottom: 5%;
+  }
 }
