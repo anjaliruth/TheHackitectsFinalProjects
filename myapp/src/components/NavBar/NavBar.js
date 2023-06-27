@@ -24,7 +24,9 @@ function Navbar() {
         </button>
 
         <div className="ourLogo">
+        <Link to= "/" lassName="nav-link" onClick={closeNavbar}>
           <img src={logo} alt="Paws For affection logo" className="logo" />
+          </Link>
         </div>
        
         <div role="navigation" aria-label="Main" className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`} >
