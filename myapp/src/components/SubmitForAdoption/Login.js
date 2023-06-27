@@ -38,8 +38,10 @@ export default function Login() {
           <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />
         </div>
         <div className="demoCredentials">
+
           <p>Test Email: test@test.com</p>
           <p>Test Password: 12345</p>
+
         </div>
       </div>
     );

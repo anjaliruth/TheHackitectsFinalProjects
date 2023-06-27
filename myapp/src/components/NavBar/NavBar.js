@@ -35,6 +35,7 @@ function Navbar() {
 
      <h2 className="title">Paws For Affection</h2>
         
+
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
           </Link>

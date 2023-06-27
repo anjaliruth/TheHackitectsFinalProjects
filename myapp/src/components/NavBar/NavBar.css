@@ -24,6 +24,16 @@
 
 .title{
   position: absolute;
+  top: 10px;
+  left: 135px;
+}
+
+.logo:hover {
+   transform: scale(1.4);
+}
+
+.title{
+  position: absolute;
   top: 10px; 
   left: 135px;
 }
