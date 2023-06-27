@@ -33,11 +33,17 @@ export default function Footer1() {
         <img src={footerLogo} alt="Paws For Affection" className="footerlogo" />
       </div>
       <div className="footer-social">
-        <FaTwitterSquare />
-        <FaFacebookSquare />
-        <FaInstagramSquare />
-        <FaLinkedin />
-        <FaYoutubeSquare />
+        <a
+          href="https://linktr.ee/kylew95"
+          rel="noreferrer"
+          style={{ color: "white" }}
+        >
+          <FaTwitterSquare />
+          <FaFacebookSquare />
+          <FaInstagramSquare />
+          <FaLinkedin />
+          <FaYoutubeSquare />
+        </a>
       </div>
       <div className="footer-contents">
         <div className="footer-links">
