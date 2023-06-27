@@ -23,8 +23,9 @@ function Navbar() {
           )}
         </button>
         <div className="ourLogo">
+        <Link to="/"> 
         <img src={logo} alt="Paws For affection" className="logo" />
-        </div>
+        </Link> 
         {/* <div>
           <img className=“logo” src={logo} alt=“Paws for Affection logo” />
         </div> */}
@@ -32,9 +33,6 @@ function Navbar() {
         
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
-          </Link>
-          <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
-           Adopter Side
           </Link>
           <Link to="/about-us" className="nav-link" onClick={closeNavbar}>
             About Us
@@ -49,8 +47,12 @@ function Navbar() {
           >
             Application Form
           </Link>
+          <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
+        Shelter Portal
+          </Link>
          
         </div>
+      </div>
       </div>
     </nav>
   );

@@ -151,7 +151,8 @@ export default function MyForm() {
           </label>
 
           <Link to="/ConfirmationScreen">
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={() =>
+                        window.scrollTo({ top: 0})}>Submit</button>
           </Link>
 
         </div>

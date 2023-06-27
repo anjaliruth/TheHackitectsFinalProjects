@@ -4,6 +4,7 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 
 import SubmitForAdoption from "./SubmitForAdoption";
+import "./Login.css";
 
 export default function Login() {
   const [session, setSession] = useState(null);
@@ -23,7 +24,19 @@ export default function Login() {
   }, []);
 
   if (!session) {
-    return <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />;
+    return (
+      <div className="totalSignup">
+        <div className="dummyDiv"></div>
+     <h1 className="moreInfo">Sign up as a shelter. Once you have been verified as a partner, you will be able to list your organization's dogs for adoption!</h1>
+        <div className="SupabaseLogin">
+        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />
+        </div>
+        <div className="demoCredentials">
+          <p>Test Email:</p>
+          <p>Test Password:</p>
+        </div>
+      </div>
+    );
   } else {
     return (
       <div>

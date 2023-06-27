@@ -1,3 +1,24 @@
+
+.dummyDiv{
+    height: 80px;
+}
+
+.demoCredentials{
+    margin: 0 auto;
+    width: 20%;
+}
+
+.SupabaseLogin{
+    width: 20%;
+    margin: 0 auto;
+}
+.moreInfo{
+    width: 50%; 
+    margin: 0 auto;
+    text-align: center;
+
+}
+
 .conts {
   position: relative;
   display: flex;
@@ -12,3 +33,4 @@
 .conts input {
   /* width: 22vw; Adjust the width value as needed */
 }
+
