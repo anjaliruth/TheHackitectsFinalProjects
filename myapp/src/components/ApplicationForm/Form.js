@@ -62,12 +62,12 @@ export default function MyForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-container-w-image">
-      <div className="applicationInstrictions-w-pic">
-        <img
-          src={AppFormImage}
-          alt="happy dashund dog and boy"
-          className="appFormImage"
-        />
+        <div className="applicationInstrictions-w-pic">
+          <img
+            src={AppFormImage}
+            alt="happy dashund dog and boy"
+            className="appFormImage"
+          />
         </div>
         <div className="form-container">
           <label>
@@ -151,10 +151,10 @@ export default function MyForm() {
           </label>
 
           <Link to="/ConfirmationScreen">
-          <button type="submit" onClick={() =>
-                        window.scrollTo({ top: 0})}>Submit</button>
+            <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+              Submit
+            </button>
           </Link>
-
         </div>
       </div>
     </form>
