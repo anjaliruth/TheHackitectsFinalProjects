@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav id="nav">
       <div className="nav-container">
-        <button className="nav-btn" onClick={toggleNavbar}>
+        <button aria-label="mainMenu" className="nav-btn" onClick={toggleNavbar}>
           {isNavbarOpen ? (
             <FaTimes className="nav-icon" />
           ) : (
@@ -24,11 +24,18 @@ function Navbar() {
         </button>
 
         <div className="ourLogo">
+        <Link to= "/" lassName="nav-link" onClick={closeNavbar}>
           <img src={logo} alt="Paws For affection logo" className="logo" />
+          </Link>
         </div>
+       
+        <div role="navigation" aria-label="Main" className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`} >
+        
 
- <h2 className="title">Paws For Affection</h2>
-        <div className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`}>
+
+     <h2 className="title">Paws For Affection</h2>
+        
+
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
           </Link>

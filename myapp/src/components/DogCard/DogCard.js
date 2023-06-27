@@ -74,7 +74,7 @@ export default function DogCard({ dogData }) {
             <div key={info.id} className="ind">
               <img
                 src={info.dogPics[0]?.photoLink}
-                alt="dog card"
+                alt={info.dogPics[0]?.PhotoLinkAltText}
                 className="dogGridPhoto"
               />
 

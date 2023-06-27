@@ -31,7 +31,7 @@ function DogProfile({ dogData }) {
             <div className="dummyDiv"></div>
             <div className="backbutondiv">
               <Link to="/Filter" className="backButton">
-                <TiArrowBack aria-hidden="true"/>
+                <TiArrowBack aria-hidden="true" />
                 Back to the dogs
               </Link>
             </div>
@@ -61,11 +61,13 @@ function DogProfile({ dogData }) {
                   {dog.id}
                 </p>
                 <p>
-                  <IoPaw aria-hidden="true"/> <strong> Breed: </strong> {dog.breed}
+                  <IoPaw aria-hidden="true" /> <strong> Breed: </strong>{" "}
+                  {dog.breed}
                 </p>
                 <p>
                   {" "}
-                  <FaTransgender aria-hidden="true" /> <strong> Gender:</strong> {dog.sex}
+                  <FaTransgender aria-hidden="true" /> <strong> Gender:</strong>{" "}
+                  {dog.sex}
                 </p>
 
                 <p>
@@ -77,14 +79,16 @@ function DogProfile({ dogData }) {
                 </p>
                 <p>
                   <FaDog aria-hidden="true" className="smalldog" />
-                  <FaDog  aria-hidden="true" className="bigdog" /> <strong>Size:</strong> {dog.size}
+                  <FaDog aria-hidden="true" className="bigdog" />{" "}
+                  <strong>Size:</strong> {dog.size}
                 </p>
                 <p>
-                  <BsFillBarChartFill aria-hidden="true" /> <strong>Activity Level: </strong>
+                  <BsFillBarChartFill aria-hidden="true" />{" "}
+                  <strong>Activity Level: </strong>
                   {dog.activity_level}
                 </p>
                 <p>
-                  <FaMapMarkedAlt aria-hidden="true"/>
+                  <FaMapMarkedAlt aria-hidden="true" />
                   <strong> Location:</strong> {dog.location}
                 </p>
               </div>
@@ -103,8 +107,9 @@ function DogProfile({ dogData }) {
         </div>
 
         <div className="dogProfileDescription2">
-          <br></br>
-          <h1> Who can I live with? </h1>
+
+          <h1> Who I can live with</h1>
+     
 
           <h2> Can I live with children?</h2>
           <p>{dog.live_with_children}</p>
@@ -112,9 +117,13 @@ function DogProfile({ dogData }) {
           <p>{dog.live_with_cats}</p>
           <h2> Can I live with other dogs?</h2>
           <p>{dog.live_with_dogs}</p>
-          <h2> Additional info</h2>
-          <p className="additionalInfo">{dog.additional_info}</p>
         </div>
+
+        <div className="dogProfileDescription3">
+          <h1> Additional info</h1>
+          <p className="additionalInfo">{dog.additional_info}</p>
+          <br></br>
+          </div>
       </div>
     </>
   );
