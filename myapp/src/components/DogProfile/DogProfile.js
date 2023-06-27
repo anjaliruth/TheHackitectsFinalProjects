@@ -107,8 +107,9 @@ function DogProfile({ dogData }) {
         </div>
 
         <div className="dogProfileDescription2">
-          <br></br>
-          <h1> Who can I live with? </h1>
+
+          <h1> Who I can live with</h1>
+     
 
           <h2> Can I live with children?</h2>
           <p>{dog.live_with_children}</p>
@@ -116,9 +117,13 @@ function DogProfile({ dogData }) {
           <p>{dog.live_with_cats}</p>
           <h2> Can I live with other dogs?</h2>
           <p>{dog.live_with_dogs}</p>
-          <h2> Additional info</h2>
-          <p className="additionalInfo">{dog.additional_info}</p>
         </div>
+
+        <div className="dogProfileDescription3">
+          <h1> Additional info</h1>
+          <p className="additionalInfo">{dog.additional_info}</p>
+          <br></br>
+          </div>
       </div>
     </>
   );

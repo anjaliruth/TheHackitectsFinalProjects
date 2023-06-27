@@ -35,7 +35,7 @@ export default function InfoPack() {
                 long-term commitment.
               </p>
             </div>
-            <img id="masieImg" src={maisieImage1} alt="dog" />
+            <img id="masieImg" src={maisieImage1} alt="A brown and white Spaniel dog in the snow" />
           </div>
           <aside>
             <div className="rotateContainer-research">
@@ -78,7 +78,7 @@ export default function InfoPack() {
               </ul>
             </div>
             <div id="millieContainer">
-              <img id="millieImg" src={millieImage1} alt="dog" />
+              <img id="millieImg" src={millieImage1} alt="A brown lurcher dog chewing on a watermelon toy" />
             </div>
             {/* <div id="home">
               <h3 className="rotateText">HOME</h3>
@@ -104,7 +104,7 @@ export default function InfoPack() {
                 regularly they destroy their toys!
               </p>
             </div>
-            <img id="neilImg" src={neilImage1} alt="dog" />
+            <img id="neilImg" src={neilImage1} alt="A black and white greyhound sticking his tongue out lying down" />
           </div>
         </section>
         <aside id="research">
