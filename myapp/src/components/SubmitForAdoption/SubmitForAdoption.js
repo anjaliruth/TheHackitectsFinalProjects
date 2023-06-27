@@ -3,8 +3,7 @@ import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
 
-export default function SubmitForAdoption() {
-  const [userId] = useState(null);
+export default function SubmitForAdoption({ user }) {
   const [formData, setFormData] = useState({
     name: "",
     breed: "",
@@ -14,27 +13,25 @@ export default function SubmitForAdoption() {
     size: "",
     age: "",
   });
-
+  //
   async function uploadImage(e) {
     let file = e.target.files[0];
 
     const { data, error } = await supabase.storage
       .from("dogDataPics")
-      .upload(userId + "/" + uuidv4(), file);
+      .upload(user + "/" + uuidv4(), file);
 
     if (data) {
-      // Perform any necessary actions after successful upload
+      // Set the file URL path in the form data
+      setFormData({ ...formData, photoLink: data.Key });
     } else {
       console.log(error);
     }
   }
 
   async function signOut() {
-
     const { error } = await supabase.auth.signOut();
     console.log(error);
-
-
   }
 
   const handleChange = (event) => {
@@ -158,13 +155,13 @@ export default function SubmitForAdoption() {
               Dog Photo:
               <input
                 type="file"
-                name="dogPics"
+                name="dogpics"
                 accept="image/*"
                 onChange={(e) => uploadImage(e)}
                 required
               />
             </label>
-            <button type="submit" >Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </div>
       </form>
