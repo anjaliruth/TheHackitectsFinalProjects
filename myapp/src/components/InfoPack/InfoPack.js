@@ -16,7 +16,9 @@ export default function InfoPack() {
               dog
             </h1>
           </div>
-          <h2 className="infoHeader">Do Your Research First</h2>
+          <h2 className="infoHeader">
+            Do Your <span id="researchColour">Research</span> First
+          </h2>
           <div id="paraImgContainer1">
             <div className="infoPackContent">
               <p id="para1">
@@ -44,7 +46,7 @@ export default function InfoPack() {
 
         <section className="dogsrus">
           <h2 className="infoHeader" id="section2-title">
-            When You First Bring Home Your New Dog…
+            When You First Bring <span id="homeColour">Home</span> Your New Dog…
           </h2>
           <div id="paraImgContainer2">
             <div className="infoPackContent">
@@ -73,26 +75,6 @@ export default function InfoPack() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <li>
-                  Don’t pressure them - you need to start building trust and a
-                  bond
-                </li>
-                <br></br>
-                <li>
-                  Give them a safe space - such as a room or crate, where they
-                  can retreat to if they need
-                </li>
-                <br></br>
-                <li>
-                  Let them settle at their own pace - some will take longer than
-                  others
-                </li>
-                <br></br>
-                <li>
-                  Start as you mean to go on - if mealtimes are always the same
-                  or you’ll be walking at the same time each day, or if there
-                  are any areas of the house the dog won’t be able to access
-                </li>
               </ul>
             </div>
             <div id="millieContainer">
@@ -111,7 +93,7 @@ export default function InfoPack() {
 
         <section className="dogsrus">
           <h2 className="infoHeader" id="section3-title">
-            Understand the Cost
+            Understand the <span id="costColour">Cost</span>
           </h2>
           <div id="paraImgContainer3">
             <div className="infoPackContent">

@@ -1,8 +1,8 @@
 .footer {
   background-color: #004953;
   padding: 10px;
+  margin-top: 10vh;
   color: #ffffff;
-  width: 100%;
 }
 .footerLogo {
   display: flex;
@@ -36,11 +36,21 @@
   margin-top: 10px;
 }
 @media screen and (min-width: 764px) {
+  /* footer width is bigger than the screen size on mobile */
+  /* thats not right */
+  /* the width is the issue */
+
+  .footer {
+    width: 100%;
+  }
+
   .footer-contents {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
+
   .footer-links {
     flex: 0.89;
     display: flex;

@@ -1,3 +1,43 @@
+:root {
+  --fontBold: 700;
+}
+
+#researchColour {
+  color: #00a3a370;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+#researchColour:hover {
+  color: #00a3a3;
+  transition: color 0.5s ease-in;
+}
+
+#homeColour {
+  color: #fd8b49dc;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+#homeColour:hover {
+  color: #e9a781dc;
+  transition: color 0.5s ease-in;
+}
+
+#costColour {
+  color: #004953b7;
+  font-weight: var(--fontBold);
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+#costColour:hover {
+  color: #46d7ebb7;
+  font-weight: var(--fontBold);
+  transition: color 0.5s ease-in;
+}
+
 .infoContainer {
   display: flex;
   flex-direction: column;
@@ -445,7 +485,7 @@
 
   #mainHeader {
     margin-left: 0;
-    margin-top: 45lvh;
+    margin-top: 5lvh;
     font-size: 40px;
     height: 32px;
     margin-bottom: 6vh;
@@ -482,18 +522,19 @@
   }
 
   #section3-title {
-    margin-right: 12vh;
+    margin-right: -2vh;
     margin-bottom: 18vh;
   }
 
   #para1 {
-    margin-right: 30vw;
+    margin-right: 44vw;
     margin-bottom: 20px;
   }
 
   #para3 {
     margin-left: 24vw;
     margin-bottom: 20px;
+    margin-right: 25vw;
   }
 
   #millieContainer {
@@ -502,8 +543,9 @@
   }
 
   #infoLi {
-    width: 22rem;
+    width: 18rem;
     margin-bottom: 20px;
+    margin-top: -3vh;
   }
 
   #home.rotateText {
@@ -511,16 +553,20 @@
   }
 
   #masieImg {
-    margin-left: 22vw;
+    margin-left: 62vw;
     margin-top: 0;
+    margin-bottom: -7vh;
   }
 
   #millieImg {
     margin-top: 12vh;
+    width: 300px;
+    height: 350px;
   }
 
   #neilImg {
     margin-top: 0;
+    width: 350px;
   }
 
   .rotateContainer-research {

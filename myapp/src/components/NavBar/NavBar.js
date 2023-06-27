@@ -22,20 +22,19 @@ function Navbar() {
             <FaBars className="nav-icon" />
           )}
         </button>
-        
+
         <div className="ourLogo">
-        <img src={logo} alt="Paws For affection logo" className="logo" />
+          <img src={logo} alt="Paws For affection logo" className="logo" />
         </div>
-        {/* <div>
-          <img className=“logo” src={logo} alt=“Paws for Affection logo” />
-        </div> */}
+       
         <div role="navigation" aria-label="Main" className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`} >
+        
+
+
+     <h2 className="title">Paws For Affection</h2>
         
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
-          </Link>
-          <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
-           Adopter Side
           </Link>
           <Link to="/about-us" className="nav-link" onClick={closeNavbar}>
             About Us
@@ -46,10 +45,13 @@ function Navbar() {
           <Link
             to="/application-form"
             className="nav-link"
-            onClick={closeNavbar}>
+            onClick={closeNavbar}
+          >
             Application Form
           </Link>
-         
+          <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
+            Shelter Portal
+          </Link>
         </div>
       </div>
     </nav>
