@@ -13,7 +13,7 @@ export default function SubmitForAdoption({ user }) {
     size: "",
     age: "",
   });
-
+  //
   async function uploadImage(e) {
     let file = e.target.files[0];
 
