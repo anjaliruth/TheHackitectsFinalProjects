@@ -65,7 +65,7 @@ export default function MyForm() {
       <div className="applicationInstrictions-w-pic">
         <img
           src={AppFormImage}
-          alt="happy dog and boy"
+          alt="happy dashund dog and boy"
           className="appFormImage"
         />
         </div>

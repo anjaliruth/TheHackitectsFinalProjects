@@ -100,39 +100,30 @@ function DogProfile({ dogData }) {
 
         <div className="dogProfileDescription">
           <h1> Support & health</h1>
-          <p> Am I Toliet Trained?</p>
-          <h2>{dog.toilet_trained}</h2>
-          <p> Can I be left alone?</p>
-          <h2>{dog.left_alone}</h2>
-          <p> Do I have any medical conditions? </p>
-          <h2>{dog.medical_conditions}</h2>
-          <p></p>
+          <h2> Am I Toilet Trained?</h2>
+          <p>{dog.toilet_trained}</p>
+          <h2> Can I be left alone?</h2>
+          <p>{dog.left_alone}</p>
+          <h2> Do I have any medical conditions? </h2>
+          <p>{dog.medical_conditions}</p>
         </div>
 
         <div className="dogProfileDescription2">
-          <h1> Who can I live with? </h1>
-          
+          <h1> Who I can live with</h1>
+
           <h2> Can I live with children?</h2>
           <p>{dog.live_with_children}</p>
           <h2> Can I live with cats?</h2>
           <p>{dog.live_with_cats}</p>
           <h2> Can I live with other dogs?</h2>
           <p>{dog.live_with_dogs}</p>
-          <h2> Can I live with other small animals?</h2>
-          <p></p>
-          <h2> Additional info</h2>
-          <p className="additionalInfo">{dog.additional_info}</p>
         </div>
-
+        
         <div className="dogProfileDescription3">
-          <h1> About {dog.name}</h1>
-          <h2> What kind of family am I looking for?</h2>
-          <p></p>
-          <h2> What type of environment would suit me?</h2>
-          <p></p>
-          <p> About</p>
-          <p></p>
-        </div>
+          <h1> Additional info</h1>
+          <p className="additionalInfo">{dog.additional_info}</p>
+          <br></br>
+          </div>
       </div>
     </>
   );
