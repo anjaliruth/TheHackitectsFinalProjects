@@ -127,7 +127,6 @@ export default function MyForm() {
               name="homeVideo"
               accept="video/*"
               onChange={handleFileChange}
-              required
             />
           </label>
           <label>
@@ -150,9 +149,11 @@ export default function MyForm() {
               required
             />
           </label>
+
           <Link to="/ConfirmationScreen">
           <button type="submit">Submit</button>
           </Link>
+
         </div>
       </div>
     </form>

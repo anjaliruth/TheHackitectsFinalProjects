@@ -30,7 +30,11 @@ export default function SubmitForAdoption() {
   }
 
   async function signOut() {
-    await supabase.auth.signOut();
+
+    const { error } = await supabase.auth.signOut();
+    console.log(error);
+
+
   }
 
   const handleChange = (event) => {
