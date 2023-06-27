@@ -15,7 +15,6 @@ import Footer from "./components/Footer/Footer1";
 import ConfirmationScreen from "./components/ConfirmationScreen/ConfirmationScreen";
 import Filter from "./components/HomePage/Filter";
 
-
 export const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
   process.env.REACT_APP_SUPABASE_KEY
@@ -77,11 +76,12 @@ function App() {
 
         <Route path="ConfirmationScreen" element={<ConfirmationScreen />} />
 
-        <Route path="Filter" element={dogData && <Filter dogData={dogData}  />} />
-
+        <Route
+          path="Filter"
+          element={dogData && <Filter dogData={dogData} />}
+        />
       </Routes>
       <Footer />
-    
     </div>
   );
 }

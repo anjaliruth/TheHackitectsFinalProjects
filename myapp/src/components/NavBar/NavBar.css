@@ -19,11 +19,10 @@
 }
 
 .logo:hover {
-
   transform: scale(1.4);
-} 
+}
 #nav .nav-link:hover {
-  color: #FD8B49;
+  color: #fd8b49;
 }
 .nav-link {
   box-sizing: border-box;
@@ -45,7 +44,7 @@
   display: flex;
   padding: 5px;
   cursor: pointer;
-  background: #FD8B49;
+  background: #fd8b49;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -60,7 +59,7 @@
   width: 100%;
 }
 
-.ourLogo{
+.ourLogo {
   display: flex;
   justify-content: flex-start;
 }
@@ -74,6 +73,7 @@
     display: flex;
     justify-content: flex-start;
     margin-top: -0.12px;
+    text-align: center;
   }
   #nav .nav-btn {
     visibility: visible;
@@ -88,6 +88,7 @@
     height: calc(
       60vh
     ); /* Adjust the height to fill the remaining viewport height */
+    margin: 0;
     width: 50%;
     border-radius: 13px;
     display: flex;
@@ -158,10 +159,11 @@
   height: auto;
 }
 #nav .nav-link:hover {
-  color: #FD8B49;
+  color: #fd8b49;
 }
 .nav-link {
   box-sizing: border-box;
+  text-align: center;
 }
 .nav-link:last-child {
   padding-right: 30px;
@@ -173,11 +175,12 @@
   font-weight: 450;
   text-decoration: none;
 }
+
 #nav .nav-btn {
   display: flex;
   padding: 5px;
   cursor: pointer;
-  background: #FD8B49;
+  background: #fd8b49;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -217,6 +220,8 @@
     height: calc(
       60vh
     ); /* Adjust the height to fill the remaining viewport height */
+    margin: 0;
+    padding: 0;
     width: 50%;
     border-radius: 13px;
     display: flex;
@@ -239,6 +244,7 @@
       both;
     animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
+
   @-webkit-keyframes slide-right {
     0% {
       -webkit-transform: translateX(0);
@@ -268,32 +274,12 @@
     color: #fff;
     font-size: 1.5rem;
   }
+
+  .header-nav.responsive_nav {
+    background-color: #004953;
+    text-align: center;
+  }
+  .nav-link:last-child {
+    padding-right: 0;
+  }
 }
-
-
-.header-nav.responsive_nav{
-  background-color: #004953;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
