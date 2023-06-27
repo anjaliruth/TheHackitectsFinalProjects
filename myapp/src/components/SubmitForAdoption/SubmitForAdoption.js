@@ -30,8 +30,11 @@ export default function SubmitForAdoption() {
   }
 
   async function signOut() {
+
     const { error } = await supabase.auth.signOut();
     console.log(error);
+
+
   }
 
   const handleChange = (event) => {
@@ -68,7 +71,6 @@ export default function SubmitForAdoption() {
 
   return (
     <div className="">
-      (
       <form onSubmit={handleSubmit}>
         <div className="offsetDiv"></div>
         <div className="form-container-w-image">

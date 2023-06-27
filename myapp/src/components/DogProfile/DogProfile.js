@@ -9,11 +9,16 @@ import { TiArrowBack } from "react-icons/ti";
 import { IoPaw } from "react-icons/io5";
 import { ImClock } from "react-icons/im";
 import { FaTransgender } from "react-icons/fa";
+import React, { useEffect } from 'react';
+
 
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
 
 function DogProfile({ dogData }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
@@ -31,7 +36,7 @@ function DogProfile({ dogData }) {
           <div className="swiperandbuttons">
           <div className="dummyDiv"></div>
             <div className="backbutondiv">
-              <Link to="/dogGrid" className="backButton">
+              <Link to="/Filter" className="backButton">
                 <TiArrowBack />
                 Back to the dogs
               </Link>
@@ -96,32 +101,34 @@ function DogProfile({ dogData }) {
         <div className="dogProfileDescription">
           <h1> Support & health</h1>
           <p> Am I Toliet Trained?</p>
-          <p>{dog.toilet_trained}</p>
+          <h2>{dog.toilet_trained}</h2>
           <p> Can I be left alone?</p>
-          <p>{dog.left_alone}</p>
+          <h2>{dog.left_alone}</h2>
           <p> Do I have any medical conditions? </p>
+          <h2>{dog.medical_conditions}</h2>
           <p></p>
         </div>
 
         <div className="dogProfileDescription2">
           <h1> Who can I live with? </h1>
-          <p> Can I live with children?</p>
+          
+          <h2> Can I live with children?</h2>
+          <p>{dog.live_with_children}</p>
+          <h2> Can I live with cats?</h2>
+          <p>{dog.live_with_cats}</p>
+          <h2> Can I live with other dogs?</h2>
+          <p>{dog.live_with_dogs}</p>
+          <h2> Can I live with other small animals?</h2>
           <p></p>
-          <p> Can I live with cats?</p>
-          <p></p>
-          <p> Can I live with other dogs?</p>
-          <p></p>
-          <p> Can I live with other small animals?</p>
-          <p></p>
-          <p> Additional info</p>
-          <p></p>
+          <h2> Additional info</h2>
+          <p className="additionalInfo">{dog.additional_info}</p>
         </div>
 
         <div className="dogProfileDescription3">
           <h1> About {dog.name}</h1>
-          <p> What kind of family am I looking for?</p>
+          <h2> What kind of family am I looking for?</h2>
           <p></p>
-          <p> What type of environment would suit me?</p>
+          <h2> What type of environment would suit me?</h2>
           <p></p>
           <p> About</p>
           <p></p>

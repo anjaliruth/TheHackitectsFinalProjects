@@ -1,0 +1,62 @@
+.dummydiv {
+    height: 80px;
+
+}
+
+.ConfirmationScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.backbutondiv4{
+    display: flex;
+  }
+
+.backButton4{
+    display: flex;
+    background-color: #F5F5F5; /* Green */
+    border: none;
+    color: #00bdbd;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    width: 16%;
+    /* height: 15%; */
+  }
+
+  .backButton4{
+    justify-content: center;
+    height: 5%;
+    width: 30%;
+    margin-bottom: 3%;
+  }
+
+.ConfirmationPageContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dogWithBowlImage{
+    max-width: 150px; 
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.ConfirmationText{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .SuccessHeader{
+        margin-top: 150px;
+    }
+}

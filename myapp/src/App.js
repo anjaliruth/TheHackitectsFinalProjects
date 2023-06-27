@@ -11,8 +11,9 @@ import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
 import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
-// import SubmitForAdoption from "./components/SubmitForAdoption/SubmitForAdoption";
 import Footer from "./components/Footer/Footer1";
+import ConfirmationScreen from "./components/ConfirmationScreen/ConfirmationScreen";
+import Filter from "./components/HomePage/Filter";
 
 
 export const supabase = createClient(
@@ -73,8 +74,14 @@ function App() {
           path="dogGrid"
           element={dogData && <DogCard dogData={dogData} />}
         />
+
+        <Route path="ConfirmationScreen" element={<ConfirmationScreen />} />
+
+        <Route path="Filter" element={dogData && <Filter dogData={dogData}  />} />
+
       </Routes>
       <Footer />
+    
     </div>
   );
 }
