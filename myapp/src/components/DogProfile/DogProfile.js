@@ -10,14 +10,10 @@ import { IoPaw } from "react-icons/io5";
 import { ImClock } from "react-icons/im";
 import { FaTransgender } from "react-icons/fa";
 
-
-
 // this page breaks because the dogData is not being
 // passed in from the App.js and is null when refreshed
 
 function DogProfile({ dogData }) {
-
-
   const { id } = useParams();
   // fin the dog object with this id
   const dog = dogData.find((dog) => dog.id === parseInt(id));
@@ -29,11 +25,10 @@ function DogProfile({ dogData }) {
 
   return (
     <>
-   
       <div className="paddingdiv">
         <div className="totalDogInfo">
           <div className="swiperandbuttons">
-          <div className="dummyDiv"></div>
+            <div className="dummyDiv"></div>
             <div className="backbutondiv">
               <Link to="/Filter" className="backButton">
                 <TiArrowBack />
@@ -99,18 +94,18 @@ function DogProfile({ dogData }) {
 
         <div className="dogProfileDescription">
           <h1> Support & health</h1>
-          <p> Am I Toilet Trained?</p>
-          <h2>{dog.toilet_trained}</h2>
-          <p> Can I be left alone?</p>
-          <h2>{dog.left_alone}</h2>
-          <p> Do I have any medical conditions? </p>
-          <h2>{dog.medical_conditions}</h2>
-          <p></p>
+          <h2> Am I Toilet Trained?</h2>
+          <p>{dog.toilet_trained}</p>
+          <h2> Can I be left alone?</h2>
+          <p>{dog.left_alone}</p>
+          <h2> Do I have any medical conditions? </h2>
+          <p>{dog.medical_conditions}</p>
         </div>
 
         <div className="dogProfileDescription2">
+          <br></br>
           <h1> Who can I live with? </h1>
-          
+
           <h2> Can I live with children?</h2>
           <p>{dog.live_with_children}</p>
           <h2> Can I live with cats?</h2>
