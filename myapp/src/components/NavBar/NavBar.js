@@ -27,9 +27,7 @@ function Navbar() {
           <img src={logo} alt="Paws For affection logo" className="logo" />
         </div>
 
-        {/* <div>
-          <img className=“logo” src={logo} alt=“Paws for Affection logo” />
-        </div> */}
+ <h2 className="title">Paws For Affection</h2>
         <div className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`}>
           <Link to="/" className="nav-link" onClick={closeNavbar}>
             Home
