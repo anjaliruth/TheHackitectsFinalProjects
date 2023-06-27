@@ -75,26 +75,6 @@ export default function InfoPack() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <li>
-                  Don’t pressure them - you need to start building trust and a
-                  bond
-                </li>
-                <br></br>
-                <li>
-                  Give them a safe space - such as a room or crate, where they
-                  can retreat to if they need
-                </li>
-                <br></br>
-                <li>
-                  Let them settle at their own pace - some will take longer than
-                  others
-                </li>
-                <br></br>
-                <li>
-                  Start as you mean to go on - if mealtimes are always the same
-                  or you’ll be walking at the same time each day, or if there
-                  are any areas of the house the dog won’t be able to access
-                </li>
               </ul>
             </div>
             <div id="millieContainer">
