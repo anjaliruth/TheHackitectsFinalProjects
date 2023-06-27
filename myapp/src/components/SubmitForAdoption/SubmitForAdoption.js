@@ -75,7 +75,7 @@ export default function SubmitForAdoption() {
         <div className="offsetDiv"></div>
         <div className="form-container-w-image">
           <h4 className="application-instruction">
-            Please enter your details below
+            Please enter the details of the dog you want to submit for adoption
           </h4>
 
           <div className="form-container">
