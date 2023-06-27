@@ -22,7 +22,8 @@ export default function SubmitForAdoption({ user }) {
       .upload(user + "/" + uuidv4(), file);
 
     if (data) {
-      // Perform any necessary actions after successful upload
+      // Set the file URL path in the form data
+      setFormData({ ...formData, photoLink: data.Key });
     } else {
       console.log(error);
     }
@@ -154,7 +155,7 @@ export default function SubmitForAdoption({ user }) {
               Dog Photo:
               <input
                 type="file"
-                name="dogPics"
+                name="dogpics"
                 accept="image/*"
                 onChange={(e) => uploadImage(e)}
                 required
