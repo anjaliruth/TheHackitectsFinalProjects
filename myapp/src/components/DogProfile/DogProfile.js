@@ -117,8 +117,6 @@ function DogProfile({ dogData }) {
           <p>{dog.live_with_cats}</p>
           <h2> Can I live with other dogs?</h2>
           <p>{dog.live_with_dogs}</p>
-          <h2> Can I live with other small animals?</h2>
-          <p></p>
           <h2> Additional info</h2>
           <p className="additionalInfo">{dog.additional_info}</p>
         </div>
