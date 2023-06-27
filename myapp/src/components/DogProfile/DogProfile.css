@@ -264,7 +264,7 @@ margin-bottom: 25px;
 text-align: center;
 color: #004953;
 border: 2px dashed  #00BDBD;
-border-style: dashed none none none;
+border-style: solid none none none;
 width: 60%; 
 margin: 0 auto; 
 }
