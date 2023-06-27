@@ -74,7 +74,7 @@ export default function DogCard({ dogData }) {
             <div key={info.id} className="ind">
               <img
                 src={info.dogPics[0]?.photoLink}
-                alt={info.dogPics[0]?.photoLinkAltText}
+                alt={info.dogPics[0]?.PhotoLinkAltText}
                 className="dogGridPhoto"
               />
 
@@ -89,7 +89,9 @@ export default function DogCard({ dogData }) {
                 </div>
                 <div className="moreInfoButton">
                   <Link to={`/${info.id}`}>
-                    <button className= "buttonstyling">More Info!</button>
+                    <button className= "buttonstyling" onClick={() =>
+                        window.scrollTo({ top: 0})
+                      }>More Info!</button>
                   </Link>
                 </div>
               </div>

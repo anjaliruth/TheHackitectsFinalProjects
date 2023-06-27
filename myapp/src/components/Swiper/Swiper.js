@@ -37,7 +37,9 @@ export default function SwiperComp({ dogData }) {
               <img
                 className="carousel-image"
                 src={photo}
-                alt={`Dog ${dogData.id}`}
+                alt={`Dog ${dogData.dogPics[0].SwiperPhotoAltText}`}
+               
+
               />
             </div>
           </SwiperSlide>
