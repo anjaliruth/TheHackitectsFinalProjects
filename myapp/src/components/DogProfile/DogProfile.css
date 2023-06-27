@@ -246,14 +246,14 @@ margin-bottom: 25px;
   transition-duration: 0.4s; */
 
 .button1:hover {
-  background-color: #00a3a3; /* Green */
+  background-color: #00BDBD; /* Green */
   transform: scale(1.1);
 
   color: white;
 }
 
 .button2:hover {
-  background-color: #00a3a3; /* Green */
+  background-color: #00BDBD; /* Green */
   transform: scale(1.1);
   color: white;
 } 

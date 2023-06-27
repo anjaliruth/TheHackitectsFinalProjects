@@ -31,7 +31,7 @@ function DogProfile({ dogData }) {
             <div className="dummyDiv"></div>
             <div className="backbutondiv">
               <Link to="/Filter" className="backButton">
-                <TiArrowBack />
+                <TiArrowBack aria-hidden="true"/>
                 Back to the dogs
               </Link>
             </div>
@@ -61,30 +61,30 @@ function DogProfile({ dogData }) {
                   {dog.id}
                 </p>
                 <p>
-                  <IoPaw /> <strong> Breed: </strong> {dog.breed}
+                  <IoPaw aria-hidden="true"/> <strong> Breed: </strong> {dog.breed}
                 </p>
                 <p>
                   {" "}
-                  <FaTransgender /> <strong> Gender:</strong> {dog.sex}
+                  <FaTransgender aria-hidden="true" /> <strong> Gender:</strong> {dog.sex}
                 </p>
 
                 <p>
                   {" "}
                   <strong>
-                    <ImClock /> Age:
+                    <ImClock aria-hidden="true" /> Age:
                   </strong>{" "}
                   {dog.age}
                 </p>
                 <p>
-                  <FaDog className="smalldog" />
-                  <FaDog className="bigdog" /> <strong>Size:</strong> {dog.size}
+                  <FaDog aria-hidden="true" className="smalldog" />
+                  <FaDog  aria-hidden="true" className="bigdog" /> <strong>Size:</strong> {dog.size}
                 </p>
                 <p>
-                  <BsFillBarChartFill /> <strong>Activity Level: </strong>
+                  <BsFillBarChartFill aria-hidden="true" /> <strong>Activity Level: </strong>
                   {dog.activity_level}
                 </p>
                 <p>
-                  <FaMapMarkedAlt />
+                  <FaMapMarkedAlt aria-hidden="true"/>
                   <strong> Location:</strong> {dog.location}
                 </p>
               </div>

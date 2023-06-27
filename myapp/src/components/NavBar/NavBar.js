@@ -22,10 +22,11 @@ function Navbar() {
             <FaBars className="nav-icon" />
           )}
         </button>
+        
         <div className="ourLogo">
-        <Link to="/"> 
-        <img src={logo} alt="Paws For affection" className="logo" />
-        </Link> 
+        <img src={logo} alt="Paws For affection logo" className="logo" />
+        </div>
+
         {/* <div>
           <img className=“logo” src={logo} alt=“Paws for Affection logo” />
         </div> */}
@@ -43,8 +44,7 @@ function Navbar() {
           <Link
             to="/application-form"
             className="nav-link"
-            onClick={closeNavbar}
-          >
+            onClick={closeNavbar}>
             Application Form
           </Link>
           <Link to="/submitAdoption" className="nav-link" onClick={closeNavbar}>
