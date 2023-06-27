@@ -30,7 +30,11 @@ export default function SubmitForAdoption() {
   }
 
   async function signOut() {
-    await supabase.auth.signOut();
+
+    const { error } = await supabase.auth.signOut();
+    console.log(error);
+
+
   }
 
   const handleChange = (event) => {
@@ -160,7 +164,7 @@ export default function SubmitForAdoption() {
                 required
               />
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" >Submit</button>
           </div>
         </div>
       </form>

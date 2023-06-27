@@ -65,7 +65,6 @@ align-items: center;    */
     font-size: 18px;
     margin-left: 25px;
     width: 16%;
-    /* height: 15%; */
   }
   #dogname{
     color: #004953;
@@ -80,17 +79,25 @@ align-items: center;    */
 
 .totalDogInfo {
     display: flex; 
-    flex-wrap: wrap;
+    flex-direction:column;
     height: 100vh;
+gap: 20px;
     justify-content: space-around;
       /* background-color: pink */
     align-content: center;
     align-items: center;
+margin-bottom: 30%;
+
+@media screen and (min-width: 768px){
+  flex-direction: row;
+  margin-bottom: 5%;
+  
+}
   }
-  .totalDogInfo:first-child{
+  /* .totalDogInfo:first-child{
     display:flex ;
     align-content: flex-start;
-  }
+  } */
 
   .dogProfileButtons{ 
     display: flex;
@@ -263,6 +270,7 @@ color: #004953;
 }
 
 .additionalInfo{
+ padding-bottom: 10vh;
   max-width: 500px;
   text-align: center;
   margin: 0 auto;

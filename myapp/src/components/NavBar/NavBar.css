@@ -14,7 +14,14 @@
   max-width: 50px;
   height: auto;
   margin-right: 750px;
+  transition-duration: 0.4s;
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+
+  transform: scale(1.4);
+} 
 #nav .nav-link:hover {
   color: #FD8B49;
 }

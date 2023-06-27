@@ -21,15 +21,13 @@ export default function HomePage({ dogData }) {
 
 {/* //           <span class="material-symbols-outlined">expand_more</span> */}
 
-
-          <img
-            src={downarrow}
-            onClick={() => {
-              window.scrollTo(0, 1000);
-            }}
-            id="scrollArrow"
-            alt="scroll down arrow"
-          ></img>
+<a href="#dogGridTitle">
+  <img
+    src={downarrow}
+    id="scrollArrow"
+    alt="scroll down arrow"
+  ></img>
+</a>
 
         </div>
       </section>
