@@ -37,9 +37,10 @@
 
 .appFormImage {
   max-width: 310px;
-  margin: 40px auto;
+  margin: 0px auto;
   margin-bottom: -10px;
   border-radius: 20px;
+  margin-left: -20vw;
 }
 
 label {
@@ -81,5 +82,6 @@ button[type="submit"] {
   }
   .appFormImage {
     max-width: 500px;
+    margin: 0px auto;
   }
 }
