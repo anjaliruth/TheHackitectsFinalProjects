@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 export default function SubmitForAdoption({ user }) {
   const [formData, setFormData] = useState({
@@ -161,7 +162,12 @@ export default function SubmitForAdoption({ user }) {
                 required
               />
             </label>
-            <button type="submit">Submit</button>
+            <Link to="/ShelterConfirmationScreen">
+            <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+              Submit
+            </button>
+          </Link>
+            {/* <button type="submit">Submit</button> */}
           </div>
         </div>
       </form>
