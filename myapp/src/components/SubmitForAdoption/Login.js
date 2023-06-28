@@ -20,7 +20,6 @@ export default function Login() {
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
       setUserId(session?.user.id);
-      console.log(userId);
     });
 
     return () => subscription.unsubscribe();
