@@ -71,8 +71,8 @@ export default function SubmitForAdoption({ user }) {
     <div className="">
       <form onSubmit={handleSubmit}>
         <div className="offsetDiv"></div>
-        <div className="form-container-w-image">
         <h1 className="Dog-Submission-Form"> Dog Submission Form</h1>
+        <div className="form-container-w-image">
           <h4 className="application-instruction">
             Please enter the details of the dog you want to submit for adoption
           </h4>
