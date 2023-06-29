@@ -31,11 +31,16 @@
   color: black;
   font-size: 18px;
   border-radius: 5px;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 @media screen and (min-width: 768px) {
   .instructionContainer {
     width: 40vw;
   }
+}
+
+.application-form-title {
+  text-align: center;
+  margin-bottom: 10vh;
 }
