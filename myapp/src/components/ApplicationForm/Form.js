@@ -3,7 +3,8 @@ import "./Form.css";
 import AppFormImage from "../../Media/AppFormImage.jpg";
 import { supabase } from "../../App.js";
 import { uuid } from "@supabase/gotrue-js/dist/module/lib/helpers";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function MyForm() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,8 @@ export default function MyForm() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
+   
+    
   };
 
   const handleFileChange = (event) => {
@@ -30,15 +33,17 @@ export default function MyForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent form submission and page refresh
-
+    console.log("i work")
     try {
       // Store form data in the Supabase table
       const { data, error } = await supabase
         .from("Application_Input")
         .insert([formData]);
+        
 
       if (error) {
         console.error("Error inserting data:", error);
+        console.log("i work2")
       } else {
         console.log("Data inserted successfully:", data);
         // Reset form data after successful submission
@@ -58,8 +63,13 @@ export default function MyForm() {
       console.error("Error inserting data:", error);
     }
   };
-
+  const navigate = useNavigate();
+  const toComponentB=()=>{
+    navigate("/ConfirmationScreen")
+    window.scrollTo({ top: 0 });
+      }
   return (
+    
     <form onSubmit={handleSubmit}>
       <div className="form-container-w-image">
         <div className="applicationInstrictions-w-pic">
@@ -87,6 +97,16 @@ export default function MyForm() {
               name="last_name"
               value={formData.last_name}
               onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              type="text"
+              name="last_name"
+              // value={formData.last_name}
+              // onChange={handleChange}
               required
             />
           </label>
@@ -150,11 +170,14 @@ export default function MyForm() {
             />
           </label>
 
-          <Link to="/ConfirmationScreen">
-            <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+          <button type="submit"  onClick={()=>{toComponentB()}}>
               Submit
             </button>
-          </Link>
+          {/* <Link  to="/ConfirmationScreen"> */}
+            {/* <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+              Submit
+            </button> */}
+          {/* </Link> */}
         </div>
       </div>
     </form>

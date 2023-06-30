@@ -1,17 +1,13 @@
-.offsetDiv{
-    height: 80px;
+.offsetDiv {
+  height: 80px;
 }
 
 .form-container-w-image {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-top: 10%;
 
 
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 2%;
 }
 
-.Dog-Submission-Form{
-    text-align: center;
-    align-items: start;
-}

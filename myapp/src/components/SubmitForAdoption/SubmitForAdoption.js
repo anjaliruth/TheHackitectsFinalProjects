@@ -78,8 +78,17 @@ export default function SubmitForAdoption({ user }) {
           </h4>
 
           <div className="form-container">
+          <label>
+              Shelter Name:
+              <input
+                type="text"
+                name="ShelterName"
+                onChange={handleChange}
+                required
+              />
+            </label>
             <label>
-              Dog name:
+              Dog Name:
               <input
                 type="text"
                 name="name"
@@ -160,7 +169,7 @@ export default function SubmitForAdoption({ user }) {
                 name="dogpics"
                 accept="image/*"
                 onChange={(e) => uploadImage(e)}
-                required
+                // required
               />
             </label>
             <Link to="/ShelterConfirmationScreen">

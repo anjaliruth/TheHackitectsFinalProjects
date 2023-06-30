@@ -30,7 +30,9 @@ export default function ConfirmationScreen() {
           we'll be in touch within the next week.
           <br></br>
           <br></br>
-          If you have any questions in the meantime, you can contact us test@test.com
+
+          If you have any questions in the meantime, you can contact us  at <span className="email">pawsforaffection@pfa.com</span>
+
         </p>
       </div>
     </div>

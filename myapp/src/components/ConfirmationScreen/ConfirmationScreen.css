@@ -11,6 +11,10 @@
     height: 80vh;
 }
 
+
+.email{
+    font-weight: 700;
+}
 .backbutondiv{
     display: flex;
   }
