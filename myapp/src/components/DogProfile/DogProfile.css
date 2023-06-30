@@ -85,21 +85,27 @@ margin: 3%;
 
 .totalDogInfo {
     display: flex; 
-    flex-direction:column;
+    flex-direction: column;   
     height: 100vh;
-gap: 20px;
+    gap: 20px;
     justify-content: space-around;
-      /* background-color: pink */
     align-content: center;
     align-items: center;
-margin-bottom: 30%;
-
-@media screen and (min-width: 768px){
-  flex-direction: row;
-  margin-bottom: 5%;
-  
-}
+    margin-bottom: 30%;
+        
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+      margin-bottom: 5%;
+      
+    }
   }
+  @media only screen and (max-width: 567px) {
+    .backbutondiv {
+      margin-top: 20em;
+  
+    }
+  }
+
   /* .totalDogInfo:first-child{
     display:flex ;
     align-content: flex-start;
@@ -270,15 +276,26 @@ margin-bottom: 25px;
 
 
 /* #004953 */
+@media only screen and (max-width: 567px) {
+ 
+
+    .dogProfileDescription {
+      margin-top: 90%;
+    }
+  }   
+
+
 
 .dogProfileDescription,.dogProfileDescription1,.dogProfileDescription2,.dogProfileDescription3 {
-
+/* margin-top: 300px; */
+align-items: center;
 text-align: center;
 color: #004953;
 border: 2px dashed  #00BDBD;
 border-style: solid none none none;
 width: 60%; 
-margin: 0 auto; 
+margin-left:20%;
+/* margin: 0 auto;  */
 }
 
 .additionalInfo{
@@ -295,4 +312,3 @@ border-style: dashed none none none;
 width: 60%; 
 margin: 0 auto;
 }
-
