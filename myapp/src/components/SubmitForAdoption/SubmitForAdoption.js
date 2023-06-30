@@ -13,7 +13,7 @@ export default function SubmitForAdoption({ user }) {
     size: "",
     age: "",
   });
-  //
+
   async function uploadImage(e) {
     let file = e.target.files[0];
 
@@ -41,6 +41,7 @@ export default function SubmitForAdoption({ user }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log(formData);
 
     try {
       // Store form data in the Supabase table
