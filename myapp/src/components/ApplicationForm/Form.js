@@ -91,6 +91,16 @@ export default function MyForm() {
             />
           </label>
           <label>
+            Email:
+            <input
+              type="text"
+              name="last_name"
+              // value={formData.last_name}
+              // onChange={handleChange}
+              required
+            />
+          </label>
+          <label>
             Dog ID:
             <input
               type="text"
