@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 export default function SubmitForAdoption({ user }) {
   const [formData, setFormData] = useState({
@@ -70,6 +71,7 @@ export default function SubmitForAdoption({ user }) {
     <div className="">
       <form onSubmit={handleSubmit}>
         <div className="offsetDiv"></div>
+        <h1 className="Dog-Submission-Form"> Dog Submission Form</h1>
         <div className="form-container-w-image">
           <h4 className="application-instruction">
             Please enter the details of the dog you want to submit for adoption
@@ -170,7 +172,12 @@ export default function SubmitForAdoption({ user }) {
                 // required
               />
             </label>
-            <button type="submit">Submit</button>
+            <Link to="/ShelterConfirmationScreen">
+            <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+              Submit
+            </button>
+          </Link>
+            {/* <button type="submit">Submit</button> */}
           </div>
         </div>
       </form>
