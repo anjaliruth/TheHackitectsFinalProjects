@@ -11,6 +11,9 @@
     height: 80vh;
 }
 
+.SuccessHeader{
+    text-align: center;
+}
 
 .email{
     font-weight: 700;
