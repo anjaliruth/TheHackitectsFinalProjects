@@ -24,7 +24,7 @@ function Navbar() {
         </button>
 
         <div className="ourLogo">
-        <Link to= "/" lassName="nav-link" onClick={closeNavbar}>
+        <Link to= "/" className="nav-link" onClick={closeNavbar}>
           <img src={logo} alt="Paws For affection logo" className="logo" />
           </Link>
         </div>
