@@ -29,11 +29,11 @@ function Navbar() {
           </Link>
         </div>
        
+     <h2 className="title">Paws For Affection</h2>
         <div role="navigation" aria-label="Main" className={`header-nav ${isNavbarOpen ? "responsive_nav" : ""}`} >
         
 
 
-     <h2 className="title">Paws For Affection</h2>
         
 
           <Link to="/" className="nav-link" onClick={closeNavbar}>
