@@ -92,9 +92,9 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 376px) and (max-width: 499px) {
+@media screen and (min-width: 400px) and (max-width: 499px) {
   .tryHere {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 }
 
