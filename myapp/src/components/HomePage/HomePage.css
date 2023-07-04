@@ -26,7 +26,7 @@
 }
 .scrollTag{
   font-size: 30px;
-  color: black;
+
   text-align: center;
   @media screen and (min-width:600px){
     font-size: 40px;
@@ -80,7 +80,6 @@
   width: 100%;
   background-position: center center;
 
-  /* @media screen and (max-width: 600px) */
 }
 
 .tryHere {
@@ -91,14 +90,20 @@
   padding-top: 50px;
   max-width: 500px;
   margin: 0 auto;
-  @media screen and (min-width: 376px) and (max-width: 499px) {
+}
+
+@media screen and (min-width: 376px) and (max-width: 499px) {
+  .tryHere {
     padding-top: 100px;
   }
-  @media screen and (min-width: 500px) {
+}
+
+@media screen and (min-width: 500px) {
+  .tryHere {
     padding-top: 150px;
   }
-
 }
+
 .homepagePic {
   display: block;
   width: 100%;
