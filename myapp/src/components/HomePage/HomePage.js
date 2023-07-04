@@ -19,9 +19,7 @@ export default function HomePage({ dogData }) {
             </h2>
           </div>
           <div className="scrollForDogs-with-arrow">
-            <h3>Scroll down for dogs!</h3>
-
-            {/* //           <span class="material-symbols-outlined">expand_more</span> */}
+            <h3 className="scrollTag">Scroll down for dogs!</h3>
 
             <a href="#dogGridTitle">
               <img
