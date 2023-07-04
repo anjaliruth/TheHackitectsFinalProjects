@@ -11,24 +11,19 @@ export default function HomePage({ dogData }) {
     <div>
       <section className="section1">
         {/* <div className="homePage" > */}
-          <h2 className="homePageTitle homePage">
-            Paws For Affection,<br aria-hidden="true"></br> Your Companion in Adopting a Fur-ever
-            friend.
-          </h2>
+        <h2 className="homePageTitle homePage">
+          Paws For Affection,<br aria-hidden="true"></br> Your Companion in
+          Adopting a Fur-ever friend.
+        </h2>
         {/* </div> */}
         <div className="scrollForDogs">
           <h3>Scroll down for dogs!</h3>
 
-{/* //           <span class="material-symbols-outlined">expand_more</span> */}
+          {/* //           <span class="material-symbols-outlined">expand_more</span> */}
 
-<a href="#dogGridTitle">
-  <img
-    src={downarrow}
-    id="scrollArrow"
-    alt="scroll down arrow"
-  ></img>
-</a>
-
+          <a href="#dogGridTitle">
+            <img src={downarrow} id="scrollArrow" alt="scroll down arrow"></img>
+          </a>
         </div>
       </section>
       <Filter dogData={dogData} />

@@ -84,7 +84,7 @@ function App() {
           element={dogData && <Filter dogData={dogData} />}
         />
       </Routes>
-      <Footer />
+      <Footer className="mainFooter" />
     </div>
   );
 }
