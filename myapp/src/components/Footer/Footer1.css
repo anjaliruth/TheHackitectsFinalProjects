@@ -37,12 +37,11 @@
 }
 @media screen and (min-width: 764px) {
   /* footer width is bigger than the screen size on mobile */
-  /* thats not right */
   /* the width is the issue */
 
-  .footer {
+  /* .footer {
     width: 100%;
-  }
+  } */
 
   .footer-contents {
     display: flex;

@@ -22,8 +22,7 @@ export default function MyForm() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
-   
-    
+    console.log(formData);
   };
 
   const handleFileChange = (event) => {
@@ -33,17 +32,16 @@ export default function MyForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent form submission and page refresh
-    console.log("i work")
+    console.log("handleSubmit called");
     try {
       // Store form data in the Supabase table
       const { data, error } = await supabase
         .from("Application_Input")
         .insert([formData]);
-        
 
       if (error) {
         console.error("Error inserting data:", error);
-        console.log("i work2")
+        console.log("i work2");
       } else {
         console.log("Data inserted successfully:", data);
         // Reset form data after successful submission
@@ -64,12 +62,11 @@ export default function MyForm() {
     }
   };
   const navigate = useNavigate();
-  const toComponentB=()=>{
-    navigate("/ConfirmationScreen")
+  const toComponentB = () => {
+    navigate("/ConfirmationScreen");
     window.scrollTo({ top: 0 });
-      }
+  };
   return (
-    
     <form onSubmit={handleSubmit}>
       <div className="form-container-w-image">
         <div className="applicationInstrictions-w-pic">
@@ -170,11 +167,16 @@ export default function MyForm() {
             />
           </label>
 
-          <button type="submit"  onClick={()=>{toComponentB()}}>
-              Submit
-            </button>
+          <button
+            type="submit"
+            onClick={() => {
+              toComponentB();
+            }}
+          >
+            Submit
+          </button>
           {/* <Link  to="/ConfirmationScreen"> */}
-            {/* <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+          {/* <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
               Submit
             </button> */}
           {/* </Link> */}

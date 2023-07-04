@@ -22,14 +22,14 @@
   background-color: #fd8b49;
 }
 
-.application-form-title{
+.application-form-title {
   width: 30%;
   margin: 20px auto;
   text-align: center;
 }
 .application-instruction {
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   padding: 10px 21px;
   background-color: #fd8b49;

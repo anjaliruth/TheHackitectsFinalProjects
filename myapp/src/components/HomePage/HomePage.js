@@ -9,6 +9,7 @@ export default function HomePage({ dogData }) {
 
   return (
     <div>
+
       <div className="section1">
       <div className="dummyDiv"></div>
         <div className="tryHere">
@@ -29,6 +30,7 @@ export default function HomePage({ dogData }) {
               ></img>
             </a>
           </div>
+
         </div>
       </div>
       <Filter dogData={dogData} />
