@@ -45,6 +45,11 @@ align-items: center;    */
     background-color: aqua;
 } */
 
+
+/* .paddingdiv{
+margin: 3%;
+} */
+
 .dummyDiv{
   height: 80px;
 }
@@ -290,3 +295,4 @@ border-style: dashed none none none;
 width: 60%; 
 margin: 0 auto;
 }
+

@@ -11,31 +11,25 @@
     height: 80vh;
 }
 
-.SuccessHeader{
-    text-align: center;
-}
-
-.email{
-    font-weight: 700;
-}
 .backbutondiv{
     display: flex;
   }
   
-  .backButton{
-      /* display: flex;
-      background-color: #F5F5F5; Green */
-      /* border: none; */
-      /* padding: 15px 32px;
+  /* .backButton{
+      display: flex;
+      background-color: #F5F5F5; Green 
+      border: none;
+      padding: 15px 32px;
       text-align: center;
-      text-decoration: none; */
-      /* display: inline-block; */
-      /* border-radius: 10px; */
-      /* font-size: 18px; */
-      /* margin-left: 25px; */
-      /* width: 16%; */
-      /* height: 15%; */
-    }
+      text-decoration: none; 
+      display: inline-block; 
+      border-radius: 10px; 
+      font-size: 18px;
+       margin-left: 25px; 
+      width: 16%;
+       height: 15%;
+  }
+     */
 
 
 
@@ -73,4 +67,4 @@
     .SuccessHeader{
         margin-top: 150px;
     }
-}
+} 

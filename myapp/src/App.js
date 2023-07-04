@@ -13,6 +13,7 @@ import DogCard from "./components/DogCard/DogCard";
 import Login from "./components/SubmitForAdoption/Login";
 import Footer from "./components/Footer/Footer1";
 import ConfirmationScreen from "./components/ConfirmationScreen/ConfirmationScreen";
+import ShelterConfirmationScreen from "./components/ShelterCS/ShelterCS";
 import Filter from "./components/HomePage/Filter";
 
 export const supabase = createClient(
@@ -75,6 +76,8 @@ function App() {
         />
 
         <Route path="ConfirmationScreen" element={<ConfirmationScreen />} />
+        <Route path="ShelterConfirmationScreen" element={<ShelterConfirmationScreen />} />
+
 
         <Route
           path="Filter"
