@@ -33,7 +33,7 @@ export default function Footer1() {
         <img src={footerLogo} alt="Paws For Affection" className="footerlogo" />
       </div>
       <div className="footer-social">
-        <a
+        <a aria-label="link to our github accounts"
           href="https://linktr.ee/kylew95"
           rel="noreferrer"
           style={{ color: "white" }}
