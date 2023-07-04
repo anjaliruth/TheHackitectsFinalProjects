@@ -2,31 +2,35 @@
   scroll-behavior: smooth;
 } */
 
-.homePage {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* .homePage {
+
   display: flex;
-  align-items: center;
-  background-color: rgb(245, 245, 245, 0.6);
-  max-width: 600px;
+  justify-content: center;
+  background-color: rgb(245, 245, 245, 0.3);
   margin: 0 auto;
   border-radius: 15px;
-  padding: 10px;
+  max-width: 500px;
+  min-width: 300px;
   text-align: center;
+} */
+
+.catchphrase {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 245, 245, 0.6);
+  border-radius: 15px;
+  max-width: 500px;
+
+  
+}
+
+.scrollForDogs-with-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .scrollForDogs {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-.scrollForDogs{
   font-size: 30px;
 }
 #scrollArrow {
@@ -61,7 +65,7 @@
 .section1 {
   background-image: url("../../Media/PFAHomePage.jpg");
   background-size: cover;
-  filter:grayscale(0%);
+  filter: grayscale(0%);
   height: 100vh;
   width: 100vw;
   background-position: center center;
@@ -69,6 +73,20 @@
   /* @media screen and (max-width: 600px) */
 }
 
+.tryHere {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  padding: 50px;
+  /* max-width: 400px; */
+  @media screen and (min-width: 500px) {
+    padding: 200px;
+  }
+
+}
 .homepagePic {
   display: block;
   width: 100%;
@@ -76,14 +94,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .homePage {
-    width: 100%;
-    flex-direction: column;
-  }
-  .homePageTitle {
-    width: 70vw;
-    font-size: 30px;
-  }
+ 
   .scrollForDogs {
     bottom: 5%;
   }
