@@ -25,7 +25,7 @@ export default function ShelterConfirmationScreen() {
           Thank you for sending us your dogs!. They will be uploded shortly.
           <br></br>
           <br></br>
-          If you have any questions in the meantime, you can contact us test@test.com
+          If you have any questions in the meantime, you can contact us at <span className="email">pawsforaffection@pfa.com</span>
         </p>
       </div>
     </div>
