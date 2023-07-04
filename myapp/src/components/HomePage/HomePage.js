@@ -9,23 +9,30 @@ export default function HomePage({ dogData }) {
 
   return (
     <div>
-      <section className="section1">
-        {/* <div className="homePage" > */}
-        <h2 className="homePageTitle homePage">
-          Paws For Affection,<br aria-hidden="true"></br> Your Companion in
-          Adopting a Fur-ever friend.
-        </h2>
-        {/* </div> */}
-        <div className="scrollForDogs">
-          <h3>Scroll down for dogs!</h3>
 
-          {/* //           <span class="material-symbols-outlined">expand_more</span> */}
+      <div className="section1">
+      <div className="dummyDiv"></div>
+        <div className="tryHere">
+          <div className="catchphrase">
+            <h2 className="homePageTitle">
+              Paws For Affection,<br aria-hidden="true"></br> Your Companion in
+              Adopting a Fur-ever friend.
+            </h2>
+          </div>
+          <div className="scrollForDogs-with-arrow">
+            <h3 className="scrollTag">Scroll down for dogs!</h3>
 
-          <a href="#dogGridTitle">
-            <img src={downarrow} id="scrollArrow" alt="scroll down arrow"></img>
-          </a>
+            <a href="#dogGridTitle">
+              <img
+                src={downarrow}
+                id="scrollArrow"
+                alt="scroll down arrow"
+              ></img>
+            </a>
+          </div>
+
         </div>
-      </section>
+      </div>
       <Filter dogData={dogData} />
     </div>
   );
