@@ -26,11 +26,10 @@
 }
 .scrollTag{
   font-size: 30px;
-  color: white;
+  color: black;
   text-align: center;
   @media screen and (min-width:600px){
     font-size: 40px;
-    color: black;
   }
 
 }
@@ -92,6 +91,9 @@
   padding-top: 50px;
   max-width: 500px;
   margin: 0 auto;
+  @media screen and (min-width: 376px) and (max-width: 499px) {
+    padding-top: 100px;
+  }
   @media screen and (min-width: 500px) {
     padding-top: 150px;
   }
