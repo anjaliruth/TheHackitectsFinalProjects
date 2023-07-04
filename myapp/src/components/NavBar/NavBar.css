@@ -24,16 +24,6 @@
 
 .title{
   position: absolute;
-  top: 10px;
-  left: 135px;
-}
-
-.logo:hover {
-   transform: scale(1.4);
-}
-
-.title{
-  position: absolute;
   top: 10px; 
   left: 135px;
 }
@@ -87,9 +77,11 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 800px) {
   .title{
-visibility: hidden;
+top: 10px;
+left: 40px;
+width: 400px;
   }
 
   #nav {
@@ -175,11 +167,6 @@ visibility: hidden;
   background-color: #004953;
   margin-top: -2vh;
   width: 100%;
-}
-.logo {
-  justify-self: flex-end;
-  max-width: 50px;
-  height: auto;
 }
 #nav .nav-link:hover {
   color: #fd8b49;
