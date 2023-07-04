@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { supabase } from "../../App";
 import "./SubmitForAdoption.css";
 import { v4 as uuidv4 } from "uuid";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SubmitForAdoption({ user }) {
   const [formData, setFormData] = useState({
@@ -42,7 +42,7 @@ export default function SubmitForAdoption({ user }) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    console.log("handleSubmit called");
     try {
       // Store form data in the Supabase table
       const { data, error } = await supabase.from("dogData").insert([formData]);
@@ -67,6 +67,12 @@ export default function SubmitForAdoption({ user }) {
     }
   };
 
+  const navigate = useNavigate();
+  const successBtn = () => {
+    navigate("/ShelterConfirmationScreen");
+    window.scrollTo({ top: 0 });
+  };
+
   return (
     <div className="">
       <form onSubmit={handleSubmit}>
@@ -78,14 +84,9 @@ export default function SubmitForAdoption({ user }) {
           </h4>
 
           <div className="form-container">
-          <label>
+            <label>
               Shelter Name:
-              <input
-                type="text"
-                name="ShelterName"
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="ShelterName" required />
             </label>
             <label>
               Dog Name:
@@ -172,11 +173,9 @@ export default function SubmitForAdoption({ user }) {
                 // required
               />
             </label>
-            <Link to="/ShelterConfirmationScreen">
-            <button type="submit" onClick={() => window.scrollTo({ top: 0 })}>
+            <button type="submit" onClick={successBtn}>
               Submit
             </button>
-          </Link>
             {/* <button type="submit">Submit</button> */}
           </div>
         </div>
