@@ -8,3 +8,7 @@ Since the end of COVID-19, pet abandonment in the UK has surged as people return
 
 ## Product: 
 View our website on: https://pawsforaffection.netlify.app/
+
+## Challenges we faced as a team and how we overcame them: 
+
+CSS: Difficulties in
