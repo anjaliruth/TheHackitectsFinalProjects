@@ -1,6 +1,7 @@
 # The Hackitects
 ## Our Team: 
  Anjali Muthusamy: https://www.linkedin.com/in/anjali-ruth-muthusamy/
+ <br>
  Katim Touray: https://www.linkedin.com/in/katim-touray-a52b52267/
  K VP: https://www.linkedin.com/in/k-vp-749533267/
  Kyle Williams: https://www.linkedin.com/in/kyle-williams-4a7793200/
