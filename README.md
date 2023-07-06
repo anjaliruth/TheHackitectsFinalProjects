@@ -1,4 +1,15 @@
-# The Hackitects School Of Code Bootcamp Final Project
+# The Hackitects
+## Our Team: 
+ Anjali Muthusamy: https://www.linkedin.com/in/anjali-ruth-muthusamy/
+ Katim Touray: https://www.linkedin.com/in/katim-touray-a52b52267/
+ K VP: https://www.linkedin.com/in/k-vp-749533267/
+ Kyle Williams: https://www.linkedin.com/in/kyle-williams-4a7793200/
+ Lucy Morgan: https://www.linkedin.com/in/lucy--morgan/
+ Tom Grogan: https://www.linkedin.com/in/tom-grogan-7541a3275/
+
+
+
+
 ## Brief: 
 Design and develop a full-stack application in a team of 6 that addresses a specific issue you feel needs attention. 
 
